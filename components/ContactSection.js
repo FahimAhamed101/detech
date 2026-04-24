@@ -1,3 +1,4 @@
+import { fiverrProfile } from "@/utility/fiverrContent";
 import DalTechSelect from "./DalTechSelect";
 
 const ContactSection = ({
@@ -20,14 +21,14 @@ const ContactSection = ({
             <div className="col-lg-6">
               <div className="contact-content">
                 <div className={`section-title ${titleStyle}`}>
-                  <span className="wow fadeInUp">IT Support Help</span>
+                  <span className="wow fadeInUp">Fiverr Support Help</span>
                   <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                    let,s work together
+                    Let&apos;s work together
                   </h2>
                 </div>
                 <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                  We denounce with righteous indignation and like men <br />
-                  beguiled and demoralized by the charms
+                  Share your website goals, preferred style, and required pages.
+                  You can then continue the project smoothly through Fiverr.
                 </p>
                 <div className="contact-info-area">
                   <div
@@ -40,7 +41,7 @@ const ContactSection = ({
                     <div className="content">
                       <p>Call For Inquiry</p>
                       <h3>
-                        <a href="tel:+23645689622">+236 (456) 896 22</a>
+                        <a href={`tel:${fiverrProfile.phone}`}>{fiverrProfile.phone}</a>
                       </h3>
                     </div>
                   </div>
@@ -52,9 +53,11 @@ const ContactSection = ({
                       <i className="fal fa-envelope" />
                     </div>
                     <div className="content">
-                      <p>Send Us Email</p>
+                      <p>Send Email</p>
                       <h3>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href={`mailto:${fiverrProfile.supportEmail}`}>
+                          {fiverrProfile.supportEmail}
+                        </a>
                       </h3>
                     </div>
                   </div>
@@ -66,8 +69,8 @@ const ContactSection = ({
                       <i className="fas fa-map-marker-alt" />
                     </div>
                     <div className="content">
-                      <p>Location</p>
-                      <h3>734 H, Bryan Burlington, NC 27215 </h3>
+                      <p>Platform</p>
+                      <h3>Available worldwide on Fiverr</h3>
                     </div>
                   </div>
                 </div>
@@ -77,10 +80,11 @@ const ContactSection = ({
               <div className="contact-box">
                 <div className="contact-title">
                   <h3 className="wow fadeInUp" data-wow-delay=".3s">
-                    Need Help For Project!
+                    Need Help For Your Project?
                   </h3>
                   <p className="wow fadeInUp" data-wow-delay=".5s">
-                    We are ready to help your next projects, let’s work together
+                    Send the basics here, then continue with the right Fiverr
+                    package or a custom offer.
                   </p>
                 </div>
                 <div className="contact-form-items">
@@ -125,10 +129,10 @@ const ContactSection = ({
                         <div className="form-clt">
                           <DalTechSelect
                             items={[
-                              { id: 1, title: "Default sorting" },
-                              { id: 2, title: "Sort by popularity" },
-                              { id: 3, title: "Sort by average rating" },
-                              { id: 4, title: "Sort by latest" },
+                              { id: 1, title: "Business Website" },
+                              { id: 2, title: "Landing Page" },
+                              { id: 3, title: "Website Redesign" },
+                              { id: 4, title: "Custom Quote" },
                             ]}
                           />
                         </div>
@@ -141,7 +145,7 @@ const ContactSection = ({
                           <textarea
                             name="message"
                             id="message"
-                            placeholder="Write Your Message"
+                            placeholder="Write your project details"
                             defaultValue={""}
                           />
                         </div>
@@ -155,7 +159,7 @@ const ContactSection = ({
                           className={`theme-btn center d-block ${btnStyle}`}
                         >
                           <span>
-                            Send Us Messages
+                            Send Project Brief
                             <i className="fas fa-chevron-right" />
                           </span>
                         </button>
@@ -171,4 +175,5 @@ const ContactSection = ({
     </section>
   );
 };
+
 export default ContactSection;

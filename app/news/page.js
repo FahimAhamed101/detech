@@ -45,7 +45,7 @@ const page = () => {
                         There are many variations of passages of Lorem Ipsum
                         available, but majority have suffered teration in some
                         form, by injected humour, or randomised words which
-                        don't look even slight believable. If you are going to
+                        don&apos;t look even slight believable. If you are going to
                         use a passage of Lorem Ipsum.
                       </p>
                       <Link
@@ -92,7 +92,7 @@ const page = () => {
                         There are many variations of passages of Lorem Ipsum
                         available, but majority have suffered teration in some
                         form, by injected humour, or randomised words which
-                        don't look even slight believable. If you are going to
+                        don&apos;t look even slight believable. If you are going to
                         use a passage of Lorem Ipsum.
                       </p>
                       <Link
@@ -139,7 +139,7 @@ const page = () => {
                         There are many variations of passages of Lorem Ipsum
                         available, but majority have suffered teration in some
                         form, by injected humour, or randomised words which
-                        don't look even slight believable. If you are going to
+                        don&apos;t look even slight believable. If you are going to
                         use a passage of Lorem Ipsum.
                       </p>
                       <Link

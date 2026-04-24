@@ -1,6 +1,7 @@
 "use client";
-import Link from "next/link";
+import { fiverrHighlights, fiverrProfile } from "@/utility/fiverrContent";
 import ProgressBar from "./ProgressBar";
+
 const AboutSection = () => {
   return (
     <div className="container">
@@ -40,26 +41,27 @@ const AboutSection = () => {
           <div className="col-lg-6 mt-5 mt-lg-0">
             <div className="about-content">
               <div className="section-title">
-                <span className="wow fadeInUp">5m+ Trusted Our Clients</span>
+                <span className="wow fadeInUp">Professional Fiverr Seller Workflow</span>
                 <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                  We Prominent Truly trusted IT business solutions
+                  Website services designed to look premium and sell
+                  professionally
                 </h2>
               </div>
-              <p className=" mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                Transmds is the world’s driving worldwide coordinations supplier
-                — we uphold industry and exchange the worldwide trade of
-                merchandi
+              <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                I help businesses launch modern websites, landing pages, and
+                redesigns through Fiverr with a process that is clear, fast,
+                and client-friendly from first message to final delivery.
               </p>
               <div className="circle-progress-bar-wrapper">
                 <div
                   className="single-circle-bar wow fadeInUp"
                   data-wow-delay=".3s"
                 >
-                  <ProgressBar value={68} color={"#166FD3"} />
+                  <ProgressBar value={92} color={"#166FD3"} />
                   <div className="content">
                     <h6>
-                      Business <br />
-                      Strategy
+                      Client <br />
+                      Satisfaction
                     </h6>
                   </div>
                 </div>
@@ -67,43 +69,42 @@ const AboutSection = () => {
                   className="single-circle-bar wow fadeInUp"
                   data-wow-delay=".5s"
                 >
-                  <ProgressBar value={93} color={"#166FD3"} />
+                  <ProgressBar value={96} color={"#166FD3"} />
                   <div className="content">
                     <h6>
-                      Real Technology <br />
-                      Solutions
+                      Fiverr Order <br />
+                      Completion
                     </h6>
                   </div>
                 </div>
               </div>
               <ul className="about-list wow fadeInUp" data-wow-delay=".7s">
-                <li>
-                  <i className="far fa-check me-2" />
-                  Professional Team Member
-                </li>
-                <li>
-                  <i className="far fa-check me-2" />
-                  Awards Winning IT Solutions Company
-                </li>
-                <li>
-                  <i className="far fa-check me-2" />
-                  Dedicated Tech Services
-                </li>
+                {fiverrHighlights.map((item) => (
+                  <li key={item}>
+                    <i className="far fa-check me-2" />
+                    {item}
+                  </li>
+                ))}
               </ul>
               <div className="about-author">
                 <div className="about-button wow fadeInUp" data-wow-delay=".8s">
-                  <Link href="about" className="theme-btn">
+                  <a
+                    href={fiverrProfile.profileUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="theme-btn"
+                  >
                     <span>
-                      Explore more about
+                      View Fiverr Profile
                       <i className="fas fa-chevron-right" />
                     </span>
-                  </Link>
+                  </a>
                 </div>
                 <div className="author-image wow fadeInUp" data-wow-delay=".9s">
                   <img src="assets/img/about/author.png" alt="author-img" />
                   <div className="content">
                     <img src="assets/img/about/signature.png" alt="signature" />
-                    <p>Ceo &amp; Founder</p>
+                    <p>{fiverrProfile.name} | Fiverr Freelancer</p>
                   </div>
                 </div>
               </div>
@@ -114,4 +115,5 @@ const AboutSection = () => {
     </div>
   );
 };
+
 export default AboutSection;

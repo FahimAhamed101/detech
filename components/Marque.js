@@ -1,3 +1,12 @@
+import { fiverrProfile } from "@/utility/fiverrContent";
+
+const marqueeItems = [
+  "Fiverr orders accepted worldwide",
+  "Website design, redesign, and landing page services",
+  `Get in touch - phone: ${fiverrProfile.phone}`,
+  "Message first on Fiverr for custom offers and package guidance",
+];
+
 const Marque = () => {
   return (
     <div className="marque-section-2">
@@ -6,82 +15,19 @@ const Marque = () => {
           <div className="marquee-inner to-left">
             <ul className="marqee-list d-flex">
               <li className="marquee-item style-3">
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Open Hours : Mon-Fri: 9 AM – 6 PM Saturday: 9 AM – 4 PM
-                  Sunday: Closed
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Germany —785 15h Street, Office 478Berlin, De 81566
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Get In Touch — phone: +1(800)123-4566
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Open Hours : Mon-Fri: 9 AM – 6 PM Saturday: 9 AM – 4 PM
-                  Sunday: Closed
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Germany —785 15h Street, Office 478Berlin, De 81566
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Get In Touch — phone: +1(800)123-4566
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Open Hours : Mon-Fri: 9 AM – 6 PM Saturday: 9 AM – 4 PM
-                  Sunday: Closed
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Germany —785 15h Street, Office 478Berlin, De 81566
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Get In Touch — phone: +1(800)123-4566
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Open Hours : Mon-Fri: 9 AM – 6 PM Saturday: 9 AM – 4 PM
-                  Sunday: Closed
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Germany —785 15h Street, Office 478Berlin, De 81566
-                </span>
-                <span className="text-slider">
-                  <img src="assets/img/asterisk-2.svg" alt="img" />
-                </span>
-                <span className="text-slider">
-                  Get In Touch — phone: +1(800)123-4566
-                </span>
+                {Array.from({ length: 3 }).map((_, repeatIndex) =>
+                  marqueeItems.map((item, itemIndex) => (
+                    <span className="text-slider" key={`${repeatIndex}-${itemIndex}-${item}`}>
+                      {itemIndex % 2 === 0 ? (
+                        <>
+                          <img src="assets/img/asterisk-2.svg" alt="img" /> {item}
+                        </>
+                      ) : (
+                        item
+                      )}
+                    </span>
+                  ))
+                )}
               </li>
             </ul>
           </div>
@@ -90,4 +36,5 @@ const Marque = () => {
     </div>
   );
 };
+
 export default Marque;

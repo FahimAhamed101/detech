@@ -1,3 +1,4 @@
+import { fiverrProfile } from "@/utility/fiverrContent";
 import Link from "next/link";
 import { Fragment } from "react";
 
@@ -14,10 +15,10 @@ const Newsletter = () => {
           </div>
           <div className="newsletter-title">
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              Join Our Newsletter
+              Start Your Fiverr Project
             </h2>
             <p className="wow fadeInUp" data-wow-delay=".5s">
-              We Provide Best Pricing package to grow your lead capture
+              Send your project brief and move the conversation to Fiverr fast.
             </p>
           </div>
           <div className="newsletter-items">
@@ -29,21 +30,24 @@ const Newsletter = () => {
                 placeholder="Email Address"
               />
             </div>
-            <button
+            <a
+              href={fiverrProfile.profileUrl}
+              target="_blank"
+              rel="noreferrer"
               className="theme-btn hover-white wow fadeInUp"
               data-wow-delay=".5s"
-              type="submit"
             >
               <span>
-                Subscribe <i className="far fa-arrow-right" />
+                Open Fiverr <i className="far fa-arrow-right" />
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
 const Footer = ({ footer }) => {
   switch (footer) {
     case 1:
@@ -54,11 +58,11 @@ const Footer = ({ footer }) => {
       return <Footer3 />;
     case 4:
       return <Footer4 />;
-
     default:
       return <Footer2 />;
   }
 };
+
 export default Footer;
 
 const FooterMenu = () => {
@@ -74,19 +78,19 @@ const FooterMenu = () => {
           </div>
           <ul className="list-items">
             <li>
-              <Link href="service-details">Services</Link>
+              <Link href="service">Fiverr Services</Link>
             </li>
             <li>
-              <Link href="about">About company</Link>
+              <Link href="about">About</Link>
             </li>
             <li>
-              <Link href="news-details">latest news</Link>
+              <Link href="contact">Contact</Link>
             </li>
             <li>
-              <Link href="team">team member</Link>
+              <Link href="team">Portfolio Team</Link>
             </li>
             <li>
-              <Link href="testimonial">testimonials</Link>
+              <Link href="news">Latest Updates</Link>
             </li>
           </ul>
         </div>
@@ -97,23 +101,33 @@ const FooterMenu = () => {
       >
         <div className="single-footer-widget">
           <div className="widget-head">
-            <h5>My account</h5>
+            <h5>Client Help</h5>
           </div>
           <ul className="list-items">
             <li>
-              <Link href="contact">Forum Support</Link>
+              <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
+                Fiverr Profile
+              </a>
+            </li>
+            <li>
+              <a
+                href={fiverrProfile.primaryGigUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Featured Gig
+              </a>
             </li>
             <li>
               <Link href="faq">Help &amp; FAQ</Link>
             </li>
             <li>
-              <Link href="contact">Contact Us</Link>
+              <Link href="contact">Project Inquiry</Link>
             </li>
             <li>
-              <Link href="pricing">Pricing and plans</Link>
-            </li>
-            <li>
-              <Link href="contact">Cookies Policy</Link>
+              <a href={`mailto:${fiverrProfile.supportEmail}`}>
+                Email Support
+              </a>
             </li>
           </ul>
         </div>
@@ -124,14 +138,17 @@ const FooterMenu = () => {
       >
         <div className="single-footer-widget">
           <div className="widget-head">
-            <h5>Address:</h5>
+            <h5>Work With Me</h5>
           </div>
           <div className="footer-address-text">
-            <p>570 8th Ave, New York,NY 10018 United States</p>
-            <h5>Hours:</h5>
             <p>
-              9.30am – 6.30pm <br />
-              Monday to Friday
+              Available worldwide through Fiverr for website design, redesign,
+              and frontend development.
+            </p>
+            <h5>Response Time:</h5>
+            <p>
+              Quick replies for new project discussions <br />
+              Monday to Saturday
             </p>
           </div>
         </div>
@@ -146,8 +163,8 @@ const FooterCopyRight = () => {
       <div className="container">
         <div className="footer-wrapper d-flex align-items-center justify-content-between">
           <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-            Copyright © {new Date().getFullYear()}{" "}
-            <Link href="/">Kathbirali</Link>. All Rights Reserved.
+            Copyright © {new Date().getFullYear()} <Link href="/">DalTech</Link>.
+            {" "}All Rights Reserved.
           </p>
           <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
             <li>
@@ -157,7 +174,9 @@ const FooterCopyRight = () => {
               <Link href="contact">Support</Link>
             </li>
             <li>
-              <Link href="contact">Privacy</Link>
+              <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
+                Fiverr
+              </a>
             </li>
             <li>
               <Link href="faq">Faqs</Link>
@@ -180,22 +199,26 @@ const FooterRight = () => {
     >
       <div className="single-footer-widget">
         <div className="widget-head">
-          <h5>Install app</h5>
+          <h5>Hire on Fiverr</h5>
         </div>
         <div className="footer-apps-items">
-          <p>From App Store or Google Play</p>
+          <p>Browse gigs, compare packages, and start your project professionally.</p>
           <div className="apps-image d-flex align-items-center">
-            <a href="#">
-              <img src="assets/img/app-store.png" alt="store-img" />
+            <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
+              <img src="assets/img/app-store.png" alt="Fiverr profile" />
             </a>
-            <a href="#">
-              <img src="assets/img/google-play.png" alt="store-img" />
+            <a
+              href={fiverrProfile.primaryGigUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="assets/img/google-play.png" alt="Featured Fiverr gig" />
             </a>
           </div>
           <div className="support-text">
-            <p>24/7 Support center</p>
+            <p>Phone &amp; Fiverr support</p>
             <h3>
-              <a href="tel:+1718-904-4450">+1718-904-4450</a>
+              <a href={`tel:${fiverrProfile.phone}`}>{fiverrProfile.phone}</a>
             </h3>
           </div>
         </div>
@@ -203,6 +226,7 @@ const FooterRight = () => {
     </div>
   );
 };
+
 const FooterLeft = () => {
   return (
     <div
@@ -217,12 +241,12 @@ const FooterLeft = () => {
         </div>
         <div className="footer-content">
           <p>
-            We believe it has the power to do <br />
-            amazing things.
+            Premium Fiverr-based website services for modern businesses,
+            startups, and creators.
           </p>
-          <span>Interested in working with us?</span> <br />
-          <a href="mailto:info@example.com" className="link">
-            info@example.com
+          <span>Ready to discuss your project?</span> <br />
+          <a href={`mailto:${fiverrProfile.supportEmail}`} className="link">
+            {fiverrProfile.supportEmail}
           </a>
           <div className="social-icon d-flex align-items-center">
             <a href="#">
@@ -234,7 +258,7 @@ const FooterLeft = () => {
             <a href="#">
               <i className="fab fa-vimeo-v" />
             </a>
-            <a href="#">
+            <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
               <i className="fab fa-pinterest-p" />
             </a>
           </div>
@@ -278,6 +302,7 @@ const Footer2 = () => {
     </footer>
   );
 };
+
 const Footer3 = () => {
   return (
     <footer className="footer-section section-bg-3">
@@ -303,7 +328,9 @@ const Footer3 = () => {
             </li>
             <li>
               <i className="fab fa-instagram" />
-              <a href="#">Instagram</a>
+              <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
+                Fiverr
+              </a>
             </li>
           </ul>
         </div>
@@ -315,31 +342,36 @@ const Footer3 = () => {
             >
               <div className="single-footer-widget me-4">
                 <div className="widget-head">
-                  <h3>Subscribe Newsletter</h3>
+                  <h3>Hire Through Fiverr</h3>
                 </div>
                 <div className="footer-content">
                   <p>
-                    We understand that every challenge is an opportunity we are
-                    here seize <br />a team of dedicated professionals and a
-                    culture
+                    Browse packages, message before ordering, and start your
+                    website project with a clean professional workflow.
                   </p>
                   <div className="newsletter-items">
                     <div className="form-clt">
                       <input
                         type="text"
                         name="email"
-                        id="email2"
+                        id="email3"
                         placeholder="Email Address"
                       />
                     </div>
-                    <button className="theme-btn hover-white" type="submit">
+                    <a
+                      href={fiverrProfile.profileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="theme-btn hover-white"
+                    >
                       <span>
-                        Sign Up <i className="fas fa-chevron-right" />
+                        Open Fiverr <i className="fas fa-chevron-right" />
                       </span>
-                    </button>
+                    </a>
                   </div>
                   <h6 className="label-text">
-                    By subscribing, you’re accept <a href="#">Privacy Policy</a>
+                    By reaching out, you accept project communication through
+                    Fiverr or email.
                   </h6>
                 </div>
               </div>
@@ -350,30 +382,32 @@ const Footer3 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Services</h5>
+                  <h5>Featured Services</h5>
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Web (UX/UI) Design</Link>
+                    <a
+                      href={fiverrProfile.primaryGigUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Business Website
+                    </a>
                   </li>
                   <li>
-                    <Link href="service-details">
-                      Machine Learning &amp; AI
-                    </Link>
+                    <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
+                      Next.js Landing Page
+                    </a>
                   </li>
                   <li>
-                    <Link href="service-details">Web Development</Link>
+                    <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
+                      Website Redesign
+                    </a>
                   </li>
                   <li>
-                    <Link href="service-details">IT Cyber Security</Link>
-                  </li>
-                  <li>
-                    <Link href="service-details">Cloud Computing</Link>
-                  </li>
-                  <li>
-                    <Link href="service-details">
-                      Analytic &amp; Engineering
-                    </Link>
+                    <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
+                      Frontend Fixes
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -384,16 +418,16 @@ const Footer3 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Locations:</h5>
+                  <h5>Contact</h5>
                 </div>
                 <div className="footer-address-text">
-                  <p>55 Main Street, 2nd block Malborne, Australia</p>
-                  <h5>Contact</h5>
-                  <a href="mailto:info@example.com" className="link-mail">
-                    info@example.com
+                  <p>Available worldwide for Fiverr orders and custom inquiries.</p>
+                  <h5>Email</h5>
+                  <a href={`mailto:${fiverrProfile.supportEmail}`} className="link-mail">
+                    {fiverrProfile.supportEmail}
                   </a>
                   <h5 className="pt-3">
-                    <a href="tel:+88012345688">+880 (123) 456 88</a>
+                    <a href={`tel:${fiverrProfile.phone}`}>{fiverrProfile.phone}</a>
                   </h5>
                 </div>
               </div>
@@ -405,8 +439,8 @@ const Footer3 = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInUp color-2" data-wow-delay=".4s">
-              Copyright © {new Date().getFullYear()}{" "}
-              <Link href="/">Kathbirali</Link>. All Rights Reserved.
+              Copyright © {new Date().getFullYear()} <Link href="/">DalTech</Link>.
+              {" "}All Rights Reserved.
             </p>
           </div>
         </div>
@@ -414,6 +448,7 @@ const Footer3 = () => {
     </footer>
   );
 };
+
 const Footer4 = () => {
   return (
     <footer className="footer-section footer-bg">

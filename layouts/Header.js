@@ -619,9 +619,9 @@ const Offcanvas = ({
                       <i className="fal fa-envelope" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@azent.com">
-                        <span className="mailto:info@azent.com">
-                          info@azent.com
+                      <a href="mailto:fahimahamedweb@gmail.com">
+                        <span className="mailto:fahimahamedweb@gmail.com">
+                          fahimahamedweb@gmail.com
                         </span>
                       </a>
                     </div>
@@ -723,9 +723,9 @@ const Header1 = ({ single }) => {
                       <i className="fal fa-envelope" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@azent.com">
-                        <span className="mailto:info@azent.com">
-                          info@azent.com
+                      <a href="mailto:fahimahamedweb@gmail.com">
+                        <span className="mailto:fahimahamedweb@gmail.com">
+                          fahimahamedweb@gmail.com
                         </span>
                       </a>
                     </div>
@@ -784,8 +784,8 @@ const Header1 = ({ single }) => {
             <ul className="contact-list">
               <li>
                 <i className="far fa-envelope" />
-                <a href="mailto:info@example.com" className="link">
-                  info@example.com
+                <a href="mailto:fahimahamedweb@gmail.com" className="link">
+                  fahimahamedweb@gmail.com
                 </a>
               </li>
               <li>
@@ -976,7 +976,7 @@ const Header2 = ({ single }) => {
                 </div>
                 <div className="content">
                   <h6>Opening Houres</h6>
-                  <a href="mailto:info@example.com">info@example.com</a>
+                  <a href="mailto:fahimahamedweb@gmail.com">fahimahamedweb@gmail.com</a>
                 </div>
               </div>
               <div className="contact-info-items">
@@ -1062,8 +1062,8 @@ const Header3 = ({ single }) => {
                 </li>
                 <li>
                   <i className="fas fa-envelope" />
-                  <a href="mailto:info@example.com" className="line-none">
-                    info@example.com
+                  <a href="mailto:fahimahamedweb@gmail.com" className="line-none">
+                    fahimahamedweb@gmail.com
                   </a>
                 </li>
               </ul>
@@ -1186,8 +1186,8 @@ const Header4 = ({ single }) => {
                 </li>
                 <li>
                   <i className="far fa-envelope" />
-                  <a href="mailto:info@example.com" className="link">
-                    info@example.com
+                  <a href="mailto:fahimahamedweb@gmail.com" className="link">
+                    fahimahamedweb@gmail.com
                   </a>
                 </li>
               </ul>
@@ -1310,8 +1310,8 @@ const DefaultHeader = ({ single }) => {
                 </li>
                 <li>
                   <i className="fas fa-envelope" />
-                  <a href="mailto:info@example.com" className="line-none">
-                    info@example.com
+                  <a href="mailto:fahimahamedweb@gmail.com" className="line-none">
+                    fahimahamedweb@gmail.com
                   </a>
                 </li>
               </ul>

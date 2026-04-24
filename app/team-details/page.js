@@ -153,7 +153,7 @@ const page = () => {
                     >
                       <h4>Contact</h4>
                       <h5>
-                        <a href="tel:+1718-904-4450">+1718-904-4450</a>
+                        <a href="tel:+8801706617723">+8801706617723</a>
                       </h5>
                     </div>
                     <div
@@ -162,8 +162,8 @@ const page = () => {
                     >
                       <h4>Email</h4>
                       <h5>
-                        <a href="mailto:info@example.com" className="link">
-                          info@example.com
+                        <a href="mailto:fahimahamedweb@gmail.com" className="link">
+                          fahimahamedweb@gmail.com
                         </a>
                       </h5>
                     </div>

@@ -1,12 +1,14 @@
 import BrandSection from "@/components/BrandSection";
 import Breadcrumb from "@/components/Breadcrumb";
-import Faq from "@/components/Faq";
+import { fiverrGigs, fiverrHighlights, fiverrProfile } from "@/utility/fiverrContent";
 import Layout from "@/layouts/Layout";
-import Link from "next/link";
-const page = () => {
+
+const Page = () => {
+  const featuredGig = fiverrGigs[0];
+
   return (
     <Layout>
-      <Breadcrumb pageName="Service Details" />
+      <Breadcrumb pageName="Fiverr Service Details" />
       <section className="service-details fix section-padding">
         <div className="container">
           <div className="service-details-wrapper">
@@ -17,50 +19,35 @@ const page = () => {
                     <img src="assets/img/service/details-1.jpg" alt="img" />
                   </div>
                   <div className="details-content">
-                    <h3>Digital Marketing</h3>
+                    <h3>{featuredGig.title}</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Placeat qui ducimus illum modi? perspiciatis accusamus
-                      soluta perferendis, ad illum, nesciunt, reiciendis iusto
-                      et cupidit Repudiandae provident to consectetur, sapiente,
-                      libero iure necessitatibus corporis nulla voluptate,
-                      quisquam aut perspiciatis? Fugiat labore aspernatur eius,
-                      perspiciatis ut molestiae, delectus rem.
+                      This Fiverr service is tailored for businesses that want a
+                      polished online presence with clear communication, reliable
+                      delivery, and a modern professional look.
                     </p>
-                    <h4>Sed ut perspiciatis unde omnis iste natus et</h4>
+                    <h4>What this Fiverr service includes</h4>
                     <p>
-                      Need something changed or is there something not quite
-                      working the way you envisaged? Is your van a little old
-                      and tired and need refreshing? Lorem Ipsum is simply dummy
-                      text of the printing and typesetting industry. Lorem Ipsum
-                      has been the industry’s standard dummy text ever since the
-                      1500s, when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book. It has survived
-                      not only five centuries, but also the leap into electronic
-                      typesetting, remaining essentially unchanged.
+                      Expect responsive sections, clean layout structure,
+                      conversion-focused messaging, and an experience designed to
+                      help visitors trust the brand quickly.
                     </p>
                     <div className="service-details-video">
                       <div className="row g-4 align-items-center">
                         <div className="col-lg-6">
                           <div className="details-video-content">
-                            <h3>Why Marketing Important ?</h3>
+                            <h3>Why clients choose this gig</h3>
                             <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisici
-                              sed do eiusmod tempor incididunt ut labore et
+                              It combines strong presentation, practical delivery
+                              timelines, and a workflow that is easy to manage
+                              through Fiverr.
                             </p>
                             <ul>
-                              <li>
-                                <i className="far fa-check" />
-                                Research beyond the business plan
-                              </li>
-                              <li>
-                                <i className="far fa-check" />
-                                Marketing options and rates
-                              </li>
-                              <li>
-                                <i className="far fa-check" />
-                                The ability to turnaround consulting
-                              </li>
+                              {fiverrHighlights.map((item) => (
+                                <li key={item}>
+                                  <i className="far fa-check" />
+                                  {item}
+                                </li>
+                              ))}
                             </ul>
                           </div>
                         </div>
@@ -72,10 +59,12 @@ const page = () => {
                             />
                             <div className="video-box">
                               <a
-                                href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                                className="video-btn ripple video-popup"
+                                href={featuredGig.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="video-btn ripple"
                               >
-                                <i className="fas fa-play" />
+                                <i className="fas fa-arrow-right" />
                               </a>
                             </div>
                           </div>
@@ -83,13 +72,9 @@ const page = () => {
                       </div>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Placeat qui ducimus illum modi? perspiciatis accusamus
-                      soluta perferendis, ad illum, nesciunt, reiciendis iusto
-                      et cupidit Repudiandae provident to consectetur, sapiente,
-                      libero iure necessitatibus corporis nulla voluptate,
-                      quisquam aut perspiciatis? Fugiat labore aspernatur eius,
-                      perspiciatis ut molestiae, delectus rem.
+                      If you need custom scope beyond the standard package, you
+                      can start with a Fiverr message and get a quote before
+                      placing the order.
                     </p>
                     <div className="details-image-2">
                       <div className="row g-4">
@@ -108,49 +93,32 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="faq-content">
-                    <div className="faq-accordion">
-                      <Faq />
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="col-12 col-lg-4">
                 <div className="main-sidebar">
                   <div className="single-sidebar-widget">
                     <div className="wid-title">
-                      <h3>Categories</h3>
+                      <h3>Featured Fiverr Gigs</h3>
                     </div>
                     <div className="service-category">
-                      <Link href="service-details" className="active">
-                        Cloud Service
-                        <i className="fal fa-long-arrow-right" />
-                      </Link>
-                      <Link href="service-details">
-                        Web Development
-                        <i className="fal fa-long-arrow-right" />
-                      </Link>
-                      <Link href="service-details">
-                        Ui/Ux Designing
-                        <i className="fal fa-long-arrow-right" />
-                      </Link>
-                      <Link href="service-details">
-                        IT Management
-                        <i className="fal fa-long-arrow-right" />
-                      </Link>
-                      <Link href="service-details">
-                        Data Visualization
-                        <i className="fal fa-long-arrow-right" />
-                      </Link>
-                      <Link href="service-details">
-                        Security System
-                        <i className="fal fa-long-arrow-right" />
-                      </Link>
+                      {fiverrGigs.map((gig, index) => (
+                        <a
+                          key={gig.title}
+                          href={gig.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className={index === 0 ? "active" : ""}
+                        >
+                          {gig.title}
+                          <i className="fal fa-long-arrow-right" />
+                        </a>
+                      ))}
                     </div>
                   </div>
                   <div className="single-sidebar-widget">
                     <div className="wid-title">
-                      <h3>Any Question For Us</h3>
+                      <h3>Start Through Fiverr</h3>
                     </div>
                     <form action="#" id="contact-form" className="message-form">
                       <div className="row g-3">
@@ -167,18 +135,23 @@ const page = () => {
                         <div className="col-lg-12">
                           <div className="single-form-input">
                             <textarea
-                              placeholder="Enter Message"
+                              placeholder="share your project goals"
                               defaultValue={""}
                             />
                           </div>
                         </div>
                         <div className="col-lg-12">
-                          <button className="theme-btn" type="submit">
+                          <a
+                            className="theme-btn"
+                            href={fiverrProfile.profileUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <span>
-                              Get a Free Quate
+                              Open Fiverr Profile
                               <i className="fas fa-chevron-right" />
                             </span>
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </form>
@@ -193,4 +166,5 @@ const page = () => {
     </Layout>
   );
 };
-export default page;
+
+export default Page;

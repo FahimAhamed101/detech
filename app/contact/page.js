@@ -1,6 +1,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
+import { fiverrGigs, fiverrProfile } from "@/utility/fiverrContent";
 import Layout from "@/layouts/Layout";
-const page = () => {
+
+const Page = () => {
   return (
     <Layout>
       <Breadcrumb pageName="Contact Us" />
@@ -11,16 +13,39 @@ const page = () => {
               <div className="col-lg-6">
                 <div className="contact-content">
                   <div className="section-title mb-2">
-                    <span className="wow fadeInUp">Get In Touch</span>
+                    <span className="wow fadeInUp">Fiverr Contact Options</span>
                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                      Contact Us
+                      Start Your Project Professionally
                     </h2>
                   </div>
                   <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".4s">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque inventore
+                    You can order directly from Fiverr, message first for a custom
+                    quote, or contact me by phone and email for project planning.
                   </p>
+                  <div className="d-flex flex-wrap gap-3 mt-4 wow fadeInUp" data-wow-delay=".5s">
+                    <a
+                      href={fiverrProfile.profileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="theme-btn"
+                    >
+                      <span>
+                        View Fiverr Profile
+                        <i className="fas fa-chevron-right" />
+                      </span>
+                    </a>
+                    <a
+                      href={fiverrProfile.primaryGigUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="theme-btn bg-white"
+                    >
+                      <span>
+                        Open Featured Gig
+                        <i className="fas fa-chevron-right" />
+                      </span>
+                    </a>
+                  </div>
                   <div className="row g-4 mt-3">
                     <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                       <div className="info-items">
@@ -28,10 +53,10 @@ const page = () => {
                           <i className="fas fa-map-marker-alt" />
                         </div>
                         <div className="content">
-                          <h5>Location</h5>
+                          <h5>Availability</h5>
                           <p>
-                            55 Main street, 2nd block, <br />
-                            Melbourne, Australia
+                            Serving clients worldwide <br />
+                            through Fiverr
                           </p>
                         </div>
                       </div>
@@ -43,8 +68,7 @@ const page = () => {
                         </div>
                         <div className="content">
                           <h5>Phone</h5>
-                          <a href="tel:+09354587874">+09 354 587 874 </a> <br />
-                          <a href="tel:+01368567894">+01 368 567 894</a>
+                          <a href={`tel:${fiverrProfile.phone}`}>{fiverrProfile.phone}</a>
                         </div>
                       </div>
                     </div>
@@ -55,12 +79,8 @@ const page = () => {
                         </div>
                         <div className="content">
                           <h5>Email</h5>
-                          <a href="mailto:info@example.com" className="link">
-                            info@example.com
-                          </a>{" "}
-                          <br />
-                          <a href="mailto:info@example.com" className="link">
-                            info@example.com
+                          <a href={`mailto:${fiverrProfile.supportEmail}`} className="link">
+                            {fiverrProfile.supportEmail}
                           </a>
                         </div>
                       </div>
@@ -71,21 +91,9 @@ const page = () => {
                           <i className="fad fa-share-alt" />
                         </div>
                         <div className="content">
-                          <h5>Social</h5>
-                          <div className="social-icon d-flex align-items-center">
-                            <a href="#">
-                              <i className="fab fa-facebook-f" />
-                            </a>
-                            <a href="#">
-                              <i className="fab fa-twitter" />
-                            </a>
-                            <a href="#">
-                              <i className="fab fa-vimeo-v" />
-                            </a>
-                            <a href="#">
-                              <i className="fab fa-pinterest-p" />
-                            </a>
-                          </div>
+                          <h5>Popular Fiverr Services</h5>
+                          <p>{fiverrGigs[0].title}</p>
+                          <p>{fiverrGigs[1].title}</p>
                         </div>
                       </div>
                     </div>
@@ -102,14 +110,15 @@ const page = () => {
                 <div className="contact-form-items">
                   <div className="contact-title">
                     <h3 className="wow fadeInUp" data-wow-delay=".3s">
-                      Fill Up The Form
+                      Send Project Details
                     </h3>
                     <p className="wow fadeInUp" data-wow-delay=".5s">
-                      Your email address will not be published. Required fields
-                      are marked *
+                      Share your goals, preferred pages, style direction, and
+                      timeline. You can then continue through Fiverr for the
+                      final order.
                     </p>
                   </div>
-                  <form action="contact.php" id="contact-form" method="POST">
+                  <form action="#" id="contact-form" method="POST">
                     <div className="row g-4">
                       <div
                         className="col-lg-12 wow fadeInUp"
@@ -151,7 +160,7 @@ const page = () => {
                           <textarea
                             name="message"
                             id="message"
-                            placeholder="Enter Your Messege here"
+                            placeholder="Tell me what you need built, redesigned, or fixed"
                             defaultValue={""}
                           />
                           <div className="icon">
@@ -166,7 +175,7 @@ const page = () => {
                         <button type="submit" className="theme-btn">
                           <span>
                             <i className="fal fa-paper-plane" />
-                            Get In Touch
+                            Send Inquiry
                           </span>
                         </button>
                       </div>
@@ -178,7 +187,6 @@ const page = () => {
           </div>
         </div>
       </section>
-      {/*<< Map Section Start >>*/}
       <div className="map-section">
         <div className="google-map wow fadeInUp" data-wow-delay=".7s">
           <iframe
@@ -192,4 +200,5 @@ const page = () => {
     </Layout>
   );
 };
-export default page;
+
+export default Page;

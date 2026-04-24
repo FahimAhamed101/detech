@@ -3,9 +3,11 @@ import AboutSection from "@/components/AboutSection";
 import Counter from "@/components/Counter";
 import CtaBanner from "@/components/CtaBanner";
 import FeatureIconBoxSection from "@/components/FeatureIconBoxSection";
+import FiverrGigsSection from "@/components/FiverrGigsSection";
 import ServiceSection from "@/components/ServiceSection";
 import { TeamSection2 } from "@/components/TeamSection";
 import Layout from "@/layouts/Layout";
+import { fiverrProfile } from "@/utility/fiverrContent";
 import { sliderProps } from "@/utility/sliderProps";
 import Link from "next/link";
 import { Nav, Tab } from "react-bootstrap";
@@ -46,6 +48,27 @@ const heroSlides = [
   },
 ];
 
+const projectPreviewImages = [
+  "assets/img/project/01.jpg",
+  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80",
+];
+
+const testimonialAvatars = [
+  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80",
+  "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=600&q=80",
+];
+
+const newsImages = [
+  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+];
+
 const page = () => {
   return (
     <Layout footer={1} header={1}>
@@ -70,7 +93,7 @@ const page = () => {
                           data-animation-in="fadeInRight"
                           data-delay-in="0.2"
                         >
-                          5m+ Trusted Our Clients
+                          Fiverr-ready web services
                         </h4>
                         <h1
                           className="fs-lg animated"
@@ -80,17 +103,19 @@ const page = () => {
                           {slide.title}
                         </h1>
                         <div className="hero-button">
-                          <Link
-                            href="service-details"
+                          <a
+                            href={fiverrProfile.profileUrl}
+                            target="_blank"
+                            rel="noreferrer"
                             className="theme-btn hover-white fs-lg animated"
                             data-animation-in="fadeInRight"
                             data-delay-in="0.7"
                           >
                             <span>
-                              Explore Our Service
+                              View Fiverr Profile
                               <i className="fas fa-chevron-right" />
                             </span>
-                          </Link>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -203,6 +228,7 @@ const page = () => {
       </section>
       {/*<< Service Section Start >>*/}
       <ServiceSection />
+      <FiverrGigsSection />
       {/*<< Service Section Start >>*/}
       <section className="trusted-client-section fix section-padding pt-0">
         <div className="container">
@@ -212,7 +238,8 @@ const page = () => {
                 <div
                   className="trusted-client-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/feature/trusted.jpg")',
+                    backgroundImage:
+                      'url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80")',
                   }}
                 >
                   <div className="icon-box">
@@ -546,13 +573,13 @@ const page = () => {
                           branding/
                         </h5>
                         <h3>
-                          <Link
-                            href="project-details"
-                            className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/01.jpg"
-                          >
-                            Coors Banquet Brand design
-                          </Link>
+                            <Link
+                              href="project-details"
+                              className="changeImage2 wow fadeInUp pt-0 clicked"
+                              data-image={projectPreviewImages[0]}
+                            >
+                              Coors Banquet Brand design
+                            </Link>
                         </h3>
                       </div>
                       <div
@@ -561,13 +588,13 @@ const page = () => {
                       >
                         <h5 className="mb-2">App Design/</h5>
                         <h3>
-                          <Link
-                            href="project-details"
-                            className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/02.jpg"
-                          >
-                            Complete Project Marketing
-                          </Link>
+                            <Link
+                              href="project-details"
+                              className="changeImage2 wow fadeInUp pt-0 clicked"
+                              data-image={projectPreviewImages[1]}
+                            >
+                              Complete Project Marketing
+                            </Link>
                         </h3>
                       </div>
                     </div>
@@ -578,13 +605,13 @@ const page = () => {
                       >
                         <h5 className="mb-2">Market/</h5>
                         <h3>
-                          <Link
-                            href="project-details"
-                            className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/03.jpg"
-                          >
-                            Digital Marketing 2024
-                          </Link>
+                            <Link
+                              href="project-details"
+                              className="changeImage2 wow fadeInUp pt-0 clicked"
+                              data-image={projectPreviewImages[2]}
+                            >
+                              Digital Marketing 2024
+                            </Link>
                         </h3>
                       </div>
                       <div
@@ -593,13 +620,13 @@ const page = () => {
                       >
                         <h5 className="mb-2">UI Design/</h5>
                         <h3>
-                          <Link
-                            href="project-details"
-                            className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/04.jpg"
-                          >
-                            Coors Banquet Brand design
-                          </Link>
+                            <Link
+                              href="project-details"
+                              className="changeImage2 wow fadeInUp pt-0 clicked"
+                              data-image={projectPreviewImages[3]}
+                            >
+                              Coors Banquet Brand design
+                            </Link>
                         </h3>
                       </div>
                     </div>
@@ -610,13 +637,13 @@ const page = () => {
                       >
                         <h5 className="mb-2">development/</h5>
                         <h3>
-                          <Link
-                            href="project-details"
-                            className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/05.jpg"
-                          >
-                            web development Brand design
-                          </Link>
+                            <Link
+                              href="project-details"
+                              className="changeImage2 wow fadeInUp pt-0 clicked"
+                              data-image={projectPreviewImages[4]}
+                            >
+                              web development Brand design
+                            </Link>
                         </h3>
                       </div>
                       <div
@@ -625,13 +652,13 @@ const page = () => {
                       >
                         <h5 className="mb-2">branding/</h5>
                         <h3>
-                          <Link
-                            href="project-details"
-                            className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/06.jpg"
-                          >
-                            Coors Banquet Brand design
-                          </Link>
+                            <Link
+                              href="project-details"
+                              className="changeImage2 wow fadeInUp pt-0 clicked"
+                              data-image={projectPreviewImages[5]}
+                            >
+                              Coors Banquet Brand design
+                            </Link>
                         </h3>
                       </div>
                     </div>
@@ -642,7 +669,7 @@ const page = () => {
                 <div className="image case-studies-image">
                   <img
                     id="myImage2"
-                    src="assets/img/project/01.jpg"
+                    src={projectPreviewImages[0]}
                     alt="image"
                   />
                   <Link href="project-details" className="icon">
@@ -746,10 +773,10 @@ const page = () => {
       <section className="testimonial-section section-padding">
         <div className="container">
           <div className="section-title text-center">
-            <span className="wow fadeInUp">trusted clients feedback</span>
+            <span className="wow fadeInUp">fiverr client feedback</span>
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              Why People Say About Our <br />
-              Business Services
+              Why Clients Trust These <br />
+              Fiverr Services
             </h2>
           </div>
           <Slider
@@ -760,9 +787,7 @@ const page = () => {
               <div className="author-items">
                 <div
                   className="author-image bg-cover"
-                  style={{
-                    backgroundImage: 'url("assets/img/testimonial/01.png")',
-                  }}
+                  style={{ backgroundImage: `url("${testimonialAvatars[0]}")` }}
                 />
                 <div className="author-content">
                   <h5>Leslie Alexander</h5>
@@ -783,9 +808,7 @@ const page = () => {
               <div className="author-items">
                 <div
                   className="author-image bg-cover"
-                  style={{
-                    backgroundImage: 'url("assets/img/testimonial/03.png")',
-                  }}
+                  style={{ backgroundImage: `url("${testimonialAvatars[1]}")` }}
                 />
                 <div className="author-content">
                   <h5>Jhon Dev</h5>
@@ -806,9 +829,7 @@ const page = () => {
               <div className="author-items">
                 <div
                   className="author-image bg-cover"
-                  style={{
-                    backgroundImage: 'url("assets/img/testimonial/02.png")',
-                  }}
+                  style={{ backgroundImage: `url("${testimonialAvatars[2]}")` }}
                 />
                 <div className="author-content">
                   <h5>Salman Ahmed</h5>
@@ -828,9 +849,7 @@ const page = () => {
               <div className="author-items">
                 <div
                   className="author-image bg-cover"
-                  style={{
-                    backgroundImage: 'url("assets/img/testimonial/01.png")',
-                  }}
+                  style={{ backgroundImage: `url("${testimonialAvatars[3]}")` }}
                 />
                 <div className="author-content">
                   <h5>Shikon Bro</h5>
@@ -863,16 +882,18 @@ const page = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur notted adipisicin</p>
               </div>
             </div>
-            <Link
-              href="contact"
+            <a
+              href={fiverrProfile.primaryGigUrl}
+              target="_blank"
+              rel="noreferrer"
               className="theme-btn bg-white wow fadeInUp"
               data-wow-delay=".5s"
             >
               <span>
-                Lets Get Started
+                Open Featured Gig
                 <i className="fas fa-chevron-right" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -890,7 +911,7 @@ const page = () => {
               <div className="single-news-items">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/01.jpg")' }}
+                  style={{ backgroundImage: `url("${newsImages[0]}")` }}
                 >
                   <Link href="news-details" className="icon">
                     <i className="fal fa-arrow-right" />
@@ -918,7 +939,7 @@ const page = () => {
               <div className="single-news-items active">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/02.jpg")' }}
+                  style={{ backgroundImage: `url("${newsImages[1]}")` }}
                 >
                   <Link href="news-details" className="icon">
                     <i className="fal fa-arrow-right" />
@@ -957,7 +978,8 @@ const page = () => {
                 <div
                   className="contact-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/contact/01.jpg")',
+                    backgroundImage:
+                      'url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80")',
                   }}
                 >
                   <div className="shape-image-2">
@@ -971,7 +993,7 @@ const page = () => {
               <div className="col-lg-6 mt-5 mt-lg-0">
                 <div className="contact-area">
                   <div className="section-title">
-                    <span className="wow fadeInUp">get in touch immidiate</span>
+                    <span className="wow fadeInUp">send your project details</span>
                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
                       Let’s Work Together
                     </h2>
@@ -1039,7 +1061,7 @@ const page = () => {
                             <textarea
                               name="message"
                               id="message"
-                              placeholder="Write Your Message"
+                              placeholder="Describe the website, landing page, redesign, or fixes you need"
                               defaultValue={""}
                             />
                           </div>

@@ -1,6 +1,7 @@
 "use client";
 import AboutSection from "@/components/AboutSection";
 import Breadcrumb from "@/components/Breadcrumb";
+import FiverrGigsSection from "@/components/FiverrGigsSection";
 import Marque from "@/components/Marque";
 import NewsSection from "@/components/NewsSection";
 import ServiceCounterSection from "@/components/ServiceCounterSection";
@@ -18,6 +19,7 @@ const page = () => {
       <section className="about-section fix section-padding">
         <AboutSection />
       </section>
+      <FiverrGigsSection />
       <ServiceSection />
       <section className="manage-it-section fix section-padding">
         <div className="container">

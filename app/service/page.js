@@ -3,6 +3,7 @@ import ContactSection from "@/components/ContactSection";
 import CtaBanner from "@/components/CtaBanner";
 import FaqSection from "@/components/FaqSection";
 import FeatureIconBoxSection from "@/components/FeatureIconBoxSection";
+import FiverrGigsSection from "@/components/FiverrGigsSection";
 import NewsSection from "@/components/NewsSection";
 import { ServiceSection2 } from "@/components/ServiceSection";
 import Testimonial3Slider from "@/components/sliders/Testimonial3Slider";
@@ -10,11 +11,12 @@ import Layout from "@/layouts/Layout";
 const page = () => {
   return (
     <Layout>
-      <Breadcrumb pageName="Our Services" />
+      <Breadcrumb pageName="Fiverr Services" />
 
       <section className="service-section fix section-padding">
         <ServiceSection2 />
       </section>
+      <FiverrGigsSection />
       <CtaBanner textColor="theme-color-1" />
       <FeatureIconBoxSection />
       <section className="faq-section section-padding section-bg-2">

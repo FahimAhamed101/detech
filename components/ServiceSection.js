@@ -1,7 +1,40 @@
 "use client";
+import { fiverrGigs, fiverrProfile } from "@/utility/fiverrContent";
 import { sliderProps } from "@/utility/sliderProps";
-import Link from "next/link";
 import Slider from "react-slick";
+
+const serviceSlides = [
+  {
+    number: "01",
+    title: "Fiverr Business Website",
+    icon: "flaticon-blueprint",
+    description:
+      "Professional company websites for agencies, personal brands, and growing businesses.",
+    image:
+      'url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80")',
+    link: fiverrGigs[0].link,
+  },
+  {
+    number: "02",
+    title: "Next.js Landing Page Gig",
+    icon: "flaticon-service",
+    description:
+      "Fast, conversion-focused landing pages for startups, SaaS launches, and product campaigns.",
+    image:
+      'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80")',
+    link: fiverrGigs[1].link,
+  },
+  {
+    number: "03",
+    title: "Website Redesign Gig",
+    icon: "flaticon-cloud-storage",
+    description:
+      "Upgrade outdated layouts into polished, modern, and mobile-friendly experiences.",
+    image:
+      'url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80")',
+    link: fiverrGigs[2].link,
+  },
+];
 
 const ServiceSection = () => {
   return (
@@ -20,20 +53,22 @@ const ServiceSection = () => {
           <div className="section-title">
             <span className="wow fadeInUp">our most premium services</span>
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              Most experienced <br />
-              our services
+              Fiverr-based web services <br />
+              built to convert
             </h2>
           </div>
-          <Link
-            href="service-details"
+          <a
+            href={fiverrProfile.profileUrl}
+            target="_blank"
+            rel="noreferrer"
             className="theme-btn wow fadeInUp"
             data-wow-delay=".5s"
           >
             <span>
-              Explore Our Service
+              View Fiverr Profile
               <i className="fas fa-chevron-right" />
             </span>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="service-wrapper">
@@ -41,180 +76,39 @@ const ServiceSection = () => {
           {...sliderProps.serviceCarouselActive}
           className="service-carousel-active"
         >
-          <div>
-            <div className="service-card-items">
-              <div className="service-content">
-                <div className="icon">
-                  <i className="flaticon-blueprint" />
+          {[...serviceSlides, ...serviceSlides].map((service, index) => (
+            <div key={`${service.number}-${index}`}>
+              <div className="service-card-items">
+                <div className="service-content">
+                  <div className="icon">
+                    <i className={service.icon} />
+                  </div>
+                  <div className="content">
+                    <h4>{service.number}</h4>
+                    <h3>
+                      <a href={service.link} target="_blank" rel="noreferrer">
+                        {service.title}
+                      </a>
+                    </h3>
+                    <p>{service.description}</p>
+                  </div>
                 </div>
-                <div className="content">
-                  <h4>01</h4>
-                  <h3>
-                    <Link href="service-details">UX/UI Design</Link>
-                  </h3>
-                  <p>
-                    Sed ut perspiciatis unde is <br />
-                    voluptatem accusant
-                  </p>
+                <div
+                  className="service-image bg-cover"
+                  style={{ backgroundImage: service.image }}
+                >
+                  <a
+                    href={service.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="arrow-icon"
+                  >
+                    <i className="far fa-arrow-right" />
+                  </a>
                 </div>
-              </div>
-              <div
-                className="service-image bg-cover"
-                style={{
-                  backgroundImage: 'url("assets/img/service/01.jpg")',
-                }}
-              >
-                <Link href="service-details" className="arrow-icon">
-                  <i className="far fa-arrow-right" />
-                </Link>
               </div>
             </div>
-          </div>
-          <div>
-            <div className="service-card-items">
-              <div className="service-content">
-                <div className="icon">
-                  <i className="flaticon-service" />
-                </div>
-                <div className="content">
-                  <h4>02</h4>
-                  <h3>
-                    <Link href="service-details">it managment</Link>
-                  </h3>
-                  <p>
-                    Sed ut perspiciatis unde is <br />
-                    voluptatem accusant
-                  </p>
-                </div>
-              </div>
-              <div
-                className="service-image bg-cover"
-                style={{
-                  backgroundImage: 'url("assets/img/service/02.jpg")',
-                }}
-              >
-                <Link href="service-details" className="arrow-icon">
-                  <i className="far fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="service-card-items">
-              <div className="service-content">
-                <div className="icon">
-                  <i className="flaticon-cloud-storage" />
-                </div>
-                <div className="content">
-                  <h4>03</h4>
-                  <h3>
-                    <Link href="service-details">desktop computing</Link>
-                  </h3>
-                  <p>
-                    Sed ut perspiciatis unde is <br />
-                    voluptatem accusant
-                  </p>
-                </div>
-              </div>
-              <div
-                className="service-image bg-cover"
-                style={{
-                  backgroundImage: 'url("assets/img/service/03.jpg")',
-                }}
-              >
-                <Link href="service-details" className="arrow-icon">
-                  <i className="far fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="service-card-items">
-              <div className="service-content">
-                <div className="icon">
-                  <i className="flaticon-blueprint" />
-                </div>
-                <div className="content">
-                  <h4>01</h4>
-                  <h3>
-                    <Link href="service-details">UX/UI Design</Link>
-                  </h3>
-                  <p>
-                    Sed ut perspiciatis unde is <br />
-                    voluptatem accusant
-                  </p>
-                </div>
-              </div>
-              <div
-                className="service-image bg-cover"
-                style={{
-                  backgroundImage: 'url("assets/img/service/01.jpg")',
-                }}
-              >
-                <Link href="service-details" className="arrow-icon">
-                  <i className="far fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="service-card-items">
-              <div className="service-content">
-                <div className="icon">
-                  <i className="flaticon-service" />
-                </div>
-                <div className="content">
-                  <h4>02</h4>
-                  <h3>
-                    <Link href="service-details">it managment</Link>
-                  </h3>
-                  <p>
-                    Sed ut perspiciatis unde is <br />
-                    voluptatem accusant
-                  </p>
-                </div>
-              </div>
-              <div
-                className="service-image bg-cover"
-                style={{
-                  backgroundImage: 'url("assets/img/service/02.jpg")',
-                }}
-              >
-                <Link href="service-details" className="arrow-icon">
-                  <i className="far fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="service-card-items">
-              <div className="service-content">
-                <div className="icon">
-                  <i className="flaticon-blueprint" />
-                </div>
-                <div className="content">
-                  <h4>01</h4>
-                  <h3>
-                    <Link href="service-details">UX/UI Design</Link>
-                  </h3>
-                  <p>
-                    Sed ut perspiciatis unde is <br />
-                    voluptatem accusant
-                  </p>
-                </div>
-              </div>
-              <div
-                className="service-image bg-cover"
-                style={{
-                  backgroundImage: 'url("assets/img/service/01.jpg")',
-                }}
-              >
-                <Link href="service-details" className="arrow-icon">
-                  <i className="far fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </Slider>
       </div>
     </section>
@@ -226,51 +120,59 @@ export const ServiceSection2 = ({ showItem = 100 }) => {
   const services = [
     {
       id: 1,
-      title: "Customer Software Development",
+      title: "Business Website on Fiverr",
       icon: "flaticon-coding",
-      desc: "We approached WiaTech with complex project deliver",
+      desc: "Responsive business website packages with clear scope and delivery.",
+      link: fiverrGigs[0].link,
     },
     {
       id: 2,
-      title: "Desktop Computing Services",
+      title: "Landing Page Design",
       icon: "flaticon-server",
-      desc: "We approached WiaTech with complex project deliver",
+      desc: "Conversion-oriented landing pages designed for offers and launches.",
+      link: fiverrGigs[1].link,
     },
     {
       id: 3,
-      title: "Infrastructure Plan & Business Reform",
+      title: "Website Redesign",
       icon: "flaticon-service",
-      desc: "We approached WiaTech with complex project deliver",
+      desc: "Refresh old websites with a cleaner brand look and better UX.",
+      link: fiverrGigs[2].link,
     },
     {
       id: 4,
-      title: "Backup & Recovery Data Services",
+      title: "Custom Quote Request",
       icon: "flaticon-data-science",
-      desc: "We approached WiaTech with complex project deliver",
+      desc: "Message on Fiverr for custom pages, edits, or multi-page projects.",
+      link: fiverrProfile.profileUrl,
     },
     {
       id: 5,
-      title: "Data & Cyber Security Managment",
+      title: "Frontend Fixes",
       icon: "flaticon-technology-1",
-      desc: "We approached WiaTech with complex project deliver",
+      desc: "Clean bug fixes, responsiveness, and visual polishing for existing pages.",
+      link: fiverrProfile.profileUrl,
     },
     {
       id: 6,
-      title: "Firewall Advancement & Defender System",
+      title: "Portfolio Website Build",
       icon: "flaticon-server",
-      desc: "We approached WiaTech with complex project deliver",
+      desc: "Personal and portfolio websites for freelancers, creators, and agencies.",
+      link: fiverrProfile.profileUrl,
     },
     {
       id: 7,
-      title: "Apps Development & UI/UX Project",
+      title: "Figma to Website",
       icon: "flaticon-service",
-      desc: "We approached WiaTech with complex project deliver",
+      desc: "Turn approved layouts into responsive pages ready for launch.",
+      link: fiverrProfile.profileUrl,
     },
     {
       id: 8,
-      title: "Data & Cyber Security Managment",
+      title: "Ongoing Site Support",
       icon: "flaticon-data-science",
-      desc: "We approached WiaTech with complex project deliver",
+      desc: "Keep your website updated with small tasks and ongoing monthly help.",
+      link: fiverrProfile.profileUrl,
     },
   ];
   return (
@@ -278,8 +180,8 @@ export const ServiceSection2 = ({ showItem = 100 }) => {
       <div className="section-title text-center">
         <span className="wow fadeInUp">our fucusable services</span>
         <h2 className="wow fadeInUp" data-wow-delay=".3s">
-          How do we work to help you <br />
-          in Startup Business
+          Fiverr services for startups, <br />
+          agencies, and growing brands
         </h2>
       </div>
       <div className="row">
@@ -297,12 +199,19 @@ export const ServiceSection2 = ({ showItem = 100 }) => {
                   </div>
                   <div className="content">
                     <h3>
-                      <Link href="service-details">{service.title}</Link>
+                      <a href={service.link} target="_blank" rel="noreferrer">
+                        {service.title}
+                      </a>
                     </h3>
                     <p>{service.desc}</p>
-                    <Link href="service-details" className="arrow-icon">
+                    <a
+                      href={service.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="arrow-icon"
+                    >
                       <i className="far fa-arrow-right" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

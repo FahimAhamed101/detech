@@ -1,5 +1,23 @@
 {
-  "/news-details/page": "app/news-details/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/about/page": "app/about/page.js",
+  "/index-four-page/page": "app/index-four-page/page.js",
+  "/contact/page": "app/contact/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js"
+  "/index-3/page": "app/index-3/page.js",
+  "/index-4/page": "app/index-4/page.js",
+  "/index-2/page": "app/index-2/page.js",
+  "/index-three-page/page": "app/index-three-page/page.js",
+  "/news/page": "app/news/page.js",
+  "/news-details/page": "app/news-details/page.js",
+  "/index-one-page/page": "app/index-one-page/page.js",
+  "/project-details/page": "app/project-details/page.js",
+  "/project-2/page": "app/project-2/page.js",
+  "/index-two-page/page": "app/index-two-page/page.js",
+  "/page": "app/page.js",
+  "/service/page": "app/service/page.js",
+  "/project/page": "app/project/page.js",
+  "/team-details/page": "app/team-details/page.js",
+  "/service-details/page": "app/service-details/page.js",
+  "/team/page": "app/team/page.js"
 }

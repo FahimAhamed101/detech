@@ -748,9 +748,9 @@ const page = () => {
                   <span className="fas fa-star color-2" />
                 </div>
                 <p>
-                  “Good Time is very good in what they're doing and more than
+                  Good Time is very good in what they&apos;re doing and more than
                   happy to challenge and push you to think about your decisions
-                  both from usability and design standpoints.”
+                  both from usability and design standpoints.
                 </p>
                 <div className="author-name">
                   <h6>Cameron Williamson</h6>
@@ -774,9 +774,9 @@ const page = () => {
                   <span className="fas fa-star color-2" />
                 </div>
                 <p>
-                  “Good Time is very good in what they're doing and more than
+                  Good Time is very good in what they&apos;re doing and more than
                   happy to challenge and push you to think about your decisions
-                  both from usability and design standpoints.”
+                  both from usability and design standpoints.
                 </p>
                 <div className="author-name">
                   <h6>Salman Ahmed</h6>
@@ -800,9 +800,9 @@ const page = () => {
                   <span className="fas fa-star color-2" />
                 </div>
                 <p>
-                  “Good Time is very good in what they're doing and more than
+                  Good Time is very good in what they&apos;re doing and more than
                   happy to challenge and push you to think about your decisions
-                  both from usability and design standpoints.”
+                  both from usability and design standpoints.
                 </p>
                 <div className="author-name">
                   <h6>William Thomas Brown</h6>
@@ -826,9 +826,9 @@ const page = () => {
                   <span className="fas fa-star color-2" />
                 </div>
                 <p>
-                  “Good Time is very good in what they're doing and more than
+                  Good Time is very good in what they&apos;re doing and more than
                   happy to challenge and push you to think about your decisions
-                  both from usability and design standpoints.”
+                  both from usability and design standpoints.
                 </p>
                 <div className="author-name">
                   <h6>Amelia Rose Wilson</h6>
@@ -852,9 +852,9 @@ const page = () => {
                   <span className="fas fa-star color-2" />
                 </div>
                 <p>
-                  "Standpoints Time is very good in what they're doing and more
-                  than happy to challenge and push you to think about your
-                  decisions both from usability and design standpoints.”
+                  &quot;Standpoints Time is very good in what they&apos;re doing and
+                  more than happy to challenge and push you to think about your
+                  decisions both from usability and design standpoints.&quot;
                 </p>
                 <div className="author-name">
                   <h6>Ethan James Miller</h6>

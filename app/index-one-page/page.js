@@ -12,7 +12,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { Nav, Tab } from "react-bootstrap";
 import Slider from "react-slick";
-const page = () => {
+const Page = () => {
   useEffect(() => {
     daltechutility.scrollAnimation();
   }, []);
@@ -1188,4 +1188,4 @@ const page = () => {
     </Layout>
   );
 };
-export default page;
+export default Page;
