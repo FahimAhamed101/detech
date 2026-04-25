@@ -43,6 +43,9 @@ cp .env.example .env
 npm run build
 ```
 
+This build now also copies `public/` and `.next/static/` into the standalone
+runtime automatically, which is required for CSS, JS, fonts, and images to load.
+
 6. In Webuzo, create the Node app with:
 
 ```text
