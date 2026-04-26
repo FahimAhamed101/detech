@@ -53,10 +53,9 @@ const Page = () => {
                           <i className="fas fa-map-marker-alt" />
                         </div>
                         <div className="content">
-                          <h5>Availability</h5>
+                          <h5>Address</h5>
                           <p>
-                            Serving clients worldwide <br />
-                            through Fiverr
+                            {fiverrProfile.location}
                           </p>
                         </div>
                       </div>

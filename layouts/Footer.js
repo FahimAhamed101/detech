@@ -163,7 +163,7 @@ const FooterCopyRight = () => {
       <div className="container">
         <div className="footer-wrapper d-flex align-items-center justify-content-between">
           <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-            Copyright © {new Date().getFullYear()} <Link href="/">DalTech</Link>.
+            Copyright © {new Date().getFullYear()} <Link href="/">TomTech</Link>.
             {" "}All Rights Reserved.
           </p>
           <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
@@ -439,7 +439,7 @@ const Footer3 = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInUp color-2" data-wow-delay=".4s">
-              Copyright © {new Date().getFullYear()} <Link href="/">DalTech</Link>.
+              Copyright © {new Date().getFullYear()} <Link href="/">TomTech</Link>.
               {" "}All Rights Reserved.
             </p>
           </div>

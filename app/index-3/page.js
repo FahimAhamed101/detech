@@ -337,8 +337,8 @@ const page = () => {
                               <div className="content">
                                 <p>Phone:</p>
                                 <h6>
-                                  <a href="tel:++23645689622">
-                                    +236 (456) 896 22
+                                  <a href="tel:+8801706617723">
+                                    +8801706617723
                                   </a>
                                 </h6>
                               </div>
@@ -415,8 +415,8 @@ const page = () => {
                               <div className="content">
                                 <p>Phone:</p>
                                 <h6>
-                                  <a href="tel:++23645689622">
-                                    +236 (456) 896 22
+                                  <a href="tel:+8801706617723">
+                                    +8801706617723
                                   </a>
                                 </h6>
                               </div>
@@ -490,8 +490,8 @@ const page = () => {
                               <div className="content">
                                 <p>Phone:</p>
                                 <h6>
-                                  <a href="tel:++23645689622">
-                                    +236 (456) 896 22
+                                  <a href="tel:+8801706617723">
+                                    +8801706617723
                                   </a>
                                 </h6>
                               </div>

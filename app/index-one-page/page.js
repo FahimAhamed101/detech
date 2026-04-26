@@ -6,7 +6,7 @@ import FeatureIconBoxSection from "@/components/FeatureIconBoxSection";
 import ServiceSection from "@/components/ServiceSection";
 import { TeamSection2 } from "@/components/TeamSection";
 import Layout from "@/layouts/Layout";
-import { daltechutility } from "@/utility";
+import { tomtechUtility } from "@/utility";
 import { sliderProps } from "@/utility/sliderProps";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -14,7 +14,7 @@ import { Nav, Tab } from "react-bootstrap";
 import Slider from "react-slick";
 const Page = () => {
   useEffect(() => {
-    daltechutility.scrollAnimation();
+    tomtechUtility.scrollAnimation();
   }, []);
 
   return (

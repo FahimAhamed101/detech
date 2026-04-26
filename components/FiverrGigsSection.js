@@ -1,27 +1,38 @@
 "use client";
 import { fiverrGigs, fiverrProfile } from "@/utility/fiverrContent";
 
-const FiverrGigsSection = () => {
+const FiverrGigsSection = ({ priority = false }) => {
   return (
-    <section className="fiverr-gigs-section section-padding pt-0">
+    <section
+      className={`fiverr-gigs-section section-padding pt-0 ${
+        priority ? "priority-placement" : ""
+      }`}
+    >
       <div className="container">
         <div className="fiverr-gigs-wrap">
           <div className="row align-items-end g-4">
             <div className="col-lg-8">
               <div className="section-title mb-0">
-                <span className="wow fadeInUp">Fiverr Gigs</span>
+                <span className="wow fadeInUp">
+                  {priority ? "Top Fiverr Offers" : "Hire Through Fiverr"}
+                </span>
                 <h2 className="wow fadeInUp" data-wow-delay=".2s">
-                  Hire directly from Fiverr <br />
-                  in just one click
+                  {priority
+                    ? "See the Fiverr services first and click before visitors leave"
+                    : "Choose the right service and go straight to Fiverr"}
                 </h2>
                 <p className="wow fadeInUp" data-wow-delay=".4s">
-                  Explore featured services and jump straight to Fiverr to
-                  place an order, message first, or review packages.
+                  {priority
+                    ? "This section is intentionally placed right under the hero so users can reach Fiverr at the highest-intent moment for better click-through and lead capture."
+                    : "Clients can review the service focus, compare options, and message directly on Fiverr before starting a mobile app, website, or automation project."}
                 </p>
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="fiverr-profile-link wow fadeInUp" data-wow-delay=".3s">
+              <div
+                className="fiverr-profile-link wow fadeInUp"
+                data-wow-delay=".3s"
+              >
                 <a
                   href={fiverrProfile.profileUrl}
                   target="_blank"
@@ -50,7 +61,7 @@ const FiverrGigsSection = () => {
                   </div>
                   <div className="gig-meta">
                     <div>
-                      <span>Start at</span>
+                      <span>Pricing</span>
                       <strong>{gig.startingPrice}</strong>
                     </div>
                     <div>
@@ -65,7 +76,7 @@ const FiverrGigsSection = () => {
                     className="theme-btn hover-white"
                   >
                     <span>
-                      Open Fiverr Gig
+                      {gig.ctaLabel || "Open Fiverr"}
                       <i className="fas fa-chevron-right" />
                     </span>
                   </a>
@@ -80,6 +91,14 @@ const FiverrGigsSection = () => {
           background:
             radial-gradient(circle at top left, rgba(32, 201, 151, 0.14), transparent 34%),
             linear-gradient(180deg, #f7fbff 0%, #eef5ff 100%);
+        }
+
+        .priority-placement {
+          position: relative;
+          z-index: 5;
+          margin-top: -72px;
+          padding-bottom: 64px;
+          background: transparent;
         }
 
         .fiverr-gigs-wrap {
@@ -169,6 +188,10 @@ const FiverrGigsSection = () => {
         }
 
         @media (max-width: 991px) {
+          .priority-placement {
+            margin-top: -44px;
+          }
+
           .fiverr-gigs-wrap {
             padding: 36px 24px;
           }
@@ -179,6 +202,11 @@ const FiverrGigsSection = () => {
         }
 
         @media (max-width: 575px) {
+          .priority-placement {
+            margin-top: -24px;
+            padding-bottom: 48px;
+          }
+
           .fiverr-gigs-wrap {
             padding: 28px 18px;
             border-radius: 24px;

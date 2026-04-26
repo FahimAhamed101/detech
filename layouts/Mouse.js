@@ -1,9 +1,9 @@
 "use client";
-import { daltechutility } from "@/utility";
+import { tomtechUtility } from "@/utility";
 import { Fragment, useEffect } from "react";
 const Mouse = () => {
   useEffect(() => {
-    daltechutility.customCursor();
+    tomtechUtility.customCursor();
   }, []);
 
   return (

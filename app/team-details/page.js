@@ -1,6 +1,6 @@
 import BrandSection from "@/components/BrandSection";
 import Breadcrumb from "@/components/Breadcrumb";
-import DalTechSelect from "@/components/DalTechSelect";
+import TomTechSelect from "@/components/TomTechSelect";
 import Layout from "@/layouts/Layout";
 import Link from "next/link";
 const page = () => {
@@ -250,7 +250,7 @@ const page = () => {
                           data-wow-delay=".3s"
                         >
                           <div className="form-clt">
-                            <DalTechSelect
+                            <TomTechSelect
                               items={[
                                 { id: 1, title: "Default sorting" },
                                 { id: 2, title: "Sort by popularity" },

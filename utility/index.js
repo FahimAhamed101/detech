@@ -1,4 +1,4 @@
-export const daltechutility = {
+export const tomtechUtility = {
   scrollAnimation() {
     if (typeof window !== "undefined") {
       window.WOW = require("wowjs");

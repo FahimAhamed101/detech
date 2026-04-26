@@ -1,12 +1,12 @@
 "use client";
-import DalTechSelect from "@/components/DalTechSelect";
-import { daltechutility } from "@/utility";
+import TomTechSelect from "@/components/TomTechSelect";
+import { tomtechUtility } from "@/utility";
 import useClickOutside from "@/utility/useClickOutside";
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 const Header = ({ header, single }) => {
   useEffect(() => {
-    daltechutility.stickyNav();
+    tomtechUtility.stickyNav();
   }, []);
 
   switch (header) {
@@ -610,7 +610,7 @@ const Offcanvas = ({
                     </div>
                     <div className="offcanvas__contact-text">
                       <a target="_blank" href="#">
-                        Main Street, Melbourne, Australia
+                        Gulshan, Dhaka, Bangladesh
                       </a>
                     </div>
                   </li>
@@ -714,7 +714,7 @@ const Header1 = ({ single }) => {
                     </div>
                     <div className="offcanvas__contact-text">
                       <a target="_blank" href="#">
-                        Main Street, Melbourne, Australia
+                        Gulshan, Dhaka, Bangladesh
                       </a>
                     </div>
                   </li>
@@ -790,7 +790,7 @@ const Header1 = ({ single }) => {
               </li>
               <li>
                 <i className="fas fa-map-marker-alt" />
-                55 Main Street, 2nd block, Malborne ,Australia
+                Gulshan, Dhaka, Bangladesh
               </li>
             </ul>
             <div className="top-right">
@@ -851,7 +851,7 @@ const Header1 = ({ single }) => {
                     <div className="content">
                       <p>Phone:</p>
                       <h6>
-                        <a href="tel:+23645689622">+236 (456) 896 22</a>
+                        <a href="tel:+8801706617723">+8801706617723</a>
                       </h6>
                     </div>
                   </div>
@@ -906,14 +906,14 @@ const Header2 = ({ single }) => {
               <ul className="contact-list">
                 <li>
                   <i className="fas fa-map-marker-alt" />
-                  55 Main Street, 2nd block, Malborne ,Australia
+                  Gulshan, Dhaka, Bangladesh
                 </li>
               </ul>
               <div className="flag-wrap">
                 <div className="flag">
                   <img src="assets/img/flag.png" alt="flag" />
                 </div>
-                <DalTechSelect
+                <TomTechSelect
                   items={[
                     { id: 1, title: "English" },
                     { id: 2, title: "Bangla" },
@@ -985,7 +985,7 @@ const Header2 = ({ single }) => {
                 </div>
                 <div className="content">
                   <h6>Opening Houres</h6>
-                  <a href="tel:+23645689622">+236 (456) 896 22</a>
+                  <a href="tel:+8801706617723">+8801706617723</a>
                 </div>
               </div>
             </div>
@@ -1058,7 +1058,7 @@ const Header3 = ({ single }) => {
                 </li>
                 <li>
                   <i className="fas fa-map-marker-alt" />
-                  734 H, Bryan Burlington, NC 27215
+                  Gulshan, Dhaka, Bangladesh
                 </li>
                 <li>
                   <i className="fas fa-envelope" />
@@ -1069,7 +1069,7 @@ const Header3 = ({ single }) => {
               </ul>
             </div>
             <div className="top-right">
-              <DalTechSelect
+              <TomTechSelect
                 style="style-2"
                 items={[
                   { id: 1, title: "USD" },
@@ -1081,7 +1081,7 @@ const Header3 = ({ single }) => {
                 <div className="flag">
                   <img src="assets/img/flag.png" alt="flag" />
                 </div>
-                <DalTechSelect
+                <TomTechSelect
                   items={[
                     { id: 1, title: "English" },
                     { id: 2, title: "Bangla" },
@@ -1181,8 +1181,7 @@ const Header4 = ({ single }) => {
             <div className="top-header-items">
               <ul className="contact-list">
                 <li>
-                  <i className="far fa-map-marker-alt" /> 55 Main Street,2nd
-                  block, New York
+                  <i className="far fa-map-marker-alt" /> Gulshan, Dhaka, Bangladesh
                 </li>
                 <li>
                   <i className="far fa-envelope" />
@@ -1256,7 +1255,7 @@ const Header4 = ({ single }) => {
                     <div className="content">
                       <p>Urgent Call</p>
                       <h6>
-                        <a href="tel:+29635870088">+296 358 700 88</a>
+                        <a href="tel:+8801706617723">+8801706617723</a>
                       </h6>
                     </div>
                   </div>
@@ -1306,7 +1305,7 @@ const DefaultHeader = ({ single }) => {
                 </li>
                 <li>
                   <i className="fas fa-map-marker-alt" />
-                  734 H, Bryan Burlington, NC 27215
+                  Gulshan, Dhaka, Bangladesh
                 </li>
                 <li>
                   <i className="fas fa-envelope" />
@@ -1317,7 +1316,7 @@ const DefaultHeader = ({ single }) => {
               </ul>
             </div>
             <div className="top-right">
-              <DalTechSelect
+              <TomTechSelect
                 style="style-2"
                 items={[
                   { id: 1, title: "USD" },
@@ -1329,7 +1328,7 @@ const DefaultHeader = ({ single }) => {
                 <div className="flag">
                   <img src="assets/img/flag.png" alt="flag" />
                 </div>
-                <DalTechSelect
+                <TomTechSelect
                   items={[
                     { id: 1, title: "English" },
                     { id: 2, title: "Bangla" },

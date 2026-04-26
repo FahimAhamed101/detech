@@ -1,5 +1,5 @@
 import { fiverrProfile } from "@/utility/fiverrContent";
-import DalTechSelect from "./DalTechSelect";
+import TomTechSelect from "./TomTechSelect";
 
 const ContactSection = ({
   style = "style-1",
@@ -69,8 +69,8 @@ const ContactSection = ({
                       <i className="fas fa-map-marker-alt" />
                     </div>
                     <div className="content">
-                      <p>Platform</p>
-                      <h3>Available worldwide on Fiverr</h3>
+                      <p>Address</p>
+                      <h3>{fiverrProfile.location}</h3>
                     </div>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const ContactSection = ({
                         data-wow-delay=".3s"
                       >
                         <div className="form-clt">
-                          <DalTechSelect
+                          <TomTechSelect
                             items={[
                               { id: 1, title: "Business Website" },
                               { id: 2, title: "Landing Page" },

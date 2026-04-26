@@ -1,10 +1,10 @@
 "use client";
-import { daltechutility } from "@/utility";
+import { tomtechUtility } from "@/utility";
 import { useEffect } from "react";
 
 const PreLoader = () => {
   useEffect(() => {
-    daltechutility.preloader();
+    tomtechUtility.preloader();
   }, []);
 
   return (
