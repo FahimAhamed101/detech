@@ -1,5 +1,6 @@
 import Faq from "./Faq";
 import ProgressBar from "./ProgressBar";
+
 const FaqSection = ({
   faqStyle = "style-2",
   extraClass = "",
@@ -13,26 +14,27 @@ const FaqSection = ({
           <div className="col-lg-6">
             <div className="about-content">
               <div className={`section-title ${titleStyle}`}>
-                <span className="wow fadeInUp">freequently Ask Questions</span>
+                <span className="wow fadeInUp">Frequently Asked Questions</span>
                 <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                  have a question in <br />
-                  your mind?
+                  Questions buyers ask before <br />
+                  starting a software project
                 </h2>
               </div>
               <p className=" mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                Transmds is the world’s driving worldwide coordinations <br />
-                supplier — we uphold industry and exchange the
+                These answers cover project scope, delivery models, mobile app
+                stacks, web app architecture, and how AI automation work is
+                handled through the TomTech workflow.
               </p>
               <div className="circle-progress-bar-wrapper style-2">
                 <div
                   className="single-circle-bar wow fadeInUp"
                   data-wow-delay=".7s"
                 >
-                  <ProgressBar value={68} color={chartColor} />
+                  <ProgressBar value={88} color={chartColor} />
                   <div className="content">
                     <h6>
-                      Organizations <br />
-                      work support
+                      Discovery <br />
+                      clarity
                     </h6>
                   </div>
                 </div>
@@ -40,11 +42,11 @@ const FaqSection = ({
                   className="single-circle-bar wow fadeInUp"
                   data-wow-delay=".9s"
                 >
-                  <ProgressBar value={93} color={chartColor} />
+                  <ProgressBar value={94} color={chartColor} />
                   <div className="content">
                     <h6>
-                      Management &amp; <br />
-                      Support Services
+                      Delivery and <br />
+                      communication
                     </h6>
                   </div>
                 </div>
@@ -61,4 +63,5 @@ const FaqSection = ({
     </div>
   );
 };
+
 export default FaqSection;

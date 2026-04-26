@@ -78,19 +78,21 @@ const FooterMenu = () => {
           </div>
           <ul className="list-items">
             <li>
-              <Link href="service">Fiverr Services</Link>
+              <Link href="/service">Services</Link>
             </li>
             <li>
-              <Link href="about">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="contact">Contact</Link>
+              <Link href="/faq">FAQ</Link>
             </li>
             <li>
-              <Link href="team">Portfolio Team</Link>
+              <Link href="/contact">Contact</Link>
             </li>
             <li>
-              <Link href="news">Latest Updates</Link>
+              <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
+                Fiverr Profile
+              </a>
             </li>
           </ul>
         </div>
@@ -119,10 +121,10 @@ const FooterMenu = () => {
               </a>
             </li>
             <li>
-              <Link href="faq">Help &amp; FAQ</Link>
+              <Link href="/faq">Help &amp; FAQ</Link>
             </li>
             <li>
-              <Link href="contact">Project Inquiry</Link>
+              <Link href="/contact">Project Inquiry</Link>
             </li>
             <li>
               <a href={`mailto:${fiverrProfile.supportEmail}`}>
@@ -142,8 +144,8 @@ const FooterMenu = () => {
           </div>
           <div className="footer-address-text">
             <p>
-              Available worldwide through Fiverr for website design, redesign,
-              and frontend development.
+              Available worldwide for web app development, mobile app
+              development, and AI automation projects.
             </p>
             <h5>Response Time:</h5>
             <p>
@@ -168,10 +170,10 @@ const FooterCopyRight = () => {
           </p>
           <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
             <li>
-              <Link href="about">Company</Link>
+              <Link href="/about">Company</Link>
             </li>
             <li>
-              <Link href="contact">Support</Link>
+              <Link href="/contact">Support</Link>
             </li>
             <li>
               <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
@@ -179,7 +181,7 @@ const FooterCopyRight = () => {
               </a>
             </li>
             <li>
-              <Link href="faq">Faqs</Link>
+              <Link href="/faq">FAQ</Link>
             </li>
           </ul>
         </div>
@@ -241,8 +243,8 @@ const FooterLeft = () => {
         </div>
         <div className="footer-content">
           <p>
-            Premium Fiverr-based website services for modern businesses,
-            startups, and creators.
+            Agency-focused delivery for custom web applications, mobile apps,
+            and AI automation projects.
           </p>
           <span>Ready to discuss your project?</span> <br />
           <a href={`mailto:${fiverrProfile.supportEmail}`} className="link">

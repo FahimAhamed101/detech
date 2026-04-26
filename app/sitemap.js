@@ -1,14 +1,10 @@
-import { siteConfig } from "@/utility/fiverrContent";
-
-const routes = ["", "/about", "/service", "/service-details", "/contact", "/faq"];
+import { indexableRoutes, siteUrl } from "@/utility/seo";
 
 export default function sitemap() {
-  const baseUrl = siteConfig.siteUrl || "http://localhost:3000";
-
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
+  return indexableRoutes.map((route) => ({
+    url: `${siteUrl}${route.path}`,
     lastModified: new Date(),
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : 0.7,
+    changeFrequency: route.changeFrequency,
+    priority: route.priority,
   }));
 }

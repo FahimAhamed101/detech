@@ -21,14 +21,15 @@ const ContactSection = ({
             <div className="col-lg-6">
               <div className="contact-content">
                 <div className={`section-title ${titleStyle}`}>
-                  <span className="wow fadeInUp">Fiverr Support Help</span>
+                  <span className="wow fadeInUp">Start A Project</span>
                   <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                    Let&apos;s work together
+                    Talk to a web, mobile, and AI delivery partner
                   </h2>
                 </div>
                 <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                  Share your website goals, preferred style, and required pages.
-                  You can then continue the project smoothly through Fiverr.
+                  Share your product goals, the features you need, the preferred
+                  stack, and your timeline. You can continue through Fiverr with
+                  a fixed scope or a custom quote.
                 </p>
                 <div className="contact-info-area">
                   <div
@@ -80,11 +81,11 @@ const ContactSection = ({
               <div className="contact-box">
                 <div className="contact-title">
                   <h3 className="wow fadeInUp" data-wow-delay=".3s">
-                    Need Help For Your Project?
+                    Need a delivery plan?
                   </h3>
                   <p className="wow fadeInUp" data-wow-delay=".5s">
                     Send the basics here, then continue with the right Fiverr
-                    package or a custom offer.
+                    path for a web app, mobile app, or AI automation build.
                   </p>
                 </div>
                 <div className="contact-form-items">
@@ -129,10 +130,10 @@ const ContactSection = ({
                         <div className="form-clt">
                           <TomTechSelect
                             items={[
-                              { id: 1, title: "Business Website" },
-                              { id: 2, title: "Landing Page" },
-                              { id: 3, title: "Website Redesign" },
-                              { id: 4, title: "Custom Quote" },
+                              { id: 1, title: "Web App Development" },
+                              { id: 2, title: "Mobile App Development" },
+                              { id: 3, title: "AI Automation" },
+                              { id: 4, title: "Dedicated Support" },
                             ]}
                           />
                         </div>
@@ -145,7 +146,7 @@ const ContactSection = ({
                           <textarea
                             name="message"
                             id="message"
-                            placeholder="Write your project details"
+                            placeholder="Describe your product, users, required features, and target timeline"
                             defaultValue={""}
                           />
                         </div>

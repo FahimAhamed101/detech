@@ -1,24 +1,16 @@
 "use client";
 import { useState } from "react";
 import { Accordion } from "react-bootstrap";
-
-const items = [
-  { id: 1, title: "How can I get a venture capitalist to pay?" },
-  { id: 2, title: "How do you find different criteria in your process?" },
-  { id: 3, title: "How can I get a venture capitalist to pay?" },
-  { id: 4, title: "How can I get a venture capitalist to pay?" },
-];
+import { agencyFaqs } from "@/utility/fiverrContent";
 
 const Faq = () => {
   const [accordionActive, setAccordionActive] = useState(1);
-  const collapseClass = (value) =>
-    accordionActive == value ? "" : "collapsed";
   return (
     <div className="faq-accordion">
       <Accordion className="accordion" id="accordion" defaultActiveKey="faq1">
-        {items.map((item) => (
+        {agencyFaqs.map((item, index) => (
           <div
-            key={item.id}
+            key={item.question}
             className="accordion-item wow fadeInUp"
             data-wow-delay=".3s"
           >
@@ -27,26 +19,22 @@ const Faq = () => {
                 as={"button"}
                 onClick={() =>
                   setAccordionActive(
-                    accordionActive == item.id ? null : item.id
+                    accordionActive === index + 1 ? null : index + 1
                   )
                 }
                 className={`accordion-button ${
-                  accordionActive == item.id ? "" : "collapsed"
+                  accordionActive === index + 1 ? "" : "collapsed"
                 }`}
-                eventKey={`faq${item.id}`}
+                eventKey={`faq${index + 1}`}
               >
-                {item.title}
+                {item.question}
               </Accordion.Toggle>
             </h4>
             <Accordion.Collapse
               className="accordion-collapse"
-              eventKey={`faq${item.id}`}
+              eventKey={`faq${index + 1}`}
             >
-              <div className="accordion-body">
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit .
-              </div>
+              <div className="accordion-body">{item.answer}</div>
             </Accordion.Collapse>
           </div>
         ))}

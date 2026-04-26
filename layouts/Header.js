@@ -139,179 +139,20 @@ const Nav = ({ single, menu }) => {
         </ul>
       ) : (
         <ul>
-          <li className="has-dropdown active menu-thumb">
-            <Link href="/">
-              Home
-              <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu has-home-menu">
-              <li className="border-none">
-                <div className="row g-4">
-                  <div className="col-lg-3 home-menu">
-                    <div className="home-menu-thumb">
-                      <img src="assets/img/header/home-1.jpg" alt="img" />
-                      <div className="demo-button">
-                        <Link href="/" className="theme-btn">
-                          <span>Multi Page</span>
-                        </Link>
-                        <Link href="index-one-page" className="theme-btn">
-                          <span>One Page</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="home-menu-content text-center">
-                      <h4 className="home-menu-title">Home 01</h4>
-                    </div>
-                  </div>
-                  <div className="col-lg-3  home-menu">
-                    <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-2.jpg" alt="img" />
-                      <div className="demo-button">
-                        <Link href="index-2" className="theme-btn">
-                          <span>Multi Page</span>
-                        </Link>
-                        <Link href="index-two-page" className="theme-btn">
-                          <span>One Page</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="home-menu-content text-center">
-                      <h4 className="home-menu-title">Home 02</h4>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 home-menu">
-                    <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-3.jpg" alt="img" />
-                      <div className="demo-button">
-                        <Link href="index-3" className="theme-btn">
-                          <span>Multi Page</span>
-                        </Link>
-                        <Link href="index-three-page" className="theme-btn">
-                          <span>One Page</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="home-menu-content text-center">
-                      <h4 className="home-menu-title">Home 03</h4>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 home-menu">
-                    <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-4.jpg" alt="img" />
-                      <div className="demo-button">
-                        <Link href="index-4" className="theme-btn">
-                          <span>Multi Page</span>
-                        </Link>
-                        <Link href="index-four-page" className="theme-btn">
-                          <span>One Page</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="home-menu-content text-center">
-                      <h4 className="home-menu-title">Home 04</h4>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li className="has-dropdown active d-lg-none">
-            <Link href="team" className="border-none">
-              Home
-              <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu">
-              <li>
-                <Link href="/">Home 01</Link>
-              </li>
-              <li>
-                <Link href="index-2">Home 02</Link>
-              </li>
-              <li>
-                <Link href="index-3">Home 03</Link>
-              </li>
-              <li>
-                <Link href="index-4">Home 04</Link>
-              </li>
-            </ul>
+          <li>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="about">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="service">
-              Services <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu">
-              <li>
-                <Link href="service">Services</Link>
-              </li>
-              <li>
-                <Link href="service-details">Service Details</Link>
-              </li>
-            </ul>
-          </li>
-          <li className="has-dropdown">
-            <Link href="news">
-              Pages
-              <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu">
-              <li className="has-dropdown">
-                <Link href="project">
-                  Projects
-                  <i className="fas fa-angle-down" />
-                </Link>
-                <ul className="submenu">
-                  <li>
-                    <Link href="project">Projects One</Link>
-                  </li>
-                  <li>
-                    <Link href="project-2">Projects Two</Link>
-                  </li>
-                  <li>
-                    <Link href="project-details">Project Details</Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="has-dropdown">
-                <Link href="team">
-                  Team
-                  <i className="fas fa-angle-down" />
-                </Link>
-                <ul className="submenu">
-                  <li>
-                    <Link href="team">Team</Link>
-                  </li>
-                  <li>
-                    <Link href="team-details">Team Details</Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link href="faq">Faq's</Link>
-              </li>
-              <li>
-                <Link href="404">404 Page</Link>
-              </li>
-            </ul>
+            <Link href="/service">Services</Link>
           </li>
           <li>
-            <Link href="news">
-              Blog
-              <i className="fas fa-angle-down" />
-            </Link>
-            <ul className="submenu">
-              <li>
-                <Link href="news">Blog</Link>
-              </li>
-              <li>
-                <Link href="news-details">Blog Details</Link>
-              </li>
-            </ul>
+            <Link href="/faq">FAQ</Link>
           </li>
           <li>
-            <Link href="contact">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       )}
@@ -320,16 +161,6 @@ const Nav = ({ single, menu }) => {
 };
 
 const MobileMenu = ({ single, menu }) => {
-  const [activeMenu, setActiveMenu] = useState("");
-  const [multiMenu, setMultiMenu] = useState("");
-  const activeMenuSet = (value) =>
-      setActiveMenu(activeMenu === value ? "" : value),
-    activeLi = (value) =>
-      value === activeMenu ? { display: "block" } : { display: "none" };
-  const multiMenuSet = (value) =>
-      setMultiMenu(multiMenu === value ? "" : value),
-    multiMenuActiveLi = (value) =>
-      value === multiMenu ? { display: "block" } : { display: "none" };
   const singleMenu = menu
     ? menu
     : [
@@ -351,39 +182,11 @@ const MobileMenu = ({ single, menu }) => {
         </a>
         <nav className="mean-nav">
           <ul>
-            <li className="has-dropdown active d-lg-none">
-              <a
-                href="#"
-                className="border-none"
-                onClick={() => activeMenuSet("home")}
-              >
-                Home
-                <i className="fas fa-angle-down" />
-              </a>
-              <ul className="submenu" style={activeLi("home")}>
-                <li>
-                  <Link href="/">Home 01</Link>
-                </li>
-                <li>
-                  <Link href="index-2">Home 02</Link>
-                </li>
-                <li>
-                  <Link href="index-3">Home 03</Link>
-                </li>
-                <li>
-                  <Link href="index-4">Home 04</Link>
-                </li>
-              </ul>
-              <a
-                className="mean-expand"
-                href="#"
-                onClick={() => activeMenuSet("home")}
-              >
-                <i className="far fa-plus" />
-              </a>
-            </li>
             {single ? (
               <Fragment>
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
                 {singleMenu.map((menu) => (
                   <li key={menu.id}>
                     <a href={`#${menu.href}`}>{menu.title}</a>
@@ -393,120 +196,19 @@ const MobileMenu = ({ single, menu }) => {
             ) : (
               <Fragment>
                 <li>
-                  <Link href="about">About</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <a href="#" onClick={() => activeMenuSet("Services")}>
-                    Services <i className="fas fa-angle-down" />
-                  </a>
-                  <ul className="submenu" style={activeLi("Services")}>
-                    <li>
-                      <Link href="service">Services</Link>
-                    </li>
-                    <li>
-                      <Link href="service-details">Service Details</Link>
-                    </li>
-                  </ul>
-                  <a
-                    className="mean-expand"
-                    href="#"
-                    onClick={() => activeMenuSet("Services")}
-                  >
-                    <i className="far fa-plus" />
-                  </a>
-                </li>
-                <li className="has-dropdown">
-                  <a href="#" onClick={() => activeMenuSet("Pages")}>
-                    Pages
-                    <i className="fas fa-angle-down" />
-                  </a>
-                  <ul className="submenu" style={activeLi("Pages")}>
-                    <li className="has-dropdown">
-                      <a href="#" onClick={() => multiMenuSet("Projects")}>
-                        Projects
-                        <i className="fas fa-angle-down" />
-                      </a>
-                      <ul
-                        className="submenu"
-                        style={multiMenuActiveLi("Projects")}
-                      >
-                        <li>
-                          <Link href="project">Projects One</Link>
-                        </li>
-                        <li>
-                          <Link href="project-2">Projects Two</Link>
-                        </li>
-                        <li>
-                          <Link href="project-details">Project Details</Link>
-                        </li>
-                      </ul>
-                      <a
-                        className="mean-expand"
-                        href="#"
-                        onClick={() => multiMenuSet("Projects")}
-                      >
-                        <i className="far fa-plus" />
-                      </a>
-                    </li>
-                    <li className="has-dropdown">
-                      <a href="#" onClick={() => multiMenuSet("Team")}>
-                        Team
-                        <i className="fas fa-angle-down" />
-                      </a>
-                      <ul className="submenu" style={multiMenuActiveLi("Team")}>
-                        <li>
-                          <Link href="team">Team</Link>
-                        </li>
-                        <li>
-                          <Link href="team-details">Team Details</Link>
-                        </li>
-                      </ul>
-                      <a
-                        className="mean-expand"
-                        href="#"
-                        onClick={() => multiMenuSet("Team")}
-                      >
-                        <i className="far fa-plus" />
-                      </a>
-                    </li>
-                    <li>
-                      <Link href="faq">Faq's</Link>
-                    </li>
-                    <li>
-                      <Link href="404">404 Page</Link>
-                    </li>
-                  </ul>
-                  <a
-                    className="mean-expand"
-                    href="#"
-                    onClick={() => activeMenuSet("Pages")}
-                  >
-                    <i className="far fa-plus" />
-                  </a>
+                  <Link href="/about">About</Link>
                 </li>
                 <li>
-                  <a href="#" onClick={() => activeMenuSet("Blog")}>
-                    Blog
-                    <i className="fas fa-angle-down" />
-                  </a>
-                  <ul className="submenu" style={activeLi("Blog")}>
-                    <li>
-                      <Link href="news">Blog</Link>
-                    </li>
-                    <li>
-                      <Link href="news-details">Blog Details</Link>
-                    </li>
-                  </ul>
-                  <a
-                    className="mean-expand"
-                    href="#"
-                    onClick={() => activeMenuSet("Blog")}
-                  >
-                    <i className="far fa-plus" />
-                  </a>
+                  <Link href="/service">Services</Link>
+                </li>
+                <li>
+                  <Link href="/faq">FAQ</Link>
                 </li>
                 <li className="mean-last">
-                  <Link href="contact">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </Fragment>
             )}
@@ -646,7 +348,7 @@ const Offcanvas = ({
                   </li>
                 </ul>
                 <div className="header-button mt-4">
-                  <Link href="contact" className="theme-btn text-center">
+                  <Link href="/contact" className="theme-btn text-center">
                     <span>
                       Contact Us
                       <i className="fas fa-chevron-right" />
@@ -750,7 +452,7 @@ const Header1 = ({ single }) => {
                   </li>
                 </ul>
                 <div className="header-button mt-4">
-                  <Link href="contact" className="theme-btn text-center">
+                  <Link href="/contact" className="theme-btn text-center">
                     <span>
                       Contact Us
                       <i className="fas fa-chevron-right" />
@@ -810,13 +512,13 @@ const Header1 = ({ single }) => {
               </div>
               <ul className="header-menu">
                 <li>
-                  <Link href="contact">Help</Link>
+                  <Link href="/contact">Help</Link>
                 </li>
                 <li>
-                  <Link href="contact">Support</Link>
+                  <Link href="/contact">Support</Link>
                 </li>
                 <li>
-                  <Link href="faq">Faqs</Link>
+                  <Link href="/faq">Faqs</Link>
                 </li>
               </ul>
             </div>
@@ -856,8 +558,8 @@ const Header1 = ({ single }) => {
                     </div>
                   </div>
                   <div className="header-button">
-                    <Link href="news-details" className="link-btn">
-                      <span>read more</span>
+                    <Link href="/service" className="link-btn">
+                      <span>services</span>
                       <i className="fas fa-chevron-right" />
                     </Link>
                   </div>
@@ -925,13 +627,13 @@ const Header2 = ({ single }) => {
             <div className="top-right">
               <ul className="header-menu">
                 <li>
-                  <Link href="contact">Help</Link>
+                  <Link href="/contact">Help</Link>
                 </li>
                 <li>
-                  <Link href="contact">Support</Link>
+                  <Link href="/contact">Support</Link>
                 </li>
                 <li>
-                  <Link href="faq">Faqs</Link>
+                  <Link href="/faq">Faqs</Link>
                 </li>
               </ul>
               <div className="social-icon d-flex align-items-center">
@@ -1054,7 +756,7 @@ const Header3 = ({ single }) => {
               <ul className="contact-list">
                 <li>
                   <span>Call</span>Consult With It Advisor?{" "}
-                  <Link href="contact">Click Now</Link>
+                  <Link href="/contact">Click Now</Link>
                 </li>
                 <li>
                   <i className="fas fa-map-marker-alt" />
@@ -1129,7 +831,7 @@ const Header3 = ({ single }) => {
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
                   <div className="header-button">
-                    <Link href="contact" className="theme-btn theme-btn-2">
+                    <Link href="/contact" className="theme-btn theme-btn-2">
                       <span>
                         contact us
                         <i className="fas fa-chevron-right" />
@@ -1260,7 +962,7 @@ const Header4 = ({ single }) => {
                     </div>
                   </div>
                   <div className="header-button">
-                    <Link href="contact" className="theme-btn">
+                    <Link href="/contact" className="theme-btn">
                       <span>Get A Quote</span>
                     </Link>
                   </div>
@@ -1301,7 +1003,7 @@ const DefaultHeader = ({ single }) => {
               <ul className="contact-list">
                 <li>
                   <span>Call</span>Consult With It Advisor?{" "}
-                  <Link href="contact">Click Now</Link>
+                  <Link href="/contact">Click Now</Link>
                 </li>
                 <li>
                   <i className="fas fa-map-marker-alt" />
@@ -1376,7 +1078,7 @@ const DefaultHeader = ({ single }) => {
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
                   <div className="header-button">
-                    <Link href="contact" className="theme-btn">
+                    <Link href="/contact" className="theme-btn">
                       <span>
                         contact us
                         <i className="fas fa-chevron-right" />

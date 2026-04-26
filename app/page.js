@@ -1,5 +1,3 @@
-"use client";
-
 import FiverrGigsSection from "@/components/FiverrGigsSection";
 import Layout from "@/layouts/Layout";
 import {
@@ -10,40 +8,35 @@ import {
   homepageFaqs,
   nicheKeywords,
   serviceAreas,
-  siteConfig,
   stackHighlights,
   stats,
 } from "@/utility/fiverrContent";
+import {
+  buildMetadata,
+  getOrganizationSchema,
+  getWebSiteSchema,
+  toJsonLd,
+} from "@/utility/seo";
 import Link from "next/link";
 
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: siteConfig.siteName,
-  description: siteConfig.description,
-  areaServed: "Worldwide",
-  email: fiverrProfile.supportEmail,
-  telephone: fiverrProfile.phone,
-  url: siteConfig.siteUrl || undefined,
-  sameAs: [fiverrProfile.profileUrl],
-  serviceType: [
-    "Web app development",
-    "Mobile app development",
-    "AI automation services",
-    "MERN stack development",
-    "Laravel development",
-    "Django development",
-    "FastAPI development",
-    "Flask development",
-    ".NET development",
-    "Angular development",
-    "Vue.js development",
-    "Flutter development",
-    "React Native development",
-    "Kotlin Android development",
-    "Swift iOS development",
+export const metadata = buildMetadata({
+  title: "Web App Development, Mobile App Development, and AI Automation Agency",
+  description:
+    "TomTech helps startups and businesses hire a web app development, mobile app development, and AI automation agency through a conversion-focused Fiverr engagement path.",
+  path: "/",
+  keywords: [
+    "web app development services",
+    "mobile app development company",
+    "AI automation agency",
+    "custom software development company",
+    "startup MVP development company",
   ],
-};
+});
+
+const structuredData = [
+  getWebSiteSchema(),
+  getOrganizationSchema(),
+];
 
 export default function HomePage() {
   return (
@@ -311,9 +304,7 @@ export default function HomePage() {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
-        }}
+        dangerouslySetInnerHTML={toJsonLd(structuredData)}
       />
 
       <style jsx>{`

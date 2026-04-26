@@ -1,269 +1,303 @@
-"use client";
 import AboutSection from "@/components/AboutSection";
 import Breadcrumb from "@/components/Breadcrumb";
+import ContactSection from "@/components/ContactSection";
 import FiverrGigsSection from "@/components/FiverrGigsSection";
-import Marque from "@/components/Marque";
-import NewsSection from "@/components/NewsSection";
-import ServiceCounterSection from "@/components/ServiceCounterSection";
-import ServiceSection from "@/components/ServiceSection";
-import TeamSection from "@/components/TeamSection";
-import BrandSlider from "@/components/sliders/BrandSlider";
-import Testimonial4Slider from "@/components/sliders/Testimonial4Slider";
 import Layout from "@/layouts/Layout";
-import Link from "next/link";
-import { Nav, Tab } from "react-bootstrap";
-const page = () => {
+import {
+  agencyPillars,
+  deliverySteps,
+  engagementModels,
+  nicheKeywords,
+  stackHighlights,
+  stats,
+} from "@/utility/fiverrContent";
+import {
+  buildMetadata,
+  getBreadcrumbSchema,
+  getOrganizationSchema,
+  toJsonLd,
+} from "@/utility/seo";
+
+export const metadata = buildMetadata({
+  title: "About TomTech Web, Mobile, and AI Development Agency",
+  description:
+    "Learn how TomTech plans, designs, builds, and iterates web apps, mobile apps, and AI automation systems for startups and businesses.",
+  path: "/about",
+  keywords: [
+    "about web app development agency",
+    "mobile app development team",
+    "AI automation partner",
+    "software outsourcing company",
+  ],
+});
+
+const structuredData = [
+  getOrganizationSchema(),
+  getBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+  ]),
+];
+
+export default function AboutPage() {
   return (
     <Layout>
-      <Breadcrumb />
+      <Breadcrumb pageName="About TomTech" />
+
       <section className="about-section fix section-padding">
         <AboutSection />
       </section>
-      <FiverrGigsSection />
-      <ServiceSection />
-      <section className="manage-it-section fix section-padding">
+
+      <section className="section-padding pt-0">
         <div className="container">
-          <div className="manage-it-wrapper">
-            <div className="row justify-content-between">
-              <div className="col-lg-6">
-                <div className="manage-it-content">
-                  <div className="section-title">
-                    <span className="wow fadeInUp">How to Manage</span>
-                    <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                      Our Managed IT Services let you Concentrate on What
-                      Matters
-                    </h2>
-                  </div>
-                  <Tab.Container defaultActiveKey={"approach"}>
-                    <div className="single-tab-items mt-4 mt-md-0">
-                      <Nav as={"ul"} className="nav mb-4" role="tablist">
-                        <Nav.Item
-                          as={"li"}
-                          className="nav-item wow fadeInUp"
-                          data-wow-delay=".3s"
-                          role="presentation"
-                        >
-                          <Nav.Link
-                            as={"a"}
-                            eventKey={"approach"}
-                            href="#approach"
-                            data-bs-toggle="tab"
-                            className="nav-link"
-                            aria-selected="true"
-                            role="tab"
-                          >
-                            Our Approach
-                          </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item
-                          as={"li"}
-                          className="nav-item wow fadeInUp"
-                          data-wow-delay=".5s"
-                          role="presentation"
-                        >
-                          <Nav.Link
-                            as={"a"}
-                            eventKey={"project"}
-                            href="#project"
-                            data-bs-toggle="tab"
-                            className="nav-link"
-                            aria-selected="false"
-                            role="tab"
-                            tabIndex={-1}
-                          >
-                            Project Goals
-                          </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item
-                          as={"li"}
-                          className="nav-item wow fadeInUp"
-                          data-wow-delay=".7s"
-                          role="presentation"
-                        >
-                          <Nav.Link
-                            as={"a"}
-                            eventKey={"advisory"}
-                            href="#advisory"
-                            data-bs-toggle="tab"
-                            className="nav-link"
-                            aria-selected="false"
-                            role="tab"
-                            tabIndex={-1}
-                          >
-                            Advisory
-                          </Nav.Link>
-                        </Nav.Item>
-                      </Nav>
-                      <Tab.Content className="tab-content">
-                        <Tab.Pane
-                          eventKey="approach"
-                          className="tab-pane fade"
-                          role="tabpanel"
-                        >
-                          <div className="tab-content-items">
-                            <p className="wow fadeInUp" data-wow-delay=".3s">
-                              At veroeos accusamus dignissimos ducimus
-                              blanditiis volupta delenite atque <br />
-                              corrupti quos dolores et quas molestias excepturi
-                              sint occaecatie
-                            </p>
-                            <div className="list-area">
-                              <ul className="wow fadeInUp" data-wow-delay=".5s">
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Efficient Sprint Planning
-                                </li>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Standups and Demos
-                                </li>
-                              </ul>
-                              <ul className="wow fadeInUp" data-wow-delay=".7s">
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Iterative Delivery Approach
-                                </li>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Problem-solving
-                                </li>
-                              </ul>
-                            </div>
-                            <Link
-                              href="about"
-                              className="theme-btn wow fadeInUp"
-                              data-wow-delay=".9s"
-                            >
-                              <span>
-                                Learn More
-                                <i className="fas fa-chevron-right" />
-                              </span>
-                            </Link>
-                          </div>
-                        </Tab.Pane>
-                        <Tab.Pane
-                          eventKey="project"
-                          className="tab-pane fade"
-                          role="tabpanel"
-                        >
-                          <div className="tab-content-items">
-                            <p>
-                              At veroeos accusamus dignissimos ducimus
-                              blanditiis volupta delenite atque <br />
-                              corrupti quos dolores et quas molestias excepturi
-                              sint occaecatie
-                            </p>
-                            <div className="list-area">
-                              <ul>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Efficient Sprint Planning
-                                </li>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Standups and Demos
-                                </li>
-                              </ul>
-                              <ul>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Iterative Delivery Approach
-                                </li>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Problem-solving
-                                </li>
-                              </ul>
-                            </div>
-                            <Link href="about" className="theme-btn">
-                              <span>
-                                Learn More
-                                <i className="fas fa-chevron-right" />
-                              </span>
-                            </Link>
-                          </div>
-                        </Tab.Pane>
-                        <Tab.Pane
-                          eventKey="advisory"
-                          className="tab-pane fade"
-                          role="tabpanel"
-                        >
-                          <div className="tab-content-items">
-                            <p>
-                              At veroeos accusamus dignissimos ducimus
-                              blanditiis volupta delenite atque <br />
-                              corrupti quos dolores et quas molestias excepturi
-                              sint occaecatie
-                            </p>
-                            <div className="list-area">
-                              <ul>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Efficient Sprint Planning
-                                </li>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Standups and Demos
-                                </li>
-                              </ul>
-                              <ul>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Iterative Delivery Approach
-                                </li>
-                                <li>
-                                  <i className="fas fa-check" />
-                                  Problem-solving
-                                </li>
-                              </ul>
-                            </div>
-                            <Link href="about" className="theme-btn">
-                              <span>
-                                Learn More
-                                <i className="fas fa-chevron-right" />
-                              </span>
-                            </Link>
-                          </div>
-                        </Tab.Pane>
-                      </Tab.Content>
-                    </div>
-                  </Tab.Container>
+          <div className="section-title text-center">
+            <span className="wow fadeInUp">Why Teams Hire TomTech</span>
+            <h2 className="wow fadeInUp" data-wow-delay=".2s">
+              A practical software partner for product delivery and growth
+            </h2>
+          </div>
+          <div className="row g-4 mt-2">
+            {agencyPillars.map((pillar) => (
+              <div className="col-lg-4 col-md-6" key={pillar.title}>
+                <div className="about-value-card">
+                  <h3>{pillar.title}</h3>
+                  <p>{pillar.description}</p>
                 </div>
               </div>
-              <div
-                className="col-lg-5 mt-5 mt-lg-0 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <div
-                  className="manage-image bg-cover"
-                  style={{
-                    backgroundImage: 'url("assets/img/about/about-7.jpg")',
-                  }}
-                >
-                  <div className="counting-shape">
-                    <img src="assets/img/counting.png" alt="shape-img" />
-                  </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding pt-0">
+        <div className="container">
+          <div className="row g-4 align-items-start">
+            <div className="col-lg-7">
+              <div className="about-panel">
+                <span className="section-tag">Delivery Process</span>
+                <h2>How web, mobile, and AI projects move from idea to launch</h2>
+                <div className="process-list">
+                  {deliverySteps.map((step, index) => (
+                    <div className="process-card" key={step.title}>
+                      <strong>0{index + 1}</strong>
+                      <div>
+                        <h4>{step.title}</h4>
+                        <p>{step.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className="about-panel alt">
+                <span className="section-tag">Agency Positioning</span>
+                <div className="stats-grid">
+                  {stats.map((item) => (
+                    <div className="stat-card" key={item.label}>
+                      <strong>{item.value}</strong>
+                      <span>{item.label}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/*<< Service Counter Section Start >>*/}
-      <ServiceCounterSection />
-      {/*<< Team Section Start >>*/}
-      <TeamSection />
-      <Marque />
-      <Testimonial4Slider />
-      <div className="brand-section-3 fix section-padding pt-0">
+
+      <section className="section-padding pt-0">
         <div className="container">
-          <div className="brand-wrapper">
-            <BrandSlider />
+          <div className="row g-4 align-items-start">
+            <div className="col-lg-6">
+              <div className="about-panel">
+                <span className="section-tag">Engagement Models</span>
+                {engagementModels.map((item) => (
+                  <div className="info-row" key={item.title}>
+                    <h4>{item.title}</h4>
+                    <p>{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="about-panel">
+                <span className="section-tag">Technology Coverage</span>
+                <div className="stack-grid">
+                  {stackHighlights.map((stack) => (
+                    <div className="stack-pill" key={stack}>
+                      {stack}
+                    </div>
+                  ))}
+                </div>
+                <div className="industry-grid">
+                  {nicheKeywords.map((niche) => (
+                    <div className="industry-card" key={niche.title}>
+                      <h4>{niche.title}</h4>
+                      <ul>
+                        {niche.keywords.map((keyword) => (
+                          <li key={keyword}>{keyword}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <NewsSection sectionClass="news-section-2" />
+      </section>
+
+      <FiverrGigsSection />
+      <ContactSection style="style-2" btnStyle="" titleStyle="" />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={toJsonLd(structuredData)}
+      />
+
+      <style jsx>{`
+        .about-value-card,
+        .about-panel,
+        .stat-card,
+        .industry-card {
+          border-radius: 28px;
+          background: #fff;
+          box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+        }
+
+        .about-value-card,
+        .about-panel {
+          height: 100%;
+          padding: 30px;
+        }
+
+        .about-value-card h3,
+        .about-panel h2,
+        .info-row h4,
+        .industry-card h4 {
+          margin-bottom: 12px;
+        }
+
+        .section-tag {
+          display: inline-block;
+          margin-bottom: 12px;
+          color: #166fd3;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+
+        .about-panel.alt {
+          background: linear-gradient(180deg, #f7fbff 0%, #eef5ff 100%);
+        }
+
+        .process-list,
+        .industry-grid {
+          display: grid;
+          gap: 18px;
+        }
+
+        .process-list {
+          margin-top: 24px;
+        }
+
+        .process-card,
+        .info-row {
+          display: flex;
+          gap: 18px;
+          align-items: flex-start;
+        }
+
+        .process-card + .process-card,
+        .info-row + .info-row {
+          margin-top: 20px;
+        }
+
+        .process-card strong {
+          color: #166fd3;
+          font-size: 28px;
+          line-height: 1;
+          min-width: 40px;
+        }
+
+        .stats-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 16px;
+          margin-top: 8px;
+        }
+
+        .stat-card {
+          padding: 22px;
+        }
+
+        .stat-card strong {
+          display: block;
+          color: #166fd3;
+          font-size: 28px;
+          margin-bottom: 8px;
+        }
+
+        .stat-card span {
+          color: #5c6574;
+        }
+
+        .stack-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+          margin: 10px 0 28px;
+        }
+
+        .stack-pill {
+          display: inline-flex;
+          align-items: center;
+          min-height: 42px;
+          padding: 10px 16px;
+          border-radius: 999px;
+          background: #0f2747;
+          color: #fff;
+          font-size: 14px;
+        }
+
+        .industry-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .industry-card {
+          padding: 20px;
+        }
+
+        .industry-card ul {
+          margin: 0;
+          padding-left: 18px;
+        }
+
+        .industry-card li + li {
+          margin-top: 8px;
+        }
+
+        @media (max-width: 575px) {
+          .about-value-card,
+          .about-panel,
+          .stat-card,
+          .industry-card {
+            border-radius: 22px;
+          }
+
+          .about-value-card,
+          .about-panel {
+            padding: 22px;
+          }
+
+          .stats-grid,
+          .industry-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
     </Layout>
   );
-};
-export default page;
+}

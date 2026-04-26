@@ -39,19 +39,20 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <div className="about-content">
-              <div className="section-title">
-                <span className="wow fadeInUp">Professional Fiverr Seller Workflow</span>
-                <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                  Website services designed to look premium and sell
-                  professionally
-                </h2>
-              </div>
-              <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                I help businesses launch modern websites, landing pages, and
-                redesigns through Fiverr with a process that is clear, fast,
-                and client-friendly from first message to final delivery.
-              </p>
+              <div className="about-content">
+                <div className="section-title">
+                  <span className="wow fadeInUp">About The Agency</span>
+                  <h2 className="wow fadeInUp" data-wow-delay=".3s">
+                    Agency-grade delivery for web apps, mobile apps, and AI
+                    automation
+                  </h2>
+                </div>
+                <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                  TomTech helps startups, agencies, and established businesses
+                  build modern digital products through a streamlined
+                  Fiverr-first workflow that keeps scope, communication, and
+                  delivery organized.
+                </p>
               <div className="circle-progress-bar-wrapper">
                 <div
                   className="single-circle-bar wow fadeInUp"
@@ -60,8 +61,8 @@ const AboutSection = () => {
                   <ProgressBar value={92} color={"#166FD3"} />
                   <div className="content">
                     <h6>
-                      Client <br />
-                      Satisfaction
+                      Product <br />
+                      Clarity
                     </h6>
                   </div>
                 </div>
@@ -72,8 +73,8 @@ const AboutSection = () => {
                   <ProgressBar value={96} color={"#166FD3"} />
                   <div className="content">
                     <h6>
-                      Fiverr Order <br />
-                      Completion
+                      Delivery <br />
+                      Reliability
                     </h6>
                   </div>
                 </div>
@@ -95,7 +96,7 @@ const AboutSection = () => {
                     className="theme-btn"
                   >
                     <span>
-                      View Fiverr Profile
+                      Discuss Your Project
                       <i className="fas fa-chevron-right" />
                     </span>
                   </a>
@@ -104,7 +105,9 @@ const AboutSection = () => {
                   <img src="assets/img/about/author.png" alt="author-img" />
                   <div className="content">
                     <img src="assets/img/about/signature.png" alt="signature" />
-                    <p>{fiverrProfile.name} | Fiverr Freelancer</p>
+                    <p>
+                      {fiverrProfile.name} | {fiverrProfile.role}
+                    </p>
                   </div>
                 </div>
               </div>

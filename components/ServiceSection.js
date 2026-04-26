@@ -6,30 +6,30 @@ import Slider from "react-slick";
 const serviceSlides = [
   {
     number: "01",
-    title: "Fiverr Business Website",
+    title: "Custom Web App Development",
     icon: "flaticon-blueprint",
     description:
-      "Professional company websites for agencies, personal brands, and growing businesses.",
+      "Build secure SaaS platforms, dashboards, portals, and business tools with scalable web architecture.",
     image:
       'url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80")',
     link: fiverrGigs[0].link,
   },
   {
     number: "02",
-    title: "Next.js Landing Page Gig",
+    title: "Mobile App Development",
     icon: "flaticon-service",
     description:
-      "Fast, conversion-focused landing pages for startups, SaaS launches, and product campaigns.",
+      "Launch Flutter, React Native, Kotlin, or Swift apps for customer-facing products and internal operations.",
     image:
       'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80")',
     link: fiverrGigs[1].link,
   },
   {
     number: "03",
-    title: "Website Redesign Gig",
+    title: "AI Automation Systems",
     icon: "flaticon-cloud-storage",
     description:
-      "Upgrade outdated layouts into polished, modern, and mobile-friendly experiences.",
+      "Reduce manual work with Python automation, AI-assisted workflows, and custom internal tooling.",
     image:
       'url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80")',
     link: fiverrGigs[2].link,
@@ -51,10 +51,10 @@ const ServiceSection = () => {
       <div className="container">
         <div className="title-section-area">
           <div className="section-title">
-            <span className="wow fadeInUp">our most premium services</span>
+            <span className="wow fadeInUp">Core Agency Services</span>
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              Fiverr-based web services <br />
-              built to convert
+              Web, mobile, and AI delivery <br />
+              built for business outcomes
             </h2>
           </div>
           <a
@@ -120,68 +120,68 @@ export const ServiceSection2 = ({ showItem = 100 }) => {
   const services = [
     {
       id: 1,
-      title: "Business Website on Fiverr",
+      title: "Custom Web App Development",
       icon: "flaticon-coding",
-      desc: "Responsive business website packages with clear scope and delivery.",
+      desc: "SaaS platforms, CRMs, portals, dashboards, and internal tools.",
       link: fiverrGigs[0].link,
     },
     {
       id: 2,
-      title: "Landing Page Design",
+      title: "Mobile App Development",
       icon: "flaticon-server",
-      desc: "Conversion-oriented landing pages designed for offers and launches.",
+      desc: "Flutter, React Native, Kotlin, and Swift builds for iOS and Android.",
       link: fiverrGigs[1].link,
     },
     {
       id: 3,
-      title: "Website Redesign",
+      title: "AI Automation Services",
       icon: "flaticon-service",
-      desc: "Refresh old websites with a cleaner brand look and better UX.",
+      desc: "Python automation, workflow systems, lead handling, and reporting pipelines.",
       link: fiverrGigs[2].link,
     },
     {
       id: 4,
-      title: "Custom Quote Request",
+      title: "MVP and SaaS Delivery",
       icon: "flaticon-data-science",
-      desc: "Message on Fiverr for custom pages, edits, or multi-page projects.",
+      desc: "Launch-first product development for startups validating and scaling new ideas.",
       link: fiverrProfile.profileUrl,
     },
     {
       id: 5,
-      title: "Frontend Fixes",
+      title: "Dedicated Development Support",
       icon: "flaticon-technology-1",
-      desc: "Clean bug fixes, responsiveness, and visual polishing for existing pages.",
+      desc: "Ongoing feature delivery, bug fixing, modernization, and technical support.",
       link: fiverrProfile.profileUrl,
     },
     {
       id: 6,
-      title: "Portfolio Website Build",
+      title: "API and Backend Engineering",
       icon: "flaticon-server",
-      desc: "Personal and portfolio websites for freelancers, creators, and agencies.",
+      desc: "Authentication, business logic, integrations, admin workflows, and scalable APIs.",
       link: fiverrProfile.profileUrl,
     },
     {
       id: 7,
-      title: "Figma to Website",
+      title: "Product UI Implementation",
       icon: "flaticon-service",
-      desc: "Turn approved layouts into responsive pages ready for launch.",
+      desc: "Turn approved designs into responsive interfaces across web and mobile products.",
       link: fiverrProfile.profileUrl,
     },
     {
       id: 8,
-      title: "Ongoing Site Support",
+      title: "Product Maintenance and Upgrades",
       icon: "flaticon-data-science",
-      desc: "Keep your website updated with small tasks and ongoing monthly help.",
+      desc: "Stabilize existing products with upgrades, performance work, and post-launch support.",
       link: fiverrProfile.profileUrl,
     },
   ];
   return (
     <div className="container">
       <div className="section-title text-center">
-        <span className="wow fadeInUp">our fucusable services</span>
+        <span className="wow fadeInUp">Service Coverage</span>
         <h2 className="wow fadeInUp" data-wow-delay=".3s">
-          Fiverr services for startups, <br />
-          agencies, and growing brands
+          Services for startups, agencies, <br />
+          and growth-stage teams
         </h2>
       </div>
       <div className="row">

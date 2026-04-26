@@ -29,10 +29,7 @@ const FiverrGigsSection = ({ priority = false }) => {
               </div>
             </div>
             <div className="col-lg-4">
-              <div
-                className="fiverr-profile-link wow fadeInUp"
-                data-wow-delay=".3s"
-              >
+              <div className="fiverr-link-group wow fadeInUp" data-wow-delay=".3s">
                 <a
                   href={fiverrProfile.profileUrl}
                   target="_blank"
@@ -41,6 +38,17 @@ const FiverrGigsSection = ({ priority = false }) => {
                 >
                   <span>
                     View Fiverr Profile
+                    <i className="fas fa-chevron-right" />
+                  </span>
+                </a>
+                <a
+                  href={fiverrProfile.primaryGigUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="theme-btn hover-white"
+                >
+                  <span>
+                    Open Featured Gig
                     <i className="fas fa-chevron-right" />
                   </span>
                 </a>
@@ -108,8 +116,10 @@ const FiverrGigsSection = ({ priority = false }) => {
           box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
         }
 
-        .fiverr-profile-link {
+        .fiverr-link-group {
           display: flex;
+          flex-wrap: wrap;
+          gap: 14px;
           justify-content: flex-end;
         }
 
@@ -196,7 +206,7 @@ const FiverrGigsSection = ({ priority = false }) => {
             padding: 36px 24px;
           }
 
-          .fiverr-profile-link {
+          .fiverr-link-group {
             justify-content: flex-start;
           }
         }
