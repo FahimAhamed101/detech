@@ -101,7 +101,7 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={toJsonLd(structuredData)}
       />
 
-      <style jsx>{`
+      <style>{`
         .faq-intro {
           max-width: 820px;
           margin: 18px auto 0;

@@ -219,7 +219,7 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={toJsonLd(structuredData)}
       />
 
-      <style jsx>{`
+      <style>{`
         .contact-panel,
         .mini-gig-card,
         .service-chip-card {

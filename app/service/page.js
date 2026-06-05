@@ -136,7 +136,7 @@ export default function ServicePage() {
         dangerouslySetInnerHTML={toJsonLd(structuredData)}
       />
 
-      <style jsx>{`
+      <style>{`
         .service-intro {
           max-width: 860px;
           margin: 18px auto 0;

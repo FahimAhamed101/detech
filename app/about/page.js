@@ -156,7 +156,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={toJsonLd(structuredData)}
       />
 
-      <style jsx>{`
+      <style>{`
         .about-value-card,
         .about-panel,
         .stat-card,

@@ -94,7 +94,7 @@ const FiverrGigsSection = ({ priority = false }) => {
           </div>
         </div>
       </div>
-      <style jsx>{`
+      <style>{`
         .fiverr-gigs-section {
           background:
             radial-gradient(circle at top left, rgba(32, 201, 151, 0.14), transparent 34%),

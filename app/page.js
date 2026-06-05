@@ -307,7 +307,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={toJsonLd(structuredData)}
       />
 
-      <style jsx>{`
+      <style>{`
         .hero-seo-section .slide-bg {
           padding: 150px 0 90px;
           background:
