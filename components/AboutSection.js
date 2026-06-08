@@ -11,29 +11,29 @@ const AboutSection = () => {
             <div className="about-image-items">
               <div className="circle-shape">
                 <img
-                  src="assets/img/about/circle.png"
+                  src="/assets/img/about/circle.png"
                   alt="img"
                   className="text-circle"
                 />
                 <div className="award-img">
-                  <img src="assets/img/about/award.png" alt="img" />
+                  <img src="/assets/img/about/award.png" alt="img" />
                 </div>
               </div>
               <div className="border-shape">
-                <img src="assets/img/about/border-shape.png" alt="shape-img" />
+                <img src="/assets/img/about/border-shape.png" alt="shape-img" />
               </div>
               <div
                 className="about-image bg-cover wow fadeInLeft"
                 data-wow-delay=".3s"
                 style={{
-                  backgroundImage: 'url("assets/img/about/about.jpg")',
+                  backgroundImage: 'url("/assets/img/about/about.jpg")',
                 }}
               >
                 <div
                   className="about-image-2 wow fadeInUp"
                   data-wow-delay=".5s"
                 >
-                  <img src="assets/img/about/about-2.jpg" alt="about-img" />
+                  <img src="/assets/img/about/about-2.jpg" alt="about-img" />
                 </div>
               </div>
             </div>
@@ -102,9 +102,9 @@ const AboutSection = () => {
                   </a>
                 </div>
                 <div className="author-image wow fadeInUp" data-wow-delay=".9s">
-                  <img src="assets/img/about/author.png" alt="author-img" />
+                  <img src="/assets/img/about/author.png" alt="author-img" />
                   <div className="content">
-                    <img src="assets/img/about/signature.png" alt="signature" />
+                    <img src="/assets/img/about/signature.png" alt="signature" />
                     <p>
                       {fiverrProfile.name} | {fiverrProfile.role}
                     </p>

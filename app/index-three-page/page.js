@@ -140,25 +140,25 @@ const page = () => {
               className="brand-carousel-active"
             >
               <div className="brand-image">
-                <img src="assets/img/brand/02.png" alt="brand-img" />
+                <img src="/assets/img/brand/02.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/02.png" alt="brand-img" />
+                <img src="/assets/img/brand/02.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/02.png" alt="brand-img" />
+                <img src="/assets/img/brand/02.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/02.png" alt="brand-img" />
+                <img src="/assets/img/brand/02.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/02.png" alt="brand-img" />
+                <img src="/assets/img/brand/02.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/02.png" alt="brand-img" />
+                <img src="/assets/img/brand/02.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/02.png" alt="brand-img" />
+                <img src="/assets/img/brand/02.png" alt="brand-img" />
               </div>
             </Slider>
           </div>
@@ -167,7 +167,7 @@ const page = () => {
       {/*<< About Section Start >>*/}
       <section className="about-section section-padding" id="about">
         <div className="line-shape">
-          <img src="assets/img/service/line-shape-2.png" alt="shape-img" />
+          <img src="/assets/img/service/line-shape-2.png" alt="shape-img" />
         </div>
         <div className="container">
           <div className="about-wrapper-2">
@@ -178,19 +178,19 @@ const page = () => {
                     className="about-image-1 bg-cover wow fadeInLeft"
                     data-wow-delay=".3s"
                     style={{
-                      backgroundImage: 'url("assets/img/about/about-5.jpg")',
+                      backgroundImage: 'url("/assets/img/about/about-5.jpg")',
                     }}
                   >
                     <div
                       className="about-image-2 wow fadeInUp"
                       data-wow-delay=".5s"
                     >
-                      <img src="assets/img/about/about-6.jpg" alt="about-img" />
+                      <img src="/assets/img/about/about-6.jpg" alt="about-img" />
                     </div>
                   </div>
                   <div className="circle-shape">
                     <img
-                      src="assets/img/about/circle-2.png"
+                      src="/assets/img/about/circle-2.png"
                       alt="img"
                       className="text-circle"
                     />
@@ -272,7 +272,7 @@ const page = () => {
                               className="video-image wow fadeInUp"
                               data-wow-delay=".3s"
                             >
-                              <img src="assets/img/about/video.jpg" alt="img" />
+                              <img src="/assets/img/about/video.jpg" alt="img" />
                               <div className="video-box">
                                 <a
                                   href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
@@ -309,19 +309,19 @@ const page = () => {
                               <div className="all-client">
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-3.png"
+                                    src="/assets/img/about/client-3.png"
                                     alt="client-img"
                                   />
                                 </div>
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-4.png"
+                                    src="/assets/img/about/client-4.png"
                                     alt="client-img"
                                   />
                                 </div>
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-5.png"
+                                    src="/assets/img/about/client-5.png"
                                     alt="client-img"
                                   />
                                 </div>
@@ -335,7 +335,7 @@ const page = () => {
                               data-wow-delay=".5s"
                             >
                               <div className="icon">
-                                <img src="assets/img/contact.png" alt="img" />
+                                <img src="/assets/img/contact.png" alt="img" />
                               </div>
                               <div className="content">
                                 <p>Phone:</p>
@@ -356,7 +356,7 @@ const page = () => {
                         <div className="about-tabs-area">
                           <div className="about-list-items">
                             <div className="video-image">
-                              <img src="assets/img/about/video.jpg" alt="img" />
+                              <img src="/assets/img/about/video.jpg" alt="img" />
                               <div className="video-box">
                                 <a
                                   href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
@@ -390,19 +390,19 @@ const page = () => {
                               <div className="all-client">
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-3.png"
+                                    src="/assets/img/about/client-3.png"
                                     alt="client-img"
                                   />
                                 </div>
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-4.png"
+                                    src="/assets/img/about/client-4.png"
                                     alt="client-img"
                                   />
                                 </div>
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-5.png"
+                                    src="/assets/img/about/client-5.png"
                                     alt="client-img"
                                   />
                                 </div>
@@ -413,7 +413,7 @@ const page = () => {
                             </div>
                             <div className="author-contact">
                               <div className="icon">
-                                <img src="assets/img/contact.png" alt="img" />
+                                <img src="/assets/img/contact.png" alt="img" />
                               </div>
                               <div className="content">
                                 <p>Phone:</p>
@@ -431,7 +431,7 @@ const page = () => {
                         <div className="about-tabs-area">
                           <div className="about-list-items">
                             <div className="video-image">
-                              <img src="assets/img/about/video.jpg" alt="img" />
+                              <img src="/assets/img/about/video.jpg" alt="img" />
                               <div className="video-box">
                                 <a
                                   href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
@@ -465,19 +465,19 @@ const page = () => {
                               <div className="all-client">
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-3.png"
+                                    src="/assets/img/about/client-3.png"
                                     alt="client-img"
                                   />
                                 </div>
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-4.png"
+                                    src="/assets/img/about/client-4.png"
                                     alt="client-img"
                                   />
                                 </div>
                                 <div className="client-img">
                                   <img
-                                    src="assets/img/about/client-5.png"
+                                    src="/assets/img/about/client-5.png"
                                     alt="client-img"
                                   />
                                 </div>
@@ -488,7 +488,7 @@ const page = () => {
                             </div>
                             <div className="author-contact">
                               <div className="icon">
-                                <img src="assets/img/contact.png" alt="img" />
+                                <img src="/assets/img/contact.png" alt="img" />
                               </div>
                               <div className="content">
                                 <p>Phone:</p>
@@ -641,39 +641,39 @@ const page = () => {
             <ul className="marqee-list d-flex">
               <li className="marquee-item style-2">
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">IT Services</span>
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">Cyber Security</span>
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">Data Security</span>
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">IT Services</span>
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">Cyber Security</span>
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">Data Security</span>
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">IT Services</span>
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">Cyber Security</span>
                 <span className="text-slider">
-                  <img src="assets/img/asterisk-3.svg" alt="img" />
+                  <img src="/assets/img/asterisk-3.svg" alt="img" />
                 </span>
                 <span className="text-slider text-style-2">Data Security</span>
               </li>
@@ -699,7 +699,7 @@ const page = () => {
             <div className="case-study-items">
               <div className="case-study-image">
                 <img
-                  src="assets/img/case-studies/05.jpg"
+                  src="/assets/img/case-studies/05.jpg"
                   alt="case-study-img"
                 />
               </div>
@@ -718,7 +718,7 @@ const page = () => {
             <div className="case-study-items">
               <div className="case-study-image">
                 <img
-                  src="assets/img/case-studies/06.jpg"
+                  src="/assets/img/case-studies/06.jpg"
                   alt="case-study-img"
                 />
               </div>
@@ -738,7 +738,7 @@ const page = () => {
             <div className="case-study-items">
               <div className="case-study-image">
                 <img
-                  src="assets/img/case-studies/07.jpg"
+                  src="/assets/img/case-studies/07.jpg"
                   alt="case-study-img"
                 />
               </div>
@@ -757,7 +757,7 @@ const page = () => {
             <div className="case-study-items">
               <div className="case-study-image">
                 <img
-                  src="assets/img/case-studies/05.jpg"
+                  src="/assets/img/case-studies/05.jpg"
                   alt="case-study-img"
                 />
               </div>
@@ -966,7 +966,7 @@ const page = () => {
         id="team"
       >
         <div className="dot-shape-2">
-          <img src="assets/img/team/dot-shape-2.png" alt="shape-img" />
+          <img src="/assets/img/team/dot-shape-2.png" alt="shape-img" />
         </div>
         <div className="container">
           <div className="section-title style-2 text-center">
@@ -989,7 +989,7 @@ const page = () => {
                   <p>CEO, Founder</p>
                 </div>
                 <div className="team-image">
-                  <img src="assets/img/team/07.jpg" alt="team-img" />
+                  <img src="/assets/img/team/07.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -1032,7 +1032,7 @@ const page = () => {
                   <p>Senior Consultant</p>
                 </div>
                 <div className="team-image">
-                  <img src="assets/img/team/08.jpg" alt="team-img" />
+                  <img src="/assets/img/team/08.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -1075,7 +1075,7 @@ const page = () => {
                   <p>Digital Marketer</p>
                 </div>
                 <div className="team-image">
-                  <img src="assets/img/team/09.jpg" alt="team-img" />
+                  <img src="/assets/img/team/09.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -1118,7 +1118,7 @@ const page = () => {
                   <p>Full Stack Developer</p>
                 </div>
                 <div className="team-image">
-                  <img src="assets/img/team/10.jpg" alt="team-img" />
+                  <img src="/assets/img/team/10.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -1218,7 +1218,7 @@ const page = () => {
               <div className="single-news-items-2">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/06.jpg")' }}
+                  style={{ backgroundImage: 'url("/assets/img/news/06.jpg")' }}
                 >
                   <div className="post-date">
                     <h4>
@@ -1249,7 +1249,7 @@ const page = () => {
               <div className="single-news-items-2">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/07.jpg")' }}
+                  style={{ backgroundImage: 'url("/assets/img/news/07.jpg")' }}
                 >
                   <div className="post-date">
                     <h4>
@@ -1279,7 +1279,7 @@ const page = () => {
               <div className="single-news-items-2">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/08.jpg")' }}
+                  style={{ backgroundImage: 'url("/assets/img/news/08.jpg")' }}
                 >
                   <div className="post-date">
                     <h4>

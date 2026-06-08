@@ -9,11 +9,11 @@ const ContactSection = ({
   return (
     <section
       className="contact-section-2 fix section-padding bg-cover"
-      style={{ backgroundImage: 'url("assets/img/contact-bg.jpg")' }}
+      style={{ backgroundImage: 'url("/assets/img/contact-bg.jpg")' }}
       id="contact"
     >
       <div className="contact-image">
-        <img src="assets/img/contact-2.png" alt="contact-img" />
+        <img src="/assets/img/contact-2.png" alt="contact-img" />
       </div>
       <div className="container">
         <div className="contact-wrapper-2">

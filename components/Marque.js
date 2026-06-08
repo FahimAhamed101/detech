@@ -20,7 +20,7 @@ const Marque = () => {
                     <span className="text-slider" key={`${repeatIndex}-${itemIndex}-${item}`}>
                       {itemIndex % 2 === 0 ? (
                         <>
-                          <img src="assets/img/asterisk-2.svg" alt="img" /> {item}
+                          <img src="/assets/img/asterisk-2.svg" alt="img" /> {item}
                         </>
                       ) : (
                         item

@@ -43,10 +43,10 @@ const ServiceSection = () => {
       id="service"
     >
       <div className="shape-image">
-        <img src="assets/img/service/shape.png" alt="shape-img" />
+        <img src="/assets/img/service/shape.png" alt="shape-img" />
       </div>
       <div className="bottom-shape">
-        <img src="assets/img/service/bottom-shape.png" alt="shape-img" />
+        <img src="/assets/img/service/bottom-shape.png" alt="shape-img" />
       </div>
       <div className="container">
         <div className="title-section-area">

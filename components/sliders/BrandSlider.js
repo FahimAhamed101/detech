@@ -9,25 +9,25 @@ const BrandSlider = () => {
       className="brand-carousel-active-2"
     >
       <div className="brand-image">
-        <img src="assets/img/brand/01.png" alt="brand-img" />
+        <img src="/assets/img/brand/01.png" alt="brand-img" />
       </div>
       <div className="brand-image">
-        <img src="assets/img/brand/01.png" alt="brand-img" />
+        <img src="/assets/img/brand/01.png" alt="brand-img" />
       </div>
       <div className="brand-image">
-        <img src="assets/img/brand/01.png" alt="brand-img" />
+        <img src="/assets/img/brand/01.png" alt="brand-img" />
       </div>
       <div className="brand-image">
-        <img src="assets/img/brand/01.png" alt="brand-img" />
+        <img src="/assets/img/brand/01.png" alt="brand-img" />
       </div>
       <div className="brand-image">
-        <img src="assets/img/brand/01.png" alt="brand-img" />
+        <img src="/assets/img/brand/01.png" alt="brand-img" />
       </div>
       <div className="brand-image">
-        <img src="assets/img/brand/01.png" alt="brand-img" />
+        <img src="/assets/img/brand/01.png" alt="brand-img" />
       </div>
       <div className="brand-image">
-        <img src="assets/img/brand/01.png" alt="brand-img" />
+        <img src="/assets/img/brand/01.png" alt="brand-img" />
       </div>
     </Slider>
   );

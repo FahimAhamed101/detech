@@ -15,7 +15,7 @@ const page = () => {
                     <div
                       className="post-featured-thumb bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/news/post-1.jpg")',
+                        backgroundImage: 'url("/assets/img/news/post-1.jpg")',
                       }}
                     >
                       <div className="post-date">
@@ -62,7 +62,7 @@ const page = () => {
                     <div
                       className="post-featured-thumb bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/news/post-2.jpg")',
+                        backgroundImage: 'url("/assets/img/news/post-2.jpg")',
                       }}
                     >
                       <div className="post-date">
@@ -109,7 +109,7 @@ const page = () => {
                     <div
                       className="post-featured-thumb bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/news/post-3.jpg")',
+                        backgroundImage: 'url("/assets/img/news/post-3.jpg")',
                       }}
                     >
                       <div className="post-date">
@@ -242,7 +242,7 @@ const page = () => {
                         <div
                           className="thumb bg-cover"
                           style={{
-                            backgroundImage: 'url("assets/img/news/pp1.jpg")',
+                            backgroundImage: 'url("/assets/img/news/pp1.jpg")',
                           }}
                         />
                         <div className="post-content">
@@ -261,7 +261,7 @@ const page = () => {
                         <div
                           className="thumb bg-cover"
                           style={{
-                            backgroundImage: 'url("assets/img/news/pp2.jpg")',
+                            backgroundImage: 'url("/assets/img/news/pp2.jpg")',
                           }}
                         />
                         <div className="post-content">
@@ -280,7 +280,7 @@ const page = () => {
                         <div
                           className="thumb bg-cover"
                           style={{
-                            backgroundImage: 'url("assets/img/news/pp3.jpg")',
+                            backgroundImage: 'url("/assets/img/news/pp3.jpg")',
                           }}
                         />
                         <div className="post-content">

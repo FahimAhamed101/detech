@@ -10,10 +10,10 @@ const page = () => {
       {/* Hero Section Here */}
       <section
         className="hero-section hero-4 bg-cover"
-        style={{ backgroundImage: 'url("assets/img/home-4/hero/hero-bg.jpg")' }}
+        style={{ backgroundImage: 'url("/assets/img/home-4/hero/hero-bg.jpg")' }}
       >
         <div className="circle-shape">
-          <img src="assets/img/home-4/hero/circle.png" alt="circle-img" />
+          <img src="/assets/img/home-4/hero/circle.png" alt="circle-img" />
         </div>
         <div className="container">
           <div className="row align-items-center">
@@ -43,7 +43,7 @@ const page = () => {
               data-wow-delay=".4s"
             >
               <div className="hero-image">
-                <img src="assets/img/home-4/hero/hero4.jpg" alt="hero-img" />
+                <img src="/assets/img/home-4/hero/hero4.jpg" alt="hero-img" />
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const page = () => {
         id="about"
       >
         <div className="shape float-bob-y">
-          <img src="assets/img/home-4/about/arrow-shape.png" alt="shape-img" />
+          <img src="/assets/img/home-4/about/arrow-shape.png" alt="shape-img" />
         </div>
         <div className="container">
           <div className="section-title text-center">
@@ -72,13 +72,13 @@ const page = () => {
                 <div className="about-image-item ralt">
                   <div className="circle-shape">
                     <img
-                      src="assets/img/home-4/about/circle-shape.png"
+                      src="/assets/img/home-4/about/circle-shape.png"
                       alt="shape-img"
                     />
                   </div>
                   <div className="bg-shape">
                     <img
-                      src="assets/img/home-4/about/bg-shape.png"
+                      src="/assets/img/home-4/about/bg-shape.png"
                       alt="shape-img"
                     />
                   </div>
@@ -89,7 +89,7 @@ const page = () => {
                     >
                       <div className="about-image-1">
                         <img
-                          src="assets/img/home-4/about/about2.jpg"
+                          src="/assets/img/home-4/about/about2.jpg"
                           alt="about-img"
                         />
                       </div>
@@ -100,7 +100,7 @@ const page = () => {
                     >
                       <div className="about-image-2">
                         <img
-                          src="assets/img/home-4/about/about3.jpg"
+                          src="/assets/img/home-4/about/about3.jpg"
                           alt="about-img"
                         />
                       </div>
@@ -123,7 +123,7 @@ const page = () => {
                   >
                     <div className="icon">
                       <img
-                        src="assets/img/home-4/about/icon/icon1.svg"
+                        src="/assets/img/home-4/about/icon/icon1.svg"
                         alt="icon-img"
                       />
                     </div>
@@ -141,7 +141,7 @@ const page = () => {
                   >
                     <div className="icon">
                       <img
-                        src="assets/img/home-4/about/icon/icon2.svg"
+                        src="/assets/img/home-4/about/icon/icon2.svg"
                         alt="icon-img"
                       />
                     </div>
@@ -165,7 +165,7 @@ const page = () => {
         id="service"
       >
         <div className="bg-shape">
-          <img src="assets/img/home-4/service/bg-shape.png" alt="shape-img" />
+          <img src="/assets/img/home-4/service/bg-shape.png" alt="shape-img" />
         </div>
         <div className="container">
           <div className="section-title text-center">
@@ -183,7 +183,7 @@ const page = () => {
               <div className="single-service-style-2 center">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/service/icon-1.svg"
+                    src="/assets/img/home-4/service/icon-1.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -213,7 +213,7 @@ const page = () => {
               <div className="single-service-style-2 active center">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/service/icon-2.svg"
+                    src="/assets/img/home-4/service/icon-2.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -243,7 +243,7 @@ const page = () => {
               <div className="single-service-style-2 center">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/service/icon-3.svg"
+                    src="/assets/img/home-4/service/icon-3.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -272,21 +272,21 @@ const page = () => {
       {/* IT Service Provide Section Here */}
       <section className="service-provide bg-white">
         <div className="line-shape">
-          <img src="assets/img/home-4/service/line-shape.png" alt="shape-img" />
+          <img src="/assets/img/home-4/service/line-shape.png" alt="shape-img" />
         </div>
         <div className="container">
           <div className="single-it-service-provide">
             <div className="arrow-shape wow fadeInUp" data-wow-delay=".3s">
-              <img src="assets/img/home-4/service/arrow.png" alt="shape-img" />
+              <img src="/assets/img/home-4/service/arrow.png" alt="shape-img" />
             </div>
             <div className="arrow-shape-2 wow fadeInUp" data-wow-delay=".5s">
-              <img src="assets/img/home-4/service/arrow2.png" alt="shape-img" />
+              <img src="/assets/img/home-4/service/arrow2.png" alt="shape-img" />
             </div>
             <div
               className="service-bg bg-cover"
               style={{
                 backgroundImage:
-                  'url("assets/img/home-4/service/service-provide-bg.jpg")',
+                  'url("/assets/img/home-4/service/service-provide-bg.jpg")',
               }}
             >
               <div className="single-provide-content">
@@ -326,7 +326,7 @@ const page = () => {
       <section className="service-provide-2 bg-5 section-padding pb-0">
         <div className="line-shape-2">
           <img
-            src="assets/img/home-4/service/line-shape2.png"
+            src="/assets/img/home-4/service/line-shape2.png"
             alt="shape-img"
           />
         </div>
@@ -345,7 +345,7 @@ const page = () => {
               <div className="single-service-provide-card">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/service/icon-4.svg"
+                    src="/assets/img/home-4/service/icon-4.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -370,7 +370,7 @@ const page = () => {
               <div className="single-service-provide-card active">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/service/icon-5.svg"
+                    src="/assets/img/home-4/service/icon-5.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -395,7 +395,7 @@ const page = () => {
               <div className="single-service-provide-card">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/service/icon6.svg"
+                    src="/assets/img/home-4/service/icon6.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -418,7 +418,7 @@ const page = () => {
               <div className="single-service-provide-card">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/service/icon7.svg"
+                    src="/assets/img/home-4/service/icon7.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -450,19 +450,19 @@ const page = () => {
             <div className="single-it-case-study">
               <div className="case-study-image">
                 <img
-                  src="assets/img/home-4/case-study/case-study1.jpg"
+                  src="/assets/img/home-4/case-study/case-study1.jpg"
                   alt="study-img"
                 />
                 <div className="case-study-content">
                   <div className="arrow-shape">
                     <img
-                      src="assets/img/home-4/case-study/arrow-shape.png"
+                      src="/assets/img/home-4/case-study/arrow-shape.png"
                       alt="shape-img"
                     />
                   </div>
                   <div className="icon">
                     <img
-                      src="assets/img/home-4/case-study/icon/icon1.svg"
+                      src="/assets/img/home-4/case-study/icon/icon1.svg"
                       alt="icon-img"
                     />
                   </div>
@@ -478,19 +478,19 @@ const page = () => {
             <div className="single-it-case-study">
               <div className="case-study-image">
                 <img
-                  src="assets/img/home-4/case-study/case-study2.jpg"
+                  src="/assets/img/home-4/case-study/case-study2.jpg"
                   alt="study-img"
                 />
                 <div className="case-study-content">
                   <div className="arrow-shape">
                     <img
-                      src="assets/img/home-4/case-study/arrow-shape.png"
+                      src="/assets/img/home-4/case-study/arrow-shape.png"
                       alt="shape-img"
                     />
                   </div>
                   <div className="icon">
                     <img
-                      src="assets/img/home-4/case-study/icon/icon2.svg"
+                      src="/assets/img/home-4/case-study/icon/icon2.svg"
                       alt="icon-img"
                     />
                   </div>
@@ -506,19 +506,19 @@ const page = () => {
             <div className="single-it-case-study">
               <div className="case-study-image">
                 <img
-                  src="assets/img/home-4/case-study/case-study3.jpg"
+                  src="/assets/img/home-4/case-study/case-study3.jpg"
                   alt="study-img"
                 />
                 <div className="case-study-content">
                   <div className="arrow-shape">
                     <img
-                      src="assets/img/home-4/case-study/arrow-shape.png"
+                      src="/assets/img/home-4/case-study/arrow-shape.png"
                       alt="shape-img"
                     />
                   </div>
                   <div className="icon">
                     <img
-                      src="assets/img/home-4/case-study/icon/icon3.svg"
+                      src="/assets/img/home-4/case-study/icon/icon3.svg"
                       alt="icon-img"
                     />
                   </div>
@@ -534,19 +534,19 @@ const page = () => {
             <div className="single-it-case-study">
               <div className="case-study-image">
                 <img
-                  src="assets/img/home-4/case-study/case-study2.jpg"
+                  src="/assets/img/home-4/case-study/case-study2.jpg"
                   alt="study-img"
                 />
                 <div className="case-study-content">
                   <div className="arrow-shape">
                     <img
-                      src="assets/img/home-4/case-study/arrow-shape.png"
+                      src="/assets/img/home-4/case-study/arrow-shape.png"
                       alt="shape-img"
                     />
                   </div>
                   <div className="icon">
                     <img
-                      src="assets/img/home-4/case-study/icon/icon2.svg"
+                      src="/assets/img/home-4/case-study/icon/icon2.svg"
                       alt="icon-img"
                     />
                   </div>
@@ -591,7 +591,7 @@ const page = () => {
             >
               <div className="single-team-style-1">
                 <div className="team-image ralt">
-                  <img src="assets/img/home-4/team/team1.jpg" alt="team-img" />
+                  <img src="/assets/img/home-4/team/team1.jpg" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -631,7 +631,7 @@ const page = () => {
             >
               <div className="single-team-style-1 active">
                 <div className="team-image ralt">
-                  <img src="assets/img/home-4/team/team2.jpg" alt="team-img" />
+                  <img src="/assets/img/home-4/team/team2.jpg" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -671,7 +671,7 @@ const page = () => {
             >
               <div className="single-team-style-1">
                 <div className="team-image ralt">
-                  <img src="assets/img/home-4/team/team3.jpg" alt="team-img" />
+                  <img src="/assets/img/home-4/team/team3.jpg" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -711,7 +711,7 @@ const page = () => {
             >
               <div className="single-team-style-1">
                 <div className="team-image ralt">
-                  <img src="assets/img/home-4/team/team4.jpg" alt="team-img" />
+                  <img src="/assets/img/home-4/team/team4.jpg" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -751,7 +751,7 @@ const page = () => {
             >
               <div className="single-team-style-1">
                 <div className="team-image ralt">
-                  <img src="assets/img/home-4/team/team5.jpg" alt="team-img" />
+                  <img src="/assets/img/home-4/team/team5.jpg" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -879,7 +879,7 @@ const page = () => {
                   >
                     <div className="icon">
                       <img
-                        src="assets/img/home-4/feature-icon/icon1.svg"
+                        src="/assets/img/home-4/feature-icon/icon1.svg"
                         alt="icon-img"
                       />
                     </div>
@@ -897,7 +897,7 @@ const page = () => {
                   >
                     <div className="icon">
                       <img
-                        src="assets/img/home-4/feature-icon/icon2.svg"
+                        src="/assets/img/home-4/feature-icon/icon2.svg"
                         alt="icon-img"
                       />
                     </div>
@@ -915,7 +915,7 @@ const page = () => {
                   >
                     <div className="icon">
                       <img
-                        src="assets/img/home-4/feature-icon/icon3.svg"
+                        src="/assets/img/home-4/feature-icon/icon3.svg"
                         alt="icon-img"
                       />
                     </div>
@@ -933,7 +933,7 @@ const page = () => {
                 <div className="single-feature-image">
                   <div className="quote-img float-bob-y">
                     <img
-                      src="assets/img/home-4/feature/quote.png"
+                      src="/assets/img/home-4/feature/quote.png"
                       alt="quote-img"
                     />
                   </div>
@@ -941,7 +941,7 @@ const page = () => {
                     <div className="col-lg-6 col-md-6 col-sm-6">
                       <div className="feature-image">
                         <img
-                          src="assets/img/home-4/feature/feature.jpg"
+                          src="/assets/img/home-4/feature/feature.jpg"
                           alt="feature-img"
                         />
                       </div>
@@ -949,7 +949,7 @@ const page = () => {
                     <div className="col-lg-6 col-md-6 col-sm-6">
                       <div className="feature-image-2">
                         <img
-                          src="assets/img/home-4/feature/feature2.jpg"
+                          src="/assets/img/home-4/feature/feature2.jpg"
                           alt="feature-img"
                         />
                       </div>
@@ -964,10 +964,10 @@ const page = () => {
       {/* Testimonial Section Here */}
       <section className="testimonial-section-5 section-padding pt-0">
         <div className="shape float-bob-y">
-          <img src="assets/img/home-4/about/arrow-shape.png" alt="shape-img" />
+          <img src="/assets/img/home-4/about/arrow-shape.png" alt="shape-img" />
         </div>
         <div className="bg-shape">
-          <img src="assets/img/home-4/service/bg-shape.png" alt="shape-img" />
+          <img src="/assets/img/home-4/service/bg-shape.png" alt="shape-img" />
         </div>
         <div className="container">
           <div className="section-title text-center">
@@ -986,7 +986,7 @@ const page = () => {
                 <div className="ratting-items">
                   <div className="quote-icon">
                     <img
-                      src="assets/img/home-4/testimonial/quote2.png"
+                      src="/assets/img/home-4/testimonial/quote2.png"
                       alt="icon-img"
                     />
                   </div>
@@ -1019,7 +1019,7 @@ const page = () => {
                 <div className="client-info">
                   <div className="image">
                     <img
-                      src="assets/img/home-4/testimonial/client.png"
+                      src="/assets/img/home-4/testimonial/client.png"
                       alt="client-img"
                     />
                   </div>
@@ -1033,7 +1033,7 @@ const page = () => {
                 <div className="ratting-items">
                   <div className="quote-icon">
                     <img
-                      src="assets/img/home-4/testimonial/quote2.png"
+                      src="/assets/img/home-4/testimonial/quote2.png"
                       alt="icon-img"
                     />
                   </div>
@@ -1066,7 +1066,7 @@ const page = () => {
                 <div className="client-info">
                   <div className="image">
                     <img
-                      src="assets/img/home-4/testimonial/client2.png"
+                      src="/assets/img/home-4/testimonial/client2.png"
                       alt="client-img"
                     />
                   </div>
@@ -1080,7 +1080,7 @@ const page = () => {
                 <div className="ratting-items">
                   <div className="quote-icon">
                     <img
-                      src="assets/img/home-4/testimonial/quote2.png"
+                      src="/assets/img/home-4/testimonial/quote2.png"
                       alt="icon-img"
                     />
                   </div>
@@ -1113,7 +1113,7 @@ const page = () => {
                 <div className="client-info">
                   <div className="image">
                     <img
-                      src="assets/img/home-4/testimonial/client.png"
+                      src="/assets/img/home-4/testimonial/client.png"
                       alt="client-img"
                     />
                   </div>
@@ -1127,7 +1127,7 @@ const page = () => {
                 <div className="ratting-items">
                   <div className="quote-icon">
                     <img
-                      src="assets/img/home-4/testimonial/quote2.png"
+                      src="/assets/img/home-4/testimonial/quote2.png"
                       alt="icon-img"
                     />
                   </div>
@@ -1160,7 +1160,7 @@ const page = () => {
                 <div className="client-info">
                   <div className="image">
                     <img
-                      src="assets/img/home-4/testimonial/client2.png"
+                      src="/assets/img/home-4/testimonial/client2.png"
                       alt="client-img"
                     />
                   </div>
@@ -1177,13 +1177,13 @@ const page = () => {
       {/* Pricing Section Here */}
       <section className="pricing-section fix section-padding section-bg-4">
         <div className="dot-shape">
-          <img src="assets/img/home-4/pricing/dot.png" alt="dot-img" />
+          <img src="/assets/img/home-4/pricing/dot.png" alt="dot-img" />
         </div>
         <div className="arrow-shape float-bob-y">
-          <img src="assets/img/home-4/pricing/arrow.png" alt="arrow-img" />
+          <img src="/assets/img/home-4/pricing/arrow.png" alt="arrow-img" />
         </div>
         <div className="dot-shape-2">
-          <img src="assets/img/home-4/pricing/dot2.png" alt="dot-img" />
+          <img src="/assets/img/home-4/pricing/dot2.png" alt="dot-img" />
         </div>
         <div className="container">
           <div className="section-title text-center">
@@ -1200,7 +1200,7 @@ const page = () => {
               <div className="single-pricing-items">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/pricing/icon1.svg"
+                    src="/assets/img/home-4/pricing/icon1.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -1249,7 +1249,7 @@ const page = () => {
               <div className="single-pricing-items active-tag">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/pricing/icon2.svg"
+                    src="/assets/img/home-4/pricing/icon2.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -1298,7 +1298,7 @@ const page = () => {
               <div className="single-pricing-items">
                 <div className="icon">
                   <img
-                    src="assets/img/home-4/pricing/icon3.svg"
+                    src="/assets/img/home-4/pricing/icon3.svg"
                     alt="icon-img"
                   />
                 </div>
@@ -1360,7 +1360,7 @@ const page = () => {
             >
               <div className="single-news-style-1">
                 <div className="news-image">
-                  <img src="assets/img/home-4/news/01.jpg" alt="news-img" />
+                  <img src="/assets/img/home-4/news/01.jpg" alt="news-img" />
                   <div className="post-date">
                     <h3>24</h3>
                     <p>NOV</p>
@@ -1373,7 +1373,7 @@ const page = () => {
                     </div>
                     <div className="post-author d-flex align-items-center">
                       <img
-                        src="assets/img/home-4/news/author.jpg"
+                        src="/assets/img/home-4/news/author.jpg"
                         alt="author-img"
                       />
                       <p>David L. Davis</p>
@@ -1397,7 +1397,7 @@ const page = () => {
             >
               <div className="single-news-style-1">
                 <div className="news-image">
-                  <img src="assets/img/home-4/news/02.jpg" alt="news-img" />
+                  <img src="/assets/img/home-4/news/02.jpg" alt="news-img" />
                   <div className="post-date">
                     <h3>28</h3>
                     <p>NOV</p>
@@ -1410,7 +1410,7 @@ const page = () => {
                     </div>
                     <div className="post-author d-flex align-items-center">
                       <img
-                        src="assets/img/home-4/news/author2.jpg"
+                        src="/assets/img/home-4/news/author2.jpg"
                         alt="author-img"
                       />
                       <p>Michael J. Gray</p>
@@ -1434,7 +1434,7 @@ const page = () => {
             >
               <div className="single-news-style-1">
                 <div className="news-image">
-                  <img src="assets/img/home-4/news/03.jpg" alt="news-img" />
+                  <img src="/assets/img/home-4/news/03.jpg" alt="news-img" />
                   <div className="post-date">
                     <h3>30</h3>
                     <p>NOV</p>
@@ -1447,7 +1447,7 @@ const page = () => {
                     </div>
                     <div className="post-author d-flex align-items-center">
                       <img
-                        src="assets/img/home-4/news/author3.jpg"
+                        src="/assets/img/home-4/news/author3.jpg"
                         alt="author-img"
                       />
                       <p>David L. Davis</p>
@@ -1480,25 +1480,25 @@ const page = () => {
               className="brand-carousel-active"
             >
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
             </Slider>
           </div>
@@ -1509,7 +1509,7 @@ const page = () => {
         <div className="container">
           <div
             className="cta-banner-style-1 bg-cover"
-            style={{ background: 'url("assets/img/home-4/banner1.jpg")' }}
+            style={{ background: 'url("/assets/img/home-4/banner1.jpg")' }}
           >
             <div className="section-title">
               <span className="text-white">Get Consultations</span>

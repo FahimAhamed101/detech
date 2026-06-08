@@ -18,7 +18,7 @@ const TeamSection = () => {
           >
             <div className="single-team-items style-2">
               <div className="team-image">
-                <img src="assets/img/team/01.jpg" alt="team-img" />
+                <img src="/assets/img/team/01.jpg" alt="team-img" />
                 <div className="social-profile">
                   <span className="plus-btn">
                     <i className="fas fa-share-alt" />
@@ -61,7 +61,7 @@ const TeamSection = () => {
           >
             <div className="single-team-items style-2">
               <div className="team-image">
-                <img src="assets/img/team/02.jpg" alt="team-img" />
+                <img src="/assets/img/team/02.jpg" alt="team-img" />
                 <div className="social-profile">
                   <span className="plus-btn">
                     <i className="fas fa-share-alt" />
@@ -104,7 +104,7 @@ const TeamSection = () => {
           >
             <div className="single-team-items style-2">
               <div className="team-image">
-                <img src="assets/img/team/03.jpg" alt="team-img" />
+                <img src="/assets/img/team/03.jpg" alt="team-img" />
                 <div className="social-profile">
                   <span className="plus-btn">
                     <i className="fas fa-share-alt" />
@@ -147,7 +147,7 @@ const TeamSection = () => {
           >
             <div className="single-team-items style-2">
               <div className="team-image">
-                <img src="assets/img/team/04.jpg" alt="team-img" />
+                <img src="/assets/img/team/04.jpg" alt="team-img" />
                 <div className="social-profile">
                   <span className="plus-btn">
                     <i className="fas fa-share-alt" />
@@ -219,7 +219,7 @@ export const TeamSection2 = () => {
             >
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="assets/img/team/01.jpg" alt="team-img" />
+                  <img src="/assets/img/team/01.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -262,7 +262,7 @@ export const TeamSection2 = () => {
             >
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="assets/img/team/02.jpg" alt="team-img" />
+                  <img src="/assets/img/team/02.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -305,7 +305,7 @@ export const TeamSection2 = () => {
             >
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="assets/img/team/03.jpg" alt="team-img" />
+                  <img src="/assets/img/team/03.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -348,7 +348,7 @@ export const TeamSection2 = () => {
             >
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="assets/img/team/04.jpg" alt="team-img" />
+                  <img src="/assets/img/team/04.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -393,12 +393,12 @@ export const TeamSection2 = () => {
                 <div className="team-join-content text-center">
                   <div className="circle-shape">
                     <img
-                      src="assets/img/team/circle-shape.png"
+                      src="/assets/img/team/circle-shape.png"
                       alt="shape-img"
                     />
                   </div>
                   <div className="dot-shape">
-                    <img src="assets/img/team/dot-shape.png" alt="shape-img" />
+                    <img src="/assets/img/team/dot-shape.png" alt="shape-img" />
                   </div>
                   <h2>
                     JOIN OUR <span>TEAM</span>
@@ -414,7 +414,7 @@ export const TeamSection2 = () => {
             >
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="assets/img/team/04.jpg" alt="team-img" />
+                  <img src="/assets/img/team/04.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />
@@ -457,7 +457,7 @@ export const TeamSection2 = () => {
             >
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="assets/img/team/05.jpg" alt="team-img" />
+                  <img src="/assets/img/team/05.jpg" alt="team-img" />
                   <div className="social-profile">
                     <span className="plus-btn">
                       <i className="fas fa-share-alt" />

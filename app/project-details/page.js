@@ -56,12 +56,12 @@ const page = () => {
               <div className="row g-4">
                 <div className="col-lg-4">
                   <div className="details-image">
-                    <img src="assets/img/project/details.jpg" alt="img" />
+                    <img src="/assets/img/project/details.jpg" alt="img" />
                   </div>
                 </div>
                 <div className="col-lg-8">
                   <div className="details-image">
-                    <img src="assets/img/project/details-2.jpg" alt="img" />
+                    <img src="/assets/img/project/details-2.jpg" alt="img" />
                   </div>
                 </div>
               </div>
@@ -160,10 +160,10 @@ const page = () => {
             <div className="project-details-image mt-0">
               <div className="row g-4">
                 <div className="col-lg-6">
-                  <img src="assets/img/project/details-3.jpg" alt="img" />
+                  <img src="/assets/img/project/details-3.jpg" alt="img" />
                 </div>
                 <div className="col-lg-6">
-                  <img src="assets/img/project/details-4.jpg" alt="img" />
+                  <img src="/assets/img/project/details-4.jpg" alt="img" />
                 </div>
               </div>
             </div>

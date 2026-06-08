@@ -29,7 +29,7 @@ export default class Testimonial3Slider extends Component {
                 <div
                   className="testimonial-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/testimonial/06.jpg")',
+                    backgroundImage: 'url("/assets/img/testimonial/06.jpg")',
                   }}
                 >
                   <div className="icon">
@@ -64,7 +64,7 @@ export default class Testimonial3Slider extends Component {
                 <div
                   className="testimonial-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/testimonial/07.jpg")',
+                    backgroundImage: 'url("/assets/img/testimonial/07.jpg")',
                   }}
                 >
                   <div className="icon">
@@ -99,7 +99,7 @@ export default class Testimonial3Slider extends Component {
                 <div
                   className="testimonial-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/testimonial/08.jpg")',
+                    backgroundImage: 'url("/assets/img/testimonial/08.jpg")',
                   }}
                 >
                   <div className="icon">
@@ -134,7 +134,7 @@ export default class Testimonial3Slider extends Component {
                 <div
                   className="testimonial-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/testimonial/09.jpg")',
+                    backgroundImage: 'url("/assets/img/testimonial/09.jpg")',
                   }}
                 >
                   <div className="icon">

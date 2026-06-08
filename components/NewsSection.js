@@ -40,7 +40,7 @@ const NewsSection = ({
           <div className="news-card-items">
             <div
               className="news-image bg-cover"
-              style={{ backgroundImage: 'url("assets/img/news/03.jpg")' }}
+              style={{ backgroundImage: 'url("/assets/img/news/03.jpg")' }}
             />
             <div className="news-content">
               <ul className="post-area">
@@ -67,7 +67,7 @@ const NewsSection = ({
           <div className="news-card-items">
             <div
               className="news-image bg-cover"
-              style={{ backgroundImage: 'url("assets/img/news/04.jpg")' }}
+              style={{ backgroundImage: 'url("/assets/img/news/04.jpg")' }}
             />
             <div className="news-content">
               <ul className="post-area">
@@ -94,7 +94,7 @@ const NewsSection = ({
           <div className="news-card-items">
             <div
               className="news-image bg-cover"
-              style={{ backgroundImage: 'url("assets/img/news/05.jpg")' }}
+              style={{ backgroundImage: 'url("/assets/img/news/05.jpg")' }}
             />
             <div className="news-content">
               <ul className="post-area">
@@ -121,7 +121,7 @@ const NewsSection = ({
           <div className="news-card-items">
             <div
               className="news-image bg-cover"
-              style={{ backgroundImage: 'url("assets/img/news/03.jpg")' }}
+              style={{ backgroundImage: 'url("/assets/img/news/03.jpg")' }}
             />
             <div className="news-content">
               <ul className="post-area">

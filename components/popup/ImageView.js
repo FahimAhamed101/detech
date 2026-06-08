@@ -37,7 +37,7 @@ const ImageView = () => {
     const timerId = setTimeout(() => {
       const a = document.querySelectorAll("a");
       a.forEach((a) => {
-        if (a.href.includes("assets/img")) {
+        if (a.href.includes("/assets/img")) {
           if (a.getAttribute("download") === null) {
             a.addEventListener("click", (e) => {
               e.preventDefault();

@@ -48,7 +48,7 @@ const Nav = ({ single, menu }) => {
                 <div className="row g-4">
                   <div className="col-lg-3 home-menu">
                     <div className="home-menu-thumb">
-                      <img src="assets/img/header/home-1.jpg" alt="img" />
+                      <img src="/assets/img/header/home-1.jpg" alt="img" />
                       <div className="demo-button">
                         <Link href="/" className="theme-btn">
                           <span>Multi Page</span>
@@ -64,7 +64,7 @@ const Nav = ({ single, menu }) => {
                   </div>
                   <div className="col-lg-3  home-menu">
                     <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-2.jpg" alt="img" />
+                      <img src="/assets/img/header/home-2.jpg" alt="img" />
                       <div className="demo-button">
                         <Link href="index-2" className="theme-btn">
                           <span>Multi Page</span>
@@ -80,7 +80,7 @@ const Nav = ({ single, menu }) => {
                   </div>
                   <div className="col-lg-3 home-menu">
                     <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-3.jpg" alt="img" />
+                      <img src="/assets/img/header/home-3.jpg" alt="img" />
                       <div className="demo-button">
                         <Link href="index-3" className="theme-btn">
                           <span>Multi Page</span>
@@ -96,7 +96,7 @@ const Nav = ({ single, menu }) => {
                   </div>
                   <div className="col-lg-3 home-menu">
                     <div className="home-menu-thumb mb-15">
-                      <img src="assets/img/header/home-4.jpg" alt="img" />
+                      <img src="/assets/img/header/home-4.jpg" alt="img" />
                       <div className="demo-button">
                         <Link href="index-4" className="theme-btn">
                           <span>Multi Page</span>
@@ -266,7 +266,7 @@ const SearchBtn = ({ setSeachToggle }) => {
 const Offcanvas = ({
   open,
   close,
-  logo = "assets/img/logo/logo.svg",
+  logo = "/assets/img/logo/logo.svg",
   style = "",
   single,
   menu,
@@ -397,7 +397,7 @@ const Header1 = ({ single }) => {
               <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link href="/">
-                    <img src="assets/img/logo/logo.svg" alt="logo-img" />
+                    <img src="/assets/img/logo/logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="offcanvas__close">
@@ -534,7 +534,7 @@ const Header1 = ({ single }) => {
                 <div className="header-left">
                   <div className="logo">
                     <Link href="/" className="header-logo">
-                      <img src="assets/img/logo/logo.svg" alt="logo-img" />
+                      <img src="/assets/img/logo/logo.svg" alt="logo-img" />
                     </Link>
                   </div>
                   <div className="mean__menu-wrapper">
@@ -548,7 +548,7 @@ const Header1 = ({ single }) => {
                 <div className="header-right d-flex justify-content-end align-items-center">
                   <div className="contact-info">
                     <div className="icon">
-                      <img src="assets/img/call.png" alt="img" />
+                      <img src="/assets/img/call.png" alt="img" />
                     </div>
                     <div className="content">
                       <p>Phone:</p>
@@ -613,7 +613,7 @@ const Header2 = ({ single }) => {
               </ul>
               <div className="flag-wrap">
                 <div className="flag">
-                  <img src="assets/img/flag.png" alt="flag" />
+                  <img src="/assets/img/flag.png" alt="flag" />
                 </div>
                 <TomTechSelect
                   items={[
@@ -659,7 +659,7 @@ const Header2 = ({ single }) => {
           <div className="middle-header-wrapper">
             <div className="header-logo">
               <Link href="/">
-                <img src="assets/img/logo/logo.svg" alt="logo-img" />
+                <img src="/assets/img/logo/logo.svg" alt="logo-img" />
               </Link>
             </div>
             <div className="header-contact-items">
@@ -701,7 +701,7 @@ const Header2 = ({ single }) => {
               <div className="header-main">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                    <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="header-left">
@@ -745,7 +745,7 @@ const Header3 = ({ single }) => {
         single={single}
         open={sidebarToggle}
         close={setSidebarToggle}
-        logo="assets/img/logo/logo-2.svg"
+        logo="/assets/img/logo/logo-2.svg"
         style="style-2"
       />
       {/* Header Top Start */}
@@ -781,7 +781,7 @@ const Header3 = ({ single }) => {
               />
               <div className="flag-wrap">
                 <div className="flag">
-                  <img src="assets/img/flag.png" alt="flag" />
+                  <img src="/assets/img/flag.png" alt="flag" />
                 </div>
                 <TomTechSelect
                   items={[
@@ -817,7 +817,7 @@ const Header3 = ({ single }) => {
               <div className="header-main">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="assets/img/logo/logo-2.svg" alt="logo-img" />
+                    <img src="/assets/img/logo/logo-2.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="header-left">
@@ -933,12 +933,12 @@ const Header4 = ({ single }) => {
                   <div className="logo">
                     <Link href="/" className="header-logo-1">
                       <img
-                        src="assets/img/logo/white-logo.svg"
+                        src="/assets/img/logo/white-logo.svg"
                         alt="logo-img"
                       />
                     </Link>
                     <Link href="/" className="header-logo-2">
-                      <img src="assets/img/logo/logo.svg" alt="logo-img" />
+                      <img src="/assets/img/logo/logo.svg" alt="logo-img" />
                     </Link>
                   </div>
                   <div className="mean__menu-wrapper">
@@ -1028,7 +1028,7 @@ const DefaultHeader = ({ single }) => {
               />
               <div className="flag-wrap">
                 <div className="flag">
-                  <img src="assets/img/flag.png" alt="flag" />
+                  <img src="/assets/img/flag.png" alt="flag" />
                 </div>
                 <TomTechSelect
                   items={[
@@ -1064,7 +1064,7 @@ const DefaultHeader = ({ single }) => {
               <div className="header-main style-2">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="assets/img/logo/logo.svg" alt="logo-img" />
+                    <img src="/assets/img/logo/logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="header-left">

@@ -35,7 +35,7 @@ export default class Home3Slider extends Component {
             <div className="single-slide">
               <div
                 className="slide-bg bg-cover"
-                style={{ backgroundImage: 'url("assets/img/hero/hero-5.jpg")' }}
+                style={{ backgroundImage: 'url("/assets/img/hero/hero-5.jpg")' }}
               >
                 <div className="container">
                   <div className="hero-content">
@@ -79,7 +79,7 @@ export default class Home3Slider extends Component {
             <div className="single-slide">
               <div
                 className="slide-bg bg-cover"
-                style={{ backgroundImage: 'url("assets/img/hero/hero-6.jpg")' }}
+                style={{ backgroundImage: 'url("/assets/img/hero/hero-6.jpg")' }}
               >
                 <div className="container">
                   <div className="hero-content">
@@ -123,7 +123,7 @@ export default class Home3Slider extends Component {
             <div className="single-slide">
               <div
                 className="slide-bg bg-cover"
-                style={{ backgroundImage: 'url("assets/img/hero/hero-7.jpg")' }}
+                style={{ backgroundImage: 'url("/assets/img/hero/hero-7.jpg")' }}
               >
                 <div className="container">
                   <div className="hero-content">
@@ -167,7 +167,7 @@ export default class Home3Slider extends Component {
             <div className="single-slide">
               <div
                 className="slide-bg bg-cover"
-                style={{ backgroundImage: 'url("assets/img/hero/hero-8.jpg")' }}
+                style={{ backgroundImage: 'url("/assets/img/hero/hero-8.jpg")' }}
               >
                 <div className="container">
                   <div className="hero-content">

@@ -28,7 +28,7 @@ const Page = () => {
           <div>
             <div
               className="slide-bg bg-cover wow zoomIn"
-              style={{ backgroundImage: 'url("assets/img/hero/hero-1.jpg")' }}
+              style={{ backgroundImage: 'url("/assets/img/hero/hero-1.jpg")' }}
             >
               <div className="container">
                 <div className="row g-4 justify-content-between align-items-center">
@@ -70,7 +70,7 @@ const Page = () => {
                       data-delay-in="0.5"
                     >
                       <img
-                        src="assets/img/hero/frame-shape.png"
+                        src="/assets/img/hero/frame-shape.png"
                         alt="shape-img"
                       />
                     </div>
@@ -82,7 +82,7 @@ const Page = () => {
           <div>
             <div
               className="slide-bg bg-cover wow zoomIn"
-              style={{ backgroundImage: 'url("assets/img/hero/hero-2.jpg")' }}
+              style={{ backgroundImage: 'url("/assets/img/hero/hero-2.jpg")' }}
             >
               <div className="container">
                 <div className="row g-4 justify-content-between align-items-center">
@@ -124,7 +124,7 @@ const Page = () => {
                       data-delay-in="0.5"
                     >
                       <img
-                        src="assets/img/hero/frame-shape.png"
+                        src="/assets/img/hero/frame-shape.png"
                         alt="shape-img"
                       />
                     </div>
@@ -136,7 +136,7 @@ const Page = () => {
           <div>
             <div
               className="slide-bg bg-cover wow zoomIn"
-              style={{ backgroundImage: 'url("assets/img/hero/hero-3.jpg")' }}
+              style={{ backgroundImage: 'url("/assets/img/hero/hero-3.jpg")' }}
             >
               <div className="container">
                 <div className="row g-4 justify-content-between align-items-center">
@@ -178,7 +178,7 @@ const Page = () => {
                       data-delay-in="0.5"
                     >
                       <img
-                        src="assets/img/hero/frame-shape.png"
+                        src="/assets/img/hero/frame-shape.png"
                         alt="shape-img"
                       />
                     </div>
@@ -190,7 +190,7 @@ const Page = () => {
           <div>
             <div
               className="slide-bg bg-cover wow zoomIn"
-              style={{ backgroundImage: 'url("assets/img/hero/hero-1.jpg")' }}
+              style={{ backgroundImage: 'url("/assets/img/hero/hero-1.jpg")' }}
             >
               <div className="container">
                 <div className="row g-4 justify-content-between align-items-center">
@@ -232,7 +232,7 @@ const Page = () => {
                       data-delay-in="0.5"
                     >
                       <img
-                        src="assets/img/hero/frame-shape.png"
+                        src="/assets/img/hero/frame-shape.png"
                         alt="shape-img"
                       />
                     </div>
@@ -259,7 +259,7 @@ const Page = () => {
       {/*<< Feature Section Start >>*/}
       <section className="feature-section fix section-padding">
         <div className="shape-image">
-          <img src="assets/img/shape.png" alt="shape-img" />
+          <img src="/assets/img/shape.png" alt="shape-img" />
         </div>
         <div className="container">
           <div className="row g-4">
@@ -276,7 +276,7 @@ const Page = () => {
                   </h3>
                 </div>
                 <div className="icon">
-                  <img src="assets/img/feature/icon-1.svg" alt="icon-img" />
+                  <img src="/assets/img/feature/icon-1.svg" alt="icon-img" />
                 </div>
               </div>
             </div>
@@ -293,7 +293,7 @@ const Page = () => {
                   </h3>
                 </div>
                 <div className="icon">
-                  <img src="assets/img/feature/icon-2.svg" alt="icon-img" />
+                  <img src="/assets/img/feature/icon-2.svg" alt="icon-img" />
                 </div>
               </div>
             </div>
@@ -310,7 +310,7 @@ const Page = () => {
                   </h3>
                 </div>
                 <div className="icon">
-                  <img src="assets/img/feature/icon-3.svg" alt="icon-img" />
+                  <img src="/assets/img/feature/icon-3.svg" alt="icon-img" />
                 </div>
               </div>
             </div>
@@ -333,17 +333,17 @@ const Page = () => {
                 <div
                   className="trusted-client-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/feature/trusted.jpg")',
+                    backgroundImage: 'url("/assets/img/feature/trusted.jpg")',
                   }}
                 >
                   <div className="icon-box">
                     <img
-                      src="assets/img/circle.png"
+                      src="/assets/img/circle.png"
                       alt="img"
                       className="text-circle"
                     />
                     <div className="icon">
-                      <img src="assets/img/icon.png" alt="icon-img" />
+                      <img src="/assets/img/icon.png" alt="icon-img" />
                     </div>
                   </div>
                   <div className="counter-main-area">
@@ -564,25 +564,25 @@ const Page = () => {
               className="brand-carousel-active"
             >
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
               <div className="brand-image">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src="/assets/img/brand/01.png" alt="brand-img" />
               </div>
             </Slider>
           </div>
@@ -670,7 +670,7 @@ const Page = () => {
                           <Link
                             href="project-details"
                             className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/01.jpg"
+                            data-image="/assets/img/project/01.jpg"
                           >
                             Coors Banquet Brand design
                           </Link>
@@ -685,7 +685,7 @@ const Page = () => {
                           <Link
                             href="project-details"
                             className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/02.jpg"
+                            data-image="/assets/img/project/02.jpg"
                           >
                             Complete Project Marketing
                           </Link>
@@ -702,7 +702,7 @@ const Page = () => {
                           <Link
                             href="project-details"
                             className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/03.jpg"
+                            data-image="/assets/img/project/03.jpg"
                           >
                             Digital Marketing 2024
                           </Link>
@@ -717,7 +717,7 @@ const Page = () => {
                           <Link
                             href="project-details"
                             className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/04.jpg"
+                            data-image="/assets/img/project/04.jpg"
                           >
                             Coors Banquet Brand design
                           </Link>
@@ -734,7 +734,7 @@ const Page = () => {
                           <Link
                             href="project-details"
                             className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/05.jpg"
+                            data-image="/assets/img/project/05.jpg"
                           >
                             web development Brand design
                           </Link>
@@ -749,7 +749,7 @@ const Page = () => {
                           <Link
                             href="project-details"
                             className="changeImage2 wow fadeInUp pt-0 clicked"
-                            data-image="assets/img/project/06.jpg"
+                            data-image="/assets/img/project/06.jpg"
                           >
                             Coors Banquet Brand design
                           </Link>
@@ -763,7 +763,7 @@ const Page = () => {
                 <div className="image case-studies-image">
                   <img
                     id="myImage2"
-                    src="assets/img/project/01.jpg"
+                    src="/assets/img/project/01.jpg"
                     alt="image"
                   />
                   <Link href="project-details" className="icon">
@@ -778,7 +778,7 @@ const Page = () => {
       {/*<< Counter Section Start >>*/}
       <section className="counter-section section-padding pt-0 section-bg">
         <div className="line-shape">
-          <img src="assets/img/line.png" alt="shape-img" />
+          <img src="/assets/img/line.png" alt="shape-img" />
         </div>
         <div className="container">
           <div className="counter-wrapper">
@@ -882,7 +882,7 @@ const Page = () => {
                 <div
                   className="author-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/testimonial/01.png")',
+                    backgroundImage: 'url("/assets/img/testimonial/01.png")',
                   }}
                 />
                 <div className="author-content">
@@ -905,7 +905,7 @@ const Page = () => {
                 <div
                   className="author-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/testimonial/03.png")',
+                    backgroundImage: 'url("/assets/img/testimonial/03.png")',
                   }}
                 />
                 <div className="author-content">
@@ -928,7 +928,7 @@ const Page = () => {
                 <div
                   className="author-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/testimonial/02.png")',
+                    backgroundImage: 'url("/assets/img/testimonial/02.png")',
                   }}
                 />
                 <div className="author-content">
@@ -950,7 +950,7 @@ const Page = () => {
                 <div
                   className="author-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/testimonial/01.png")',
+                    backgroundImage: 'url("/assets/img/testimonial/01.png")',
                   }}
                 />
                 <div className="author-content">
@@ -1011,7 +1011,7 @@ const Page = () => {
               <div className="single-news-items">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/01.jpg")' }}
+                  style={{ backgroundImage: 'url("/assets/img/news/01.jpg")' }}
                 >
                   <Link href="news-details" className="icon">
                     <i className="fal fa-arrow-right" />
@@ -1039,7 +1039,7 @@ const Page = () => {
               <div className="single-news-items active">
                 <div
                   className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/02.jpg")' }}
+                  style={{ backgroundImage: 'url("/assets/img/news/02.jpg")' }}
                 >
                   <Link href="news-details" className="icon">
                     <i className="fal fa-arrow-right" />
@@ -1071,19 +1071,19 @@ const Page = () => {
         <div className="container">
           <div className="contact-wrapper">
             <div className="shape-image">
-              <img src="assets/img/contact/bg-shape.png" alt="shape-img" />
+              <img src="/assets/img/contact/bg-shape.png" alt="shape-img" />
             </div>
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div
                   className="contact-image bg-cover"
                   style={{
-                    backgroundImage: 'url("assets/img/contact/01.jpg")',
+                    backgroundImage: 'url("/assets/img/contact/01.jpg")',
                   }}
                 >
                   <div className="shape-image-2">
                     <img
-                      src="assets/img/contact/shape-img.png"
+                      src="/assets/img/contact/shape-img.png"
                       alt="shape-img"
                     />
                   </div>

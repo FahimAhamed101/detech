@@ -19,10 +19,10 @@ export default class Testimonial4Slider extends Component {
     return (
       <section className="testimonial-section-4 fix section-padding">
         <div className="client-1">
-          <img src="assets/img/testimonial/08.png" alt="img" />
+          <img src="/assets/img/testimonial/08.png" alt="img" />
         </div>
         <div className="client-2">
-          <img src="assets/img/testimonial/09.png" alt="img" />
+          <img src="/assets/img/testimonial/09.png" alt="img" />
         </div>
         <div className="container">
           <Slider
@@ -37,7 +37,7 @@ export default class Testimonial4Slider extends Component {
                     <div
                       className="testimonial-image bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/testimonial/07.png")',
+                        backgroundImage: 'url("/assets/img/testimonial/07.png")',
                       }}
                     />
                     <div className="client-info">
@@ -73,7 +73,7 @@ export default class Testimonial4Slider extends Component {
                     <div
                       className="testimonial-image bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/testimonial/07.png")',
+                        backgroundImage: 'url("/assets/img/testimonial/07.png")',
                       }}
                     />
                     <div className="client-info">
@@ -109,7 +109,7 @@ export default class Testimonial4Slider extends Component {
                     <div
                       className="testimonial-image bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/testimonial/07.png")',
+                        backgroundImage: 'url("/assets/img/testimonial/07.png")',
                       }}
                     />
                     <div className="client-info">
@@ -145,7 +145,7 @@ export default class Testimonial4Slider extends Component {
                     <div
                       className="testimonial-image bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/testimonial/07.png")',
+                        backgroundImage: 'url("/assets/img/testimonial/07.png")',
                       }}
                     />
                     <div className="client-info">

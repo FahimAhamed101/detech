@@ -11,7 +11,7 @@ const Notfount = () => {
             <div className="col-lg-8">
               <div className="error-items text-center">
                 <div className="error-image wow fadeInUp" data-wow-delay=".3s">
-                  <img src="assets/img/error.png" alt="img" />
+                  <img src="/assets/img/error.png" alt="img" />
                 </div>
                 <Link
                   href="/"

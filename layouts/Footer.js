@@ -8,10 +8,10 @@ const Newsletter = () => {
       <div className="col-lg-7">
         <div className="newsletter-area">
           <div className="shape-1">
-            <img src="assets/img/footer-shape.png" alt="shape-img" />
+            <img src="/assets/img/footer-shape.png" alt="shape-img" />
           </div>
           <div className="shape-2">
-            <img src="assets/img/footer-shape-2.png" alt="shape-img" />
+            <img src="/assets/img/footer-shape-2.png" alt="shape-img" />
           </div>
           <div className="newsletter-title">
             <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -207,14 +207,14 @@ const FooterRight = () => {
           <p>Browse gigs, compare packages, and start your project professionally.</p>
           <div className="apps-image d-flex align-items-center">
             <a href={fiverrProfile.profileUrl} target="_blank" rel="noreferrer">
-              <img src="assets/img/app-store.png" alt="Fiverr profile" />
+              <img src="/assets/img/app-store.png" alt="Fiverr profile" />
             </a>
             <a
               href={fiverrProfile.primaryGigUrl}
               target="_blank"
               rel="noreferrer"
             >
-              <img src="assets/img/google-play.png" alt="Featured Fiverr gig" />
+              <img src="/assets/img/google-play.png" alt="Featured Fiverr gig" />
             </a>
           </div>
           <div className="support-text">
@@ -238,7 +238,7 @@ const FooterLeft = () => {
       <div className="single-footer-widget">
         <div className="widget-head">
           <Link href="/">
-            <img src="assets/img/logo/footer-logo.svg" alt="logo-img" />
+            <img src="/assets/img/logo/footer-logo.svg" alt="logo-img" />
           </Link>
         </div>
         <div className="footer-content">
@@ -312,7 +312,7 @@ const Footer3 = () => {
         <div className="footer-top">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <Link href="/">
-              <img src="assets/img/logo/footer-logo-2.svg" alt="img" />
+              <img src="/assets/img/logo/footer-logo-2.svg" alt="img" />
             </Link>
           </div>
           <ul className="wow fadeInUp" data-wow-delay=".5s">

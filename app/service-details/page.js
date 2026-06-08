@@ -16,7 +16,7 @@ const Page = () => {
               <div className="col-12 col-lg-8">
                 <div className="service-details-items">
                   <div className="details-image">
-                    <img src="assets/img/service/details-1.jpg" alt="img" />
+                    <img src="/assets/img/service/details-1.jpg" alt="img" />
                   </div>
                   <div className="details-content">
                     <h3>{featuredGig.title}</h3>
@@ -54,7 +54,7 @@ const Page = () => {
                         <div className="col-lg-6">
                           <div className="video-image">
                             <img
-                              src="assets/img/service/details-2.jpg"
+                              src="/assets/img/service/details-2.jpg"
                               alt="img"
                             />
                             <div className="video-box">
@@ -80,13 +80,13 @@ const Page = () => {
                       <div className="row g-4">
                         <div className="col-lg-6">
                           <img
-                            src="assets/img/service/details-3.jpg"
+                            src="/assets/img/service/details-3.jpg"
                             alt="img"
                           />
                         </div>
                         <div className="col-lg-6">
                           <img
-                            src="assets/img/service/details-4.jpg"
+                            src="/assets/img/service/details-4.jpg"
                             alt="img"
                           />
                         </div>

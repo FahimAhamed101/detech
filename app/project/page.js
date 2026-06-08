@@ -11,8 +11,8 @@ const page = () => {
           <div className="row g-4">
             <div className="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
               <div className="project-image">
-                <img src="assets/img/project/07.jpg" alt="project-img" />
-                <a href="assets/img/project/07.jpg" className="icon img-popup">
+                <img src="/assets/img/project/07.jpg" alt="project-img" />
+                <a href="/assets/img/project/07.jpg" className="icon img-popup">
                   <i className="fal fa-plus" />
                 </a>
                 <div className="project-content">
@@ -27,8 +27,8 @@ const page = () => {
             </div>
             <div className="col-lg-5 wow fadeInUp" data-wow-delay=".5s">
               <div className="project-image">
-                <img src="assets/img/project/08.jpg" alt="project-img" />
-                <a href="assets/img/project/08.jpg" className="icon img-popup">
+                <img src="/assets/img/project/08.jpg" alt="project-img" />
+                <a href="/assets/img/project/08.jpg" className="icon img-popup">
                   <i className="fal fa-plus" />
                 </a>
                 <div className="project-content">
@@ -43,8 +43,8 @@ const page = () => {
             </div>
             <div className="col-lg-5 wow fadeInUp" data-wow-delay=".3s">
               <div className="project-image">
-                <img src="assets/img/project/09.jpg" alt="project-img" />
-                <a href="assets/img/project/09.jpg" className="icon img-popup">
+                <img src="/assets/img/project/09.jpg" alt="project-img" />
+                <a href="/assets/img/project/09.jpg" className="icon img-popup">
                   <i className="fal fa-plus" />
                 </a>
                 <div className="project-content">
@@ -59,8 +59,8 @@ const page = () => {
             </div>
             <div className="col-lg-7 wow fadeInUp" data-wow-delay=".5s">
               <div className="project-image">
-                <img src="assets/img/project/10.jpg" alt="project-img" />
-                <a href="assets/img/project/10.jpg" className="icon img-popup">
+                <img src="/assets/img/project/10.jpg" alt="project-img" />
+                <a href="/assets/img/project/10.jpg" className="icon img-popup">
                   <i className="fal fa-plus" />
                 </a>
                 <div className="project-content">
@@ -75,8 +75,8 @@ const page = () => {
             </div>
             <div className="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
               <div className="project-image">
-                <img src="assets/img/project/11.jpg" alt="project-img" />
-                <a href="assets/img/project/11.jpg" className="icon img-popup">
+                <img src="/assets/img/project/11.jpg" alt="project-img" />
+                <a href="/assets/img/project/11.jpg" className="icon img-popup">
                   <i className="fal fa-plus" />
                 </a>
                 <div className="project-content">
@@ -91,8 +91,8 @@ const page = () => {
             </div>
             <div className="col-lg-5 wow fadeInUp" data-wow-delay=".5s">
               <div className="project-image">
-                <img src="assets/img/project/12.jpg" alt="project-img" />
-                <a href="assets/img/project/12.jpg" className="icon img-popup">
+                <img src="/assets/img/project/12.jpg" alt="project-img" />
+                <a href="/assets/img/project/12.jpg" className="icon img-popup">
                   <i className="fal fa-plus" />
                 </a>
                 <div className="project-content">

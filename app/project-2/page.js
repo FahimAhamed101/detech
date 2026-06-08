@@ -27,7 +27,7 @@ const page = () => {
             <div className="case-study-items">
               <div className="case-study-image">
                 <img
-                  src="assets/img/case-studies/05.jpg"
+                  src="/assets/img/case-studies/05.jpg"
                   alt="case-study-img"
                 />
               </div>
@@ -46,7 +46,7 @@ const page = () => {
             <div className="case-study-items">
               <div className="case-study-image">
                 <img
-                  src="assets/img/case-studies/06.jpg"
+                  src="/assets/img/case-studies/06.jpg"
                   alt="case-study-img"
                 />
               </div>
@@ -65,7 +65,7 @@ const page = () => {
             <div className="case-study-items">
               <div className="case-study-image">
                 <img
-                  src="assets/img/case-studies/07.jpg"
+                  src="/assets/img/case-studies/07.jpg"
                   alt="case-study-img"
                 />
               </div>
@@ -84,7 +84,7 @@ const page = () => {
             <div className="case-study-items">
               <div className="case-study-image">
                 <img
-                  src="assets/img/case-studies/05.jpg"
+                  src="/assets/img/case-studies/05.jpg"
                   alt="case-study-img"
                 />
               </div>
