@@ -4,7 +4,8 @@ const detectedPrimaryGigUrl = "https://www.fiverr.com/s/YRVma4z";
 export const siteConfig = {
   siteName: "TomTech",
   alternateSiteName: "Tom Tech",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "",
+  siteUrl:
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.getyoursoftware.top",
   defaultTitle:
     "TomTech | Web App Development, Mobile App Development, and AI Automation Agency",
   titleTemplate: "%s | TomTech",
