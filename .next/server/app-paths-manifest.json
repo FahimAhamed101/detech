@@ -3,8 +3,8 @@
   "/index-2/page": "app/index-2/page.js",
   "/index-3/page": "app/index-3/page.js",
   "/index-4/page": "app/index-4/page.js",
-  "/index-one-page/page": "app/index-one-page/page.js",
   "/index-four-page/page": "app/index-four-page/page.js",
+  "/index-one-page/page": "app/index-one-page/page.js",
   "/index-three-page/page": "app/index-three-page/page.js",
   "/index-two-page/page": "app/index-two-page/page.js",
   "/news-details/page": "app/news-details/page.js",
@@ -18,8 +18,8 @@
   "/team/page": "app/team/page.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/faq/page": "app/faq/page.js",
-  "/contact/page": "app/contact/page.js",
   "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
   "/service/page": "app/service/page.js"
 }
