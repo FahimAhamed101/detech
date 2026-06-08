@@ -97,9 +97,11 @@ export const siteMetadata = {
     images: [defaultOgImage],
   },
   robots: buildRobots(false),
-  verification: process.env.GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
-    : undefined,
+  verification: {
+    google:
+      process.env.GOOGLE_SITE_VERIFICATION ||
+      "t-prsZPoB0ZmYIXisc7XRN3WCXbB5xV83Rbybfa9HFA",
+  },
 };
 
 export const getWebSiteSchema = () => ({
