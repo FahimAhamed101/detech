@@ -162,8 +162,8 @@ const page = () => {
                     >
                       <h4>Email</h4>
                       <h5>
-                        <a href="mailto:fahimahamedweb@gmail.com" className="link">
-                          fahimahamedweb@gmail.com
+                        <a href="mailto:tomalahamed0@gmail.com" className="link">
+                          tomalahamed0@gmail.com
                         </a>
                       </h5>
                     </div>

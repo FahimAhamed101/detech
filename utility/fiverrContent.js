@@ -76,7 +76,7 @@ export const fiverrProfile = {
     process.env.NEXT_PUBLIC_FIVERR_PROFILE_URL || detectedFiverrProfile,
   primaryGigUrl:
     process.env.NEXT_PUBLIC_FIVERR_PRIMARY_GIG_URL || detectedPrimaryGigUrl,
-  supportEmail: "fahimahamedweb@gmail.com",
+  supportEmail: "tomalahamed0@gmail.com",
   phone: "+8801706617723",
   location: "Gulshan, Dhaka, Bangladesh",
   locality: "Dhaka",
