@@ -8,12 +8,15 @@ import {
   deliverySteps,
   engagementModels,
   serviceAreas,
+  siteConfig,
   stackHighlights,
 } from "@/utility/fiverrContent";
 import {
   buildMetadata,
   getBreadcrumbSchema,
+  getItemListSchema,
   getOrganizationSchema,
+  getServiceSchema,
   toJsonLd,
 } from "@/utility/seo";
 
@@ -33,6 +36,11 @@ export const metadata = buildMetadata({
 
 const structuredData = [
   getOrganizationSchema(),
+  ...siteConfig.serviceCatalog.map(getServiceSchema),
+  getItemListSchema({
+    name: "Web, mobile, and AI automation services",
+    items: siteConfig.serviceCatalog,
+  }),
   getBreadcrumbSchema([
     { name: "Home", path: "/" },
     { name: "Services", path: "/service" },

@@ -42,6 +42,29 @@ export const siteConfig = {
     "SaaS application development services",
     "software outsourcing company",
   ],
+  serviceCatalog: [
+    {
+      name: "Web App Development Services",
+      slug: "web-app-development",
+      description:
+        "Custom dashboards, SaaS products, admin panels, portals, marketplaces, APIs, and business web applications.",
+      path: "/service",
+    },
+    {
+      name: "Mobile App Development Services",
+      slug: "mobile-app-development",
+      description:
+        "Flutter, React Native, Kotlin, and Swift app development for startups, business workflows, ecommerce, and internal tools.",
+      path: "/service",
+    },
+    {
+      name: "AI Automation Services",
+      slug: "ai-automation",
+      description:
+        "Python automation and AI workflow engineering for reporting, support, lead handling, operations, and repetitive business tasks.",
+      path: "/service",
+    },
+  ],
 };
 
 export const fiverrProfile = {

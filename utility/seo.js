@@ -96,6 +96,9 @@ export const siteMetadata = {
     description: siteConfig.description,
     images: [defaultOgImage],
   },
+  icons: {
+    icon: "/assets/img/logo/logo.svg",
+  },
   robots: buildRobots(false),
   verification: {
     google:
@@ -111,6 +114,10 @@ export const getWebSiteSchema = () => ({
   name: siteConfig.siteName,
   alternateName: siteConfig.alternateSiteName,
   url: siteUrl,
+  inLanguage: "en",
+  publisher: {
+    "@id": `${siteUrl}/#organization`,
+  },
 });
 
 export const getOrganizationSchema = () => ({
@@ -125,6 +132,7 @@ export const getOrganizationSchema = () => ({
   image: [`${siteUrl}${defaultOgImage}`],
   email: fiverrProfile.supportEmail,
   telephone: fiverrProfile.phone,
+  priceRange: "$$",
   areaServed: "Worldwide",
   sameAs: [fiverrProfile.profileUrl],
   address: {
@@ -155,6 +163,49 @@ export const getOrganizationSchema = () => ({
     "Flutter development",
     "React Native development",
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Web, mobile, and AI development services",
+    itemListElement: siteConfig.serviceCatalog.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service.name,
+        description: service.description,
+        provider: {
+          "@id": `${siteUrl}/#organization`,
+        },
+        areaServed: "Worldwide",
+        serviceType: service.name,
+      },
+    })),
+  },
+});
+
+export const getServiceSchema = (service) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${siteUrl}${service.path}#${service.slug || "service"}`,
+  name: service.name,
+  description: service.description,
+  provider: {
+    "@id": `${siteUrl}/#organization`,
+  },
+  areaServed: "Worldwide",
+  serviceType: service.name,
+  url: `${siteUrl}${service.path}`,
+});
+
+export const getItemListSchema = ({ name, items }) => ({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name,
+  itemListElement: items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: item.name,
+    url: `${siteUrl}${item.path}`,
+  })),
 });
 
 export const getBreadcrumbSchema = (items = []) => ({
@@ -182,13 +233,16 @@ export const getFaqSchema = (items = agencyFaqs) => ({
 });
 
 export const toJsonLd = (schemas) => ({
-  __html: JSON.stringify(Array.isArray(schemas) ? schemas : [schemas]),
+  __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": Array.isArray(schemas) ? schemas : [schemas],
+  }),
 });
 
 export const indexableRoutes = [
-  { path: "/", changeFrequency: "weekly", priority: 1 },
-  { path: "/about", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/service", changeFrequency: "weekly", priority: 0.9 },
-  { path: "/contact", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/faq", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/", changeFrequency: "weekly", priority: 1, lastModified: "2026-06-08" },
+  { path: "/service", changeFrequency: "weekly", priority: 0.95, lastModified: "2026-06-08" },
+  { path: "/about", changeFrequency: "monthly", priority: 0.8, lastModified: "2026-06-08" },
+  { path: "/contact", changeFrequency: "monthly", priority: 0.8, lastModified: "2026-06-08" },
+  { path: "/faq", changeFrequency: "monthly", priority: 0.7, lastModified: "2026-06-08" },
 ];

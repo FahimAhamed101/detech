@@ -8,12 +8,15 @@ import {
   homepageFaqs,
   nicheKeywords,
   serviceAreas,
+  siteConfig,
   stackHighlights,
   stats,
 } from "@/utility/fiverrContent";
 import {
   buildMetadata,
   getOrganizationSchema,
+  getItemListSchema,
+  getServiceSchema,
   getWebSiteSchema,
   toJsonLd,
 } from "@/utility/seo";
@@ -36,6 +39,11 @@ export const metadata = buildMetadata({
 const structuredData = [
   getWebSiteSchema(),
   getOrganizationSchema(),
+  ...siteConfig.serviceCatalog.map(getServiceSchema),
+  getItemListSchema({
+    name: "TomTech core development services",
+    items: siteConfig.serviceCatalog,
+  }),
 ];
 
 export default function HomePage() {
