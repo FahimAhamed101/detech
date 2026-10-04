@@ -16,7 +16,14 @@ import {
   timeAgo,
   type Product,
 } from '@/store/types'
-import { PLAY_STORE_URL, APP_NAME, WHATSAPP_DISPLAY, whatsappUrl } from '@/lib/site-config'
+import {
+  PLAY_STORE_URL,
+  APP_NAME,
+  WHATSAPP_DISPLAY,
+  whatsappUrl,
+  SITE_EMAIL,
+  mailto,
+} from '@/lib/site-config'
 
 const REPORT_REASONS = [
   { value: 'spam', label: 'Spam or advertising' },
@@ -191,6 +198,17 @@ export default function ListingDetailPage() {
               </svg>
               {saved ? 'Saved' : 'Save'}
             </button>
+            <Link
+              href={`/admin/products/${product._id}`}
+              className="action-outline-btn"
+              title="Edit, update or delete this listing in Admin Panel"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>
+              Edit / Manage Ad
+            </Link>
             <button type="button" className="action-outline-btn" onClick={() => setReportOpen(true)}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
@@ -199,6 +217,111 @@ export default function ListingDetailPage() {
               Report listing
             </button>
           </div>
+
+          {/* LIVE DEMO & ADMIN ACCESS */}
+          {(product.link ||
+            product.github ||
+            product.slug?.includes('extremis') ||
+            product.title.toLowerCase().includes('extremis')) && (
+            <div
+              style={{
+                background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+                color: '#ffffff',
+                borderRadius: '12px',
+                padding: '16px 20px',
+                margin: '18px 0',
+                border: '1px solid #38bdf8',
+                boxShadow: '0 8px 24px rgba(2, 132, 199, 0.15)',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  marginBottom: '8px',
+                  flexWrap: 'wrap',
+                }}
+              >
+                <span
+                  style={{
+                    background: '#38bdf8',
+                    color: '#0f172a',
+                    fontWeight: 800,
+                    fontSize: '11px',
+                    padding: '2px 8px',
+                    borderRadius: '4px',
+                  }}
+                >
+                  VERIFIED ASSET
+                </span>
+                <strong style={{ fontSize: '15px' }}>Live Demo &amp; Administrator Access</strong>
+              </div>
+              <p style={{ margin: '0 0 12px', fontSize: '13px', color: '#cbd5e1' }}>
+                Inspect the running web application and test out the backend administration system
+                before purchasing:
+              </p>
+              <div
+                style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}
+              >
+                <a
+                  href={product.link || 'https://extremis.top/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    background: '#38bdf8',
+                    color: '#0f172a',
+                    fontWeight: 700,
+                    fontSize: '13px',
+                    padding: '8px 14px',
+                    borderRadius: '6px',
+                    textDecoration: 'none',
+                  }}
+                >
+                  🌐 Open Live Website ({product.link || 'https://extremis.top/'}) ↗
+                </a>
+                {(product.slug?.includes('extremis') ||
+                  product.title.toLowerCase().includes('extremis')) && (
+                  <a
+                    href="https://extremis.top/admin/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      background: 'rgba(255,255,255,0.1)',
+                      color: '#ffffff',
+                      fontWeight: 600,
+                      fontSize: '13px',
+                      padding: '8px 14px',
+                      borderRadius: '6px',
+                      textDecoration: 'none',
+                      border: '1px solid rgba(255,255,255,0.2)',
+                    }}
+                  >
+                    🛡️ Admin Demo (admin@gmail.com / 12345678) ↗
+                  </a>
+                )}
+                {product.github && (
+                  <a
+                    href={product.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      background: 'rgba(255,255,255,0.1)',
+                      color: '#ffffff',
+                      fontWeight: 600,
+                      fontSize: '13px',
+                      padding: '8px 14px',
+                      borderRadius: '6px',
+                      textDecoration: 'none',
+                      border: '1px solid rgba(255,255,255,0.2)',
+                    }}
+                  >
+                    📥 Download Code Link ↗
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
  
           {/* BUY CODE & APP CALL TO ACTION */}
           <div className="buy-code-cta-box" role="region" aria-label="Purchase Source Code">
@@ -242,6 +365,72 @@ export default function ListingDetailPage() {
               >
                 Learn about {APP_NAME} App →
               </Link>
+            </div>
+          </div>
+
+          {/* WE FIX WEBSITES & APPS BANNER */}
+          <div
+            style={{
+              background: '#f8fafc',
+              border: '1px solid #e2e8f0',
+              borderLeft: '4px solid #0284c7',
+              borderRadius: '10px',
+              padding: '16px 20px',
+              margin: '20px 0',
+            }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                marginBottom: '6px',
+                flexWrap: 'wrap',
+              }}
+            >
+              <span style={{ fontSize: '18px' }}>🛠️</span>
+              <strong style={{ fontSize: '15px', color: '#0f172a' }}>
+                We Build, Customize &amp; Fix Websites and Mobile Apps
+              </strong>
+            </div>
+            <p
+              style={{
+                margin: '0 0 10px',
+                fontSize: '13px',
+                color: '#475569',
+                lineHeight: 1.5,
+              }}
+            >
+              Need this code modified, customized for your brand, or have an existing website or
+              mobile app that needs bug fixes, new features, or server deployment? Our verified
+              engineers are available 24/7.
+            </p>
+            <div
+              style={{
+                display: 'flex',
+                gap: '12px',
+                flexWrap: 'wrap',
+                alignItems: 'center',
+                fontSize: '13px',
+              }}
+            >
+              <a
+                href={whatsappUrl(
+                  `Hello, I need custom web/app development or bug fixes for "${product.title}"`
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#0284c7', fontWeight: 700, textDecoration: 'none' }}
+              >
+                💬 WhatsApp: {WHATSAPP_DISPLAY} →
+              </a>
+              <span style={{ color: '#cbd5e1' }}>•</span>
+              <a
+                href={mailto(`Inquiry about ${product.title} / Custom Bug Fixes`)}
+                style={{ color: '#0284c7', fontWeight: 700, textDecoration: 'none' }}
+              >
+                ✉️ Email: {SITE_EMAIL} →
+              </a>
             </div>
           </div>
 

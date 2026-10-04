@@ -209,6 +209,210 @@ function LeaderboardAd() {
   )
 }
 
+function ExtremisFeaturedSpotlight() {
+  return (
+    <section
+      className="extremis-spotlight-card"
+      style={{
+        background: 'linear-gradient(135deg, #0b1329 0%, #172554 45%, #0f172a 100%)',
+        borderRadius: '16px',
+        padding: '24px 28px',
+        margin: '12px 0 24px',
+        border: '2px solid #38bdf8',
+        boxShadow: '0 16px 36px -8px rgba(2, 132, 199, 0.3)',
+        color: '#ffffff',
+      }}
+    >
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '24px',
+          alignItems: 'center',
+        }}
+      >
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px', flexWrap: 'wrap' }}>
+            <span
+              style={{
+                background: '#e0f2fe',
+                color: '#0369a1',
+                fontWeight: 800,
+                fontSize: '11px',
+                padding: '4px 10px',
+                borderRadius: '6px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.06em',
+              }}
+            >
+              ⭐ Pinned Top Featured Ad
+            </span>
+            <span
+              style={{
+                background: '#fef08a',
+                color: '#854d0e',
+                fontWeight: 700,
+                fontSize: '11px',
+                padding: '4px 10px',
+                borderRadius: '6px',
+                textTransform: 'uppercase',
+              }}
+            >
+              Turnkey Asset For Sale
+            </span>
+            <span style={{ color: '#38bdf8', fontSize: '13px', fontWeight: 700 }}>$1,200 USD</span>
+          </div>
+
+          <h2 style={{ fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 800, margin: '0 0 10px', color: '#f8fafc', lineHeight: 1.25 }}>
+            Extremis News (<a href="https://extremis.top/" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'underline' }}>https://extremis.top/</a>)
+          </h2>
+          <p style={{ fontSize: '14px', lineHeight: 1.55, color: '#cbd5e1', margin: '0 0 16px' }}>
+            Complete Online Newspaper &amp; Editorial Magazine CMS Website. Includes full domain transfer (<strong>extremis.top</strong>), complete source code, AI auto-poster, dual language (EN/BN), Google AdSense spots, and 41+ role permissions.
+          </p>
+
+          <div
+            style={{
+              background: 'rgba(255, 255, 255, 0.08)',
+              borderRadius: '8px',
+              padding: '12px 14px',
+              fontSize: '12px',
+              marginBottom: '18px',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
+            }}
+          >
+            <div><strong>🌐 Public Live Demo:</strong> <a href="https://extremis.top/" target="_blank" rel="noopener noreferrer" style={{ color: '#7dd3fc', textDecoration: 'underline' }}>https://extremis.top/</a></div>
+            <div style={{ marginTop: '4px' }}><strong>🛡️ Admin Demo:</strong> <a href="https://extremis.top/admin/login" target="_blank" rel="noopener noreferrer" style={{ color: '#7dd3fc', textDecoration: 'underline' }}>https://extremis.top/admin/login</a> &bull; Email: <code>admin@gmail.com</code> &bull; Password: <code>12345678</code></div>
+          </div>
+
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
+            <a
+              href={whatsappUrl('Hello! I want to buy Extremis News (https://extremis.top/) listed on getyoursoftware.top')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-cta-button"
+              style={{ padding: '11px 18px', fontSize: '13px' }}
+            >
+              <span>💬</span> Buy on WhatsApp ({WHATSAPP_DISPLAY})
+            </a>
+            <Link
+              href="/listing/extremis-top-online-newspaper-magazine-cms-website"
+              style={{
+                background: '#ffffff',
+                color: '#0f172a',
+                padding: '11px 18px',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '13px',
+                textDecoration: 'none',
+              }}
+            >
+              View Full Details →
+            </Link>
+            <a
+              href="https://extremis.top/admin/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: '#93c5fd',
+                fontSize: '13px',
+                fontWeight: 600,
+                textDecoration: 'underline',
+              }}
+            >
+              Test Admin Demo ↗
+            </a>
+          </div>
+        </div>
+
+        <div style={{ textAlign: 'center' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/products/extremis-news/1-homepage.png"
+            alt="Extremis News Website For Sale"
+            style={{
+              width: '100%',
+              maxHeight: '240px',
+              objectFit: 'cover',
+              borderRadius: '12px',
+              border: '2px solid rgba(255, 255, 255, 0.15)',
+              boxShadow: '0 12px 28px rgba(0, 0, 0, 0.4)',
+            }}
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function DeveloperServicesBanner() {
+  return (
+    <section
+      style={{
+        background: 'linear-gradient(135deg, #111827 0%, #1f2937 100%)',
+        color: '#ffffff',
+        borderRadius: '14px',
+        padding: '24px 28px',
+        margin: '28px 0',
+        border: '1px solid #374151',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        gap: '20px',
+      }}
+    >
+      <div>
+        <span
+          style={{
+            background: '#10b981',
+            color: '#ffffff',
+            fontSize: '11px',
+            fontWeight: 800,
+            padding: '3px 8px',
+            borderRadius: '4px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+          }}
+        >
+          Custom Development &amp; Support
+        </span>
+        <h3 style={{ margin: '8px 0 4px', fontSize: '20px', fontWeight: 800, color: '#f9fafb' }}>
+          🛠️ We Build, Customize &amp; Fix Websites and Mobile Apps
+        </h3>
+        <p style={{ margin: 0, fontSize: '14px', color: '#9ca3af', maxWidth: '680px', lineHeight: 1.5 }}>
+          Need bug fixes, API integrations, script deployment, or customized mobile apps? Our verified engineering team delivers prompt solutions. Contact us anytime at <strong>{SITE_EMAIL}</strong> or on WhatsApp at <strong>{WHATSAPP_DISPLAY}</strong>.
+        </p>
+      </div>
+
+      <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
+        <a
+          href={whatsappUrl('Hello, I need custom web/app development or bug fixes')}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-cta-button"
+          style={{ padding: '11px 18px', fontSize: '13px' }}
+        >
+          <span>💬</span> Chat on WhatsApp
+        </a>
+        <a
+          href={mailto('Custom Development & Bug Fix Request')}
+          style={{
+            background: '#ffffff',
+            color: '#111827',
+            padding: '11px 18px',
+            borderRadius: '8px',
+            fontSize: '13px',
+            fontWeight: 700,
+            textDecoration: 'none',
+          }}
+        >
+          ✉ Email: {SITE_EMAIL}
+        </a>
+      </div>
+    </section>
+  )
+}
+
 function RowSkeleton() {
   const bar = { background: '#EFEDF3', color: 'transparent', borderRadius: 4 }
   return (
@@ -252,11 +456,16 @@ export default function Page() {
 
       <div className="content-shell">
         <div className="intro-row">
-          <h1 className="eyebrow">Canada&apos;s most trusted and loved marketplace</h1>
+          <h1 className="eyebrow">
+            Buy Turnkey Websites, Mobile Apps &amp; Source Codes — getyoursoftware.top
+          </h1>
           <a className="ad-choice" href="#">
             AdChoices ▷
           </a>
         </div>
+
+        {/* PINNED TOP FEATURED AD: EXTREMIS NEWS */}
+        <ExtremisFeaturedSpotlight />
 
         {dbUnreachable && (
           <div
@@ -280,7 +489,20 @@ export default function Page() {
           showInfo
           showYourAd
         />
-        {loading ? <RowSkeleton /> : <ListingRow products={gallery.data?.items ?? []} />}
+        {loading ? (
+          <RowSkeleton />
+        ) : (
+          <ListingRow
+            products={[...(gallery.data?.items ?? [])].sort((a, b) => {
+              if (a.slug.includes('extremis')) return -1
+              if (b.slug.includes('extremis')) return 1
+              return 0
+            })}
+          />
+        )}
+
+        {/* DEVELOPER SERVICES: WE BUILD & FIX WEBSITES / APPS */}
+        <DeveloperServicesBanner />
 
         <SectionHeading
           title="Recently added near you"
@@ -373,4 +595,7 @@ export default function Page() {
         </section>
       </div>
 
-      
+      <SiteFooter />
+    </main>
+  )
+}

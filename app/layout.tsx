@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next'
-import Script from 'next/script'
 import './globals.css'
 import Providers from '@/components/Providers'
 import {
@@ -10,38 +9,44 @@ import {
   APP_PACKAGE,
 } from '@/lib/site-config'
 
-const GA_MEASUREMENT_ID = 'G-EQPRMKK1ZX'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Buy & Sell Websites, Apps & Software | Official App: ${APP_NAME}`,
+    default: `${SITE_NAME} — Buy Verified Websites, Source Codes & Mobile Apps | Official App: ${APP_NAME}`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    'The premier online marketplace for buying and selling turnkey websites, mobile apps, SaaS scripts, CMS portals, and digital software businesses. Download our official BuyCode Pro app on Google Play Store or contact directly on WhatsApp.',
+    'The premier marketplace for US, UK, Canada, Australia and international tech entrepreneurs to buy verified source codes, turnkey CMS websites (Extremis News), SaaS scripts, and mobile apps. We also fix and build custom websites and apps. Contact: fahimahamedweb@gmail.com or WhatsApp: +8801706617723.',
   keywords: [
-    'buy websites',
-    'sell websites',
+    'buy websites USA',
+    'buy turnkey websites UK',
+    'turnkey website Canada',
+    'extremis.top website for sale',
+    'news portal website for sale',
+    'buy source code online',
     'apps for sale',
     'software marketplace',
-    'buy mobile app',
-    'buy SaaS',
-    'turnkey website',
+    'buy mobile app source code',
+    'buy Flutter app',
+    'buy React Next.js script',
+    'buy SaaS platform',
+    'fix website bugs',
+    'we fix websites and apps',
+    'custom web app development',
     'BuyCode Pro',
     'BuyCode Pro app',
     'download BuyCode Pro',
     'buy source code google play',
-    'extremis.top',
-    'news portal website',
-    'website broker',
+    'website broker USA',
     'digital assets marketplace',
     'getyoursoftware.top',
   ],
-  authors: [{ name: 'getyoursoftware.top' }],
+  authors: [{ name: 'getyoursoftware.top' }, { name: 'Fahim Ahamed', url: 'https://github.com/FahimAhamed101' }],
   creator: 'getyoursoftware.top',
   publisher: 'getyoursoftware.top',
   applicationName: SITE_NAME,
+  category: 'technology',
   alternates: {
     canonical: '/',
   },
@@ -148,23 +153,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-        >
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}

@@ -313,9 +313,9 @@ export default function ProductForm({
         </Card>
 
         <Card>
-          <h2 className="mb-4 text-sm font-semibold text-ink">Project &amp; Code Repository Links</h2>
+          <h2 className="mb-4 text-sm font-semibold text-ink">Project &amp; Download Code Links</h2>
           <p className="mb-4 text-xs text-ink-muted">
-            Configure live demo link, GitHub repository URL, and User ID for this listing (used by /api/projects).
+            Configure live demo link, download code link, and User ID for this listing (used by /api/projects).
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             <Field label="Live Demo URL (link)">
@@ -325,11 +325,11 @@ export default function ProductForm({
                 placeholder="https://example.com"
               />
             </Field>
-            <Field label="GitHub Repository URL (github)">
+            <Field label="Download Code Link (github)">
               <Input
                 value={values.github ?? ''}
                 onChange={(e) => set('github', e.target.value)}
-                placeholder="https://github.com/username/repository"
+                placeholder="https://github.com/username/repo or direct download link"
               />
             </Field>
             <Field label="User ID (userId)">

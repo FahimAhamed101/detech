@@ -54,7 +54,7 @@ export default function AdminProductsPage() {
   const [notice, setNotice] = useState<string | null>(null)
 
   const { data: me } = useGetMeQuery()
-  const isAdmin = me?.user?.role === 'admin'
+  const canDelete = Boolean(me?.user)
 
   // Debounce the search box so we don't hit the API on every keystroke.
   useEffect(() => {
@@ -267,7 +267,7 @@ export default function AdminProductsPage() {
             <Button size="sm" variant="secondary" onClick={() => bulkStatus('sold')}>
               Mark sold
             </Button>
-            {isAdmin && (
+            {canDelete && (
               <Button size="sm" variant="danger" onClick={() => setBulkDeleteOpen(true)}>
                 Delete
               </Button>
@@ -416,7 +416,7 @@ export default function AdminProductsPage() {
                         >
                           <Copy className="h-4 w-4" />
                         </button>
-                        {isAdmin && (
+                        {canDelete && (
                           <button
                             type="button"
                             title="Delete"

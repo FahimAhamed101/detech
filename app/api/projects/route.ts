@@ -91,11 +91,22 @@ export async function GET(req: NextRequest) {
       }
     }
 
-    const result = categoryFilter
+    const filtered = categoryFilter
       ? combined.filter((p) => p.category.toLowerCase().includes(categoryFilter))
       : combined
 
-    return NextResponse.json(result, { headers: corsHeaders })
+    // Always feature Extremis News at the top of projects list
+    const sorted = [...filtered].sort((a, b) => {
+      const aIsExtremis =
+        a.slug?.includes('extremis') || a.title?.toLowerCase().includes('extremis')
+      const bIsExtremis =
+        b.slug?.includes('extremis') || b.title?.toLowerCase().includes('extremis')
+      if (aIsExtremis && !bIsExtremis) return -1
+      if (!aIsExtremis && bIsExtremis) return 1
+      return 0
+    })
+
+    return NextResponse.json(sorted, { headers: corsHeaders })
   } catch (error) {
     console.error('Error in /api/projects:', error)
     return NextResponse.json(PROJECTS_DATA, { headers: corsHeaders })

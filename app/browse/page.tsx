@@ -2,8 +2,18 @@ import type { Metadata } from 'next'
 import BrowseClient from '@/components/BrowseClient'
 
 export const metadata: Metadata = {
-  title: 'Browse listings — getyoursoftware.top',
-  description: 'Search and filter every listing on the marketplace.',
+  title: 'Browse Turnkey Websites, Mobile Apps & Source Codes | getyoursoftware.top',
+  description:
+    'Search and buy verified source codes, complete turnkey CMS websites (Extremis News), React, Flutter, and Next.js applications with instant delivery and 24/7 custom developer support.',
+  keywords: [
+    'buy turnkey website',
+    'buy source code online',
+    'extremis news cms website',
+    'turnkey apps for sale',
+    'buy react native code',
+    'buy flutter apps',
+    'web development bug fixes',
+  ],
 }
 
 export const dynamic = 'force-dynamic'
