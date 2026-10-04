@@ -6,6 +6,7 @@ import Message from './models/Message'
 import Report from './models/Report'
 import { hashPassword } from './password'
 import { slugify } from './slug'
+import { PROJECTS_DATA } from './projects-data'
 
 /* ------------------------------------------------------------------ */
 /* Categories                                                          */
@@ -18,6 +19,7 @@ export const CATEGORY_SEED: {
   featured?: boolean
 }[] = [
   { name: 'Buy & Sell', group: 'Buy & Sell', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80', featured: true },
+  { name: 'Websites & Apps for Sale', group: 'Buy & Sell', image: '/images/products/extremis-news/1-homepage.png', featured: true },
   { name: 'Cars & Vehicles', group: 'Cars & Vehicles', image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80', featured: true },
   { name: 'Real Estate', group: 'Real Estate', image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80', featured: true },
   { name: 'Jobs', group: 'Jobs', image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80', featured: true },
@@ -91,10 +93,12 @@ export const CATEGORY_SEED: {
 
 type ProductSeed = {
   title: string
+  slug?: string
   price: number
   priceOnRequest?: boolean
   location: string
   image: string
+  images?: string[]
   category: string
   featured?: boolean
   urgent?: boolean
@@ -107,6 +111,123 @@ type ProductSeed = {
 }
 
 export const PRODUCT_SEED: ProductSeed[] = [
+  {
+    title: 'Extremis News (https://extremis.top/) — Complete Online Newspaper & Magazine CMS Website',
+    slug: 'extremis-top-online-newspaper-magazine-cms-website',
+    price: 1200,
+    priceOnRequest: false,
+    location: 'Worldwide / Online Transfer',
+    image: '/images/products/extremis-news/1-homepage.png',
+    images: [
+      '/images/products/extremis-news/1-homepage.png',
+      '/images/products/extremis-news/2-dashboard.png',
+      '/images/products/extremis-news/3-admin-news.png',
+      '/images/products/extremis-news/4-single-article.png',
+    ],
+    category: 'Websites & Apps for Sale',
+    featured: true,
+    urgent: true,
+    brand: 'Extremis News',
+    condition: 'like-new',
+    description: `## 🚀 Extremis News (https://extremis.top/) — Complete Turnkey Online Newspaper & Magazine CMS
+
+Turnkey digital newspaper and editorial magazine CMS website available for immediate purchase and ownership transfer. Perfect for digital publishers, media entrepreneurs, affiliate networks, and developers seeking an enterprise-grade content portal ready to monetize.
+
+---
+
+### 🌐 Live Website & Admin Demo Access
+
+- **Public Website Live Demo**: [https://extremis.top/](https://extremis.top/)
+- **Admin Control Panel**: [https://extremis.top/admin/login](https://extremis.top/admin/login)
+- **Demo Admin Email**: \`admin@gmail.com\`
+- **Demo Admin Password**: \`12345678\`
+
+*(Log in with the credentials above to explore the full dashboard, news publishing suite, role permissions, and site settings).*
+
+---
+
+### 📲 HOW TO BUY THIS SOURCE CODE & WEBSITE:
+- 💬 **Call or Chat on WhatsApp**: +8801706617723 ([Click here to chat on WhatsApp](https://wa.me/8801706617723?text=Hello%2C%20I%20want%20to%20buy%20Extremis%20News%20source%20code%20and%20website%20from%20getyoursoftware.top)) for instant price negotiation, live admin walkthrough, and immediate code handover.
+- 📱 **Download BuyCode Pro on Google Play**: [Install BuyCode Pro from Play Store](https://play.google.com/store/apps/details?id=com.Fahim101.tomquiz&pli=1) to securely browse and purchase verified source codes and websites on your Android device.
+
+---
+
+### 🌟 Key Features & Capabilities
+
+#### 1. 📰 Editorial & Automated Publishing Suite
+- **Comprehensive News Management**: Draft, publish, schedule, categorize, and feature news articles across multiple dynamic layouts.
+- **AI Auto-Poster Integration**: Connect automated content feeds to continuously publish fresh, trending news articles hands-free.
+- **Bilingual & Multi-Language**: Dual language support (English & Bangla) with simple language toggling.
+- **Taxonomy & Tags**: 14+ pre-configured news categories (National, Business, Technology, Sports, Health, Culture, Climate, etc.) plus author profiles and tag archives.
+- **Dynamic Homepage Modules**: Breaking News ticker, Featured Hero Slider, Category Rails, Most Viewed block, and Trending News.
+
+#### 2. 🛡️ Advanced Admin & Access Management
+- **Role-Based Permissions**: Granular access control for Admins, Editors, and Contributors with 41+ specific permissions.
+- **Real-Time Analytics Dashboard**: Live metrics tracking Total News (24+), Pending Articles, Categories, Languages, Social Counts, and Subscribers.
+- **Social Integration**: Live follower counters and direct links across major platforms (Facebook, YouTube, X, Instagram).
+- **Communication Center**: Built-in contact message inbox for reader tips, direct messages, and advertising requests.
+
+#### 3. 💰 Monetization & Growth Ready
+- **Ad Management**: Built-in banner ad spots, sidebar display units, and sponsored article slots ready for Google AdSense or direct sponsors.
+- **Audience Capture**: Integrated newsletter subscriber module with email capture.
+- **Viral Engagement**: Instant one-click social sharing (Facebook, Twitter/X, WhatsApp, Telegram, LinkedIn) on every article.
+- **SEO Optimized**: Pre-configured OpenGraph metadata, schema markup, dynamic sitemaps, clean semantic URLs, and fast responsive performance.
+
+---
+
+### 📦 What Is Included in This Sale
+1. **Domain Name Transfer**: Full ownership transfer of the premium domain **\`extremis.top\`**.
+2. **Complete Source Code**: Clean, well-structured frontend and backend codebase.
+3. **Database & Assets**: Full database export including all articles, categories, settings, and media.
+4. **Admin Accounts**: Administrative credentials handover.
+5. **Migration Support**: Assistance with deployment and domain setup on your hosting provider.`,
+    tags: [
+      'website for sale',
+      'extremis.top',
+      'news portal',
+      'cms website',
+      'turnkey website',
+      'newspaper',
+      'apps for sale',
+      'software',
+      'nextjs',
+      'react',
+      'source code',
+    ],
+    seller: {
+      name: 'getyoursoftware.top Verified Seller',
+      email: 'support@getyoursoftware.top',
+      phone: '+8801706617723',
+      location: 'Worldwide Online Transfer',
+      verified: true,
+    },
+  },
+  ...PROJECTS_DATA.map((p) => {
+    const images = p.images.split(',').filter(Boolean)
+    const techTags = p.category.split(',').map((t) => t.trim().toLowerCase())
+    return {
+      title: `${p.title} — Source Code & App`,
+      slug: slugify(p.title),
+      price: 250,
+      priceOnRequest: false,
+      location: 'Worldwide Online Transfer',
+      image: images[0] || 'https://images.unsplash.com/photo-1555066931-4365d14bab8c',
+      images: images.length > 0 ? images : undefined,
+      category: 'Websites & Apps for Sale',
+      featured: true,
+      condition: 'new' as const,
+      brand: p.category.split(',')[0]?.trim() || 'Software Code',
+      description: `## 📱 ${p.title} — Full Source Code & Application\n\n${p.description.replace(/<[^>]+>/g, '')}\n\n---\n\n### 📦 Technical Specifications & Stack:\n- **Tech Stack**: ${p.category}\n${p.github ? `- **GitHub Repository**: [${p.github}](${p.github})\n` : ''}${p.link ? `- **Live Demo URL**: [${p.link}](${p.link})\n` : ''}- **Deliverables**: Complete source code, environment setup guide, and database schemas.\n- **Support**: 1-on-1 developer onboarding and deployment assistance.\n\n---\n\n### 📲 HOW TO BUY THIS SOURCE CODE:\n- 💬 **Call or Chat on WhatsApp**: +8801706617723 ([Click here to chat on WhatsApp](https://wa.me/8801706617723?text=Hello%2C%20I%20want%20to%20buy%20source%20code%20for%20${encodeURIComponent(p.title)}%20from%20getyoursoftware.top)) for instant price negotiation and immediate repository handover.\n- 📱 **Download BuyCode Pro on Google Play**: [Install BuyCode Pro from Play Store](https://play.google.com/store/apps/details?id=com.Fahim101.tomquiz&pli=1) to safely inspect and buy applications directly on your Android phone.`,
+      tags: ['source code', 'app for sale', ...techTags],
+      seller: {
+        name: 'getyoursoftware.top Verified Developer',
+        email: 'support@getyoursoftware.top',
+        phone: '+8801706617723',
+        location: 'Worldwide Online Transfer',
+        verified: true,
+      },
+    }
+  }),
   {
     title: 'J&L Interlocking Landscaping Grass Installation',
     price: 0,
@@ -485,7 +606,7 @@ export async function runSeed(): Promise<SeedResult> {
 
   /* ---- products ---- */
   const prodOps: Parameters<typeof Product.bulkWrite>[0] = PRODUCT_SEED.map((p) => {
-    const slug = slugify(p.title)
+    const slug = p.slug ?? slugify(p.title)
     const catId = catBySlug.get(slugify(p.category)) ?? null
     return {
       updateOne: {
@@ -493,12 +614,14 @@ export async function runSeed(): Promise<SeedResult> {
         update: {
           $set: {
             title: p.title,
-            description: p.description,
+            description: p.description.includes('BuyCode Pro')
+              ? p.description
+              : `${p.description}\n\n---\n### 📲 Buy Source Code & Inquiries:\nCall or message on WhatsApp (+8801706617723) or download our official Android app [BuyCode Pro on Google Play Store](https://play.google.com/store/apps/details?id=com.Fahim101.tomquiz&pli=1) to safely inspect and buy code.`,
             price: p.price,
             priceOnRequest: p.priceOnRequest ?? false,
             category: catId,
             location: p.location,
-            images: [p.image],
+            images: p.images && p.images.length > 0 ? p.images : [p.image],
             brand: p.brand ?? '',
             condition: p.condition ?? 'used',
             status: p.status ?? 'active',
@@ -506,8 +629,8 @@ export async function runSeed(): Promise<SeedResult> {
             urgent: p.urgent ?? false,
             tags: p.tags ?? [],
             seller: {
-              name: p.seller?.name ?? 'Kijiji Member',
-              phone: p.seller?.phone ?? '',
+              name: p.seller?.name ?? 'getyoursoftware.top Member',
+              phone: p.seller?.phone || '+8801706617723',
               email: p.seller?.email ?? '',
               location: p.seller?.location ?? p.location,
               verified: p.seller?.verified ?? false,

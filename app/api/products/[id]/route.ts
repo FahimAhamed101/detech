@@ -66,8 +66,8 @@ export async function DELETE(_req: NextRequest, { params }: Ctx) {
   try {
     const session = await getSession()
     if (!session) return jsonError('Not authenticated', 401)
-    if (session.role !== 'admin') {
-      return jsonError('Only admins can delete listings', 403)
+    if (session.role !== 'admin' && session.role !== 'editor') {
+      return jsonError('Only authorized staff can delete listings', 403)
     }
 
     await dbConnect()

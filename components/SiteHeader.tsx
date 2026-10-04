@@ -7,6 +7,7 @@ import { useGetCategoriesQuery } from '@/store/categoriesApi'
 import CategoryPicker, { type CategorySelection } from '@/components/CategoryPicker'
 import LocationPicker from '@/components/LocationPicker'
 import { LogoLockup } from '@/components/Logo'
+import { PLAY_STORE_URL, APP_NAME } from '@/lib/site-config'
 
 function SearchIcon() {
   return (
@@ -173,6 +174,29 @@ export default function SiteHeader({
 
         <div className="account-actions">
           <LocationPicker value={currentLocation} onChange={handleLocationChange} />
+          <a
+            href={PLAY_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="app-header-badge"
+            title="Download BuyCode Pro on Google Play"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '5px',
+              padding: '6px 12px',
+              borderRadius: '20px',
+              background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
+              color: '#38BDF8',
+              fontSize: '12px',
+              fontWeight: 700,
+              textDecoration: 'none',
+              border: '1px solid #334155',
+            }}
+          >
+            <span>📱</span>
+            <span>Get App</span>
+          </a>
           <Link href="/admin">
             <UserIcon /> Register or Sign In
           </Link>
@@ -190,9 +214,20 @@ export default function SiteHeader({
             </Link>
           ))}
         </div>
-        <a href="#" className="newcomers-pill">
-          Newcomers
-        </a>
+        <Link
+          href="/app"
+          className="newcomers-pill"
+          style={{
+            background: 'linear-gradient(90deg, #E0F2FE 0%, #BAE6FD 100%)',
+            color: '#0369A1',
+            fontWeight: 700,
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '4px',
+          }}
+        >
+          📱 BuyCode Pro App
+        </Link>
         <div className="trending-pill">
           <span className="trending-badge">Trending</span>
           <span>Tires &amp; Rims</span>

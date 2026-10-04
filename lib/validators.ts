@@ -25,6 +25,9 @@ export const productCreateSchema = z.object({
   featured: z.boolean().optional().default(false),
   urgent: z.boolean().optional().default(false),
   tags: z.array(z.string().trim()).optional().default([]),
+  link: z.string().trim().optional().default(''),
+  github: z.string().trim().optional().default(''),
+  userId: z.string().trim().optional().default('65dc52e287bf09def1a37366'),
   seller: z
     .object({
       name: z.string().trim().max(120).optional().default(''),

@@ -40,6 +40,9 @@ export type Product = {
   urgent: boolean
   tags: string[]
   views: number
+  link?: string
+  github?: string
+  userId?: string
   seller: ProductSeller
   createdAt: string
   updatedAt: string

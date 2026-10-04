@@ -1,6 +1,13 @@
 import Link from 'next/link'
 import { LogoLockup } from '@/components/Logo'
-import { SITE_EMAIL, mailto } from '@/lib/site-config'
+import {
+  SITE_EMAIL,
+  mailto,
+  PLAY_STORE_URL,
+  APP_NAME,
+  WHATSAPP_DISPLAY,
+  whatsappUrl,
+} from '@/lib/site-config'
 
 function AppleLogo() {
   return (
@@ -25,6 +32,73 @@ export default function SiteFooter() {
       <div className="footer-inner">
         <div className="footer-brand">
           <LogoLockup tone="on-dark" height={42} />
+        </div>
+
+        {/* WE FIX WEBSITES & APPS BANNER */}
+        <div
+          style={{
+            background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
+            border: '1px solid #334155',
+            borderRadius: '12px',
+            padding: '24px 28px',
+            margin: '20px 0 32px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '16px',
+            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.25)',
+          }}
+        >
+          <div>
+            <span
+              style={{
+                background: '#0284c7',
+                color: '#ffffff',
+                fontSize: '11px',
+                fontWeight: 800,
+                padding: '3px 8px',
+                borderRadius: '4px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+              }}
+            >
+              Developer Services &amp; Support
+            </span>
+            <h3 style={{ margin: '8px 0 4px', fontSize: '18px', fontWeight: 700, color: '#f8fafc' }}>
+              🛠️ We Build, Customize &amp; Fix Websites and Mobile Apps
+            </h3>
+            <p style={{ margin: 0, fontSize: '13px', color: '#94a3b8', maxWidth: '700px', lineHeight: 1.5 }}>
+              Need bug fixes, custom features, script installation, API integrations, or full-stack web/app development?
+              Contact our engineering team directly at <strong>{SITE_EMAIL}</strong> or on WhatsApp at <strong>{WHATSAPP_DISPLAY}</strong>.
+            </p>
+          </div>
+
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}>
+            <a
+              href={whatsappUrl('Hello, I need custom web/app development or bug fixing')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-cta-button"
+              style={{ padding: '10px 16px', fontSize: '13px' }}
+            >
+              <span>💬</span> WhatsApp: {WHATSAPP_DISPLAY}
+            </a>
+            <a
+              href={mailto('Website & App Custom Work / Bug Fix Request')}
+              style={{
+                background: '#ffffff',
+                color: '#0f172a',
+                padding: '10px 16px',
+                borderRadius: '8px',
+                fontSize: '13px',
+                fontWeight: 700,
+                textDecoration: 'none',
+              }}
+            >
+              ✉ {SITE_EMAIL}
+            </a>
+          </div>
         </div>
 
         <div className="footer-links">
@@ -64,7 +138,13 @@ export default function SiteFooter() {
                 <span>App Store</span>
               </div>
             </a>
-            <a className="app-badge" href="#" aria-label="Get it on Google Play">
+            <a
+              className="app-badge"
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download BuyCode Pro on Google Play"
+            >
               <PlayLogo />
               <div className="badge-text">
                 <small>GET IT ON</small>
@@ -82,13 +162,24 @@ export default function SiteFooter() {
         </div>
 
         <div className="footer-contact">
-          <h2>CONTACT</h2>
+          <h2>CONTACT &amp; WHATSAPP</h2>
           <p>
-            Questions, support, billing and payments all go to one address:
+            Questions, support, or buy code via WhatsApp &amp; Email:
           </p>
-          <a className="footer-email" href={mailto('getyoursoftware.top enquiry')}>
-            {SITE_EMAIL}
-          </a>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginTop: '6px' }}>
+            <a
+              className="footer-email"
+              href={whatsappUrl('Hello, I am interested in buying source code / website from getyoursoftware.top')}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#25D366', fontWeight: 600 }}
+            >
+              💬 WhatsApp: {WHATSAPP_DISPLAY}
+            </a>
+            <a className="footer-email" href={mailto('getyoursoftware.top enquiry')}>
+              ✉ {SITE_EMAIL}
+            </a>
+          </div>
         </div>
 
         <div className="footer-copyright">

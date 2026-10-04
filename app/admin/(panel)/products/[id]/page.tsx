@@ -29,7 +29,7 @@ export default function EditProductPage() {
 
   const { data: product, isLoading, isError, error, refetch } = useGetProductQuery(id)
   const { data: me } = useGetMeQuery()
-  const isAdmin = me?.user?.role === 'admin'
+  const canDelete = Boolean(me?.user)
 
   const [updateProduct, { isLoading: saving }] = useUpdateProductMutation()
   const [deleteProduct, { isLoading: deleting }] = useDeleteProductMutation()
@@ -110,7 +110,7 @@ export default function EditProductPage() {
               <ExternalLink className="h-4 w-4" />
               View on site
             </Link>
-            {isAdmin && (
+            {canDelete && (
               <Button variant="danger" onClick={() => setConfirmOpen(true)}>
                 <Trash2 className="h-4 w-4" />
                 Delete

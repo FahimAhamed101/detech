@@ -6,18 +6,26 @@ import { useGetCategoriesQuery } from '@/store/categoriesApi'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
 import { priceLabel, primaryImage, type Category, type Product } from '@/store/types'
+import {
+  PLAY_STORE_URL,
+  APP_NAME,
+  WHATSAPP_DISPLAY,
+  whatsappUrl,
+  SITE_EMAIL,
+  mailto,
+} from '@/lib/site-config'
 
 const popularSearches = [
-  'Free Stuff',
-  'Swap / Trade',
-  'Wanted Ads',
-  '1 Bedroom Apartment',
-  'Apartment',
-  'Apartment For Rent',
-  'House For Rent',
-  'Iphone',
-  'Massage',
-  'Private Room For Rent',
+  'Turnkey Websites',
+  'News Portal Website',
+  'Mobile Apps',
+  'SaaS Scripts',
+  'Extremis News',
+  'eCommerce Websites',
+  'CMS Platforms',
+  'React Next.js Apps',
+  'Digital Businesses',
+  'Websites for Sale',
 ]
 
 function SectionHeading({
@@ -112,22 +120,90 @@ function CategoryTiles({
 
 function LeaderboardAd() {
   return (
-    <div className="ad-banner-section">
-      <div className="leaderboard-banner" role="region" aria-label="Advertisement">
-        <div className="ad-left">
-          <div className="product-can">
-            <span>SPRAY</span>
+    <div className="ad-banner-section" style={{ padding: '0 20px' }}>
+      <div
+        className="homepage-app-banner"
+        role="region"
+        aria-label="BuyCode Pro Android App & WhatsApp Support"
+      >
+        <div style={{ flex: 1 }}>
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '4px 10px',
+              borderRadius: '20px',
+              background: 'rgba(56, 189, 248, 0.15)',
+              color: '#38bdf8',
+              fontSize: '12px',
+              fontWeight: 700,
+              marginBottom: '8px',
+            }}
+          >
+            <span>📱</span> OFFICIAL ANDROID APP ON GOOGLE PLAY
           </div>
-          <div className="ad-text">
-            <h3>BIZLI POWER DEAL</h3>
-            <p>INSTANT FRESHNESS &bull; LONG LASTING CLEAN</p>
-          </div>
+          <h2
+            style={{
+              margin: '0 0 6px',
+              fontSize: 'clamp(18px, 2.5vw, 24px)',
+              fontWeight: 800,
+              color: '#ffffff',
+            }}
+          >
+            Buy Turnkey Websites &amp; Source Code with {APP_NAME}
+          </h2>
+          <p
+            style={{
+              margin: 0,
+              fontSize: '14px',
+              color: '#94a3b8',
+              lineHeight: 1.5,
+              maxWidth: '640px',
+            }}
+          >
+            Looking to acquire turnkey online platforms (like <strong>extremis.top</strong>) or verified source code?
+            Call/chat on WhatsApp or install our mobile app from Google Play Store!
+          </p>
         </div>
-        <div className="ad-badge">
-          <span className="discount-pill">UP TO 50% OFF</span>
-          <span className="brand-mark">BIZLI</span>
+
+        <div
+          className="banner-actions"
+          style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignItems: 'center' }}
+        >
+          <a
+            href={PLAY_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="playstore-cta-button"
+            id="hp-playstore-btn"
+            style={{ padding: '10px 16px', fontSize: '13px' }}
+          >
+            <span>📱</span> Download App
+          </a>
+          <a
+            href={whatsappUrl('Hello! I want to buy source code or website on getyoursoftware.top')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-cta-button"
+            id="hp-whatsapp-btn"
+            style={{ padding: '10px 16px', fontSize: '13px' }}
+          >
+            <span>💬</span> Call on WhatsApp
+          </a>
+          <Link
+            href="/app"
+            style={{
+              color: '#93c5fd',
+              fontSize: '12px',
+              fontWeight: 600,
+              textDecoration: 'underline',
+              marginLeft: '4px',
+            }}
+          >
+            Learn more →
+          </Link>
         </div>
-        <div className="skyline-decor" />
       </div>
     </div>
   )
@@ -297,7 +373,4 @@ export default function Page() {
         </section>
       </div>
 
-      <SiteFooter />
-    </main>
-  )
-}
+      

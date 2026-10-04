@@ -16,6 +16,7 @@ import {
   timeAgo,
   type Product,
 } from '@/store/types'
+import { PLAY_STORE_URL, APP_NAME, WHATSAPP_DISPLAY, whatsappUrl } from '@/lib/site-config'
 
 const REPORT_REASONS = [
   { value: 'spam', label: 'Spam or advertising' },
@@ -88,8 +89,35 @@ export default function ListingDetailPage() {
   const sellerName = product.seller?.name || 'getyoursoftware.top Member'
   const similar = (similarData?.items ?? []).filter((p) => p._id !== product._id)
 
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.title,
+    image: images,
+    description: product.description.replace(/[#*`_\[\]]/g, '').slice(0, 280),
+    brand: {
+      '@type': 'Brand',
+      name: product.brand || 'getyoursoftware.top',
+    },
+    offers: {
+      '@type': 'Offer',
+      price: product.price,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
+      seller: {
+        '@type': 'Organization',
+        name: sellerName,
+      },
+    },
+  }
+
   return (
     <main className="listing-detail-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <SiteHeader />
 
       {/* BREADCRUMB */}
@@ -170,6 +198,51 @@ export default function ListingDetailPage() {
               </svg>
               Report listing
             </button>
+          </div>
+ 
+          {/* BUY CODE & APP CALL TO ACTION */}
+          <div className="buy-code-cta-box" role="region" aria-label="Purchase Source Code">
+            <h3>
+              <span>🚀</span> Buy This Source Code or Website
+            </h3>
+            <p>
+              Direct handover available! <strong>Call or chat on WhatsApp</strong> for live demo access, price negotiation, and instant source code delivery. Or <strong>download our official Android App &ldquo;{APP_NAME}&rdquo;</strong> from Google Play Store to safely inspect and buy applications.
+            </p>
+            <div className="buy-code-cta-buttons">
+              <a
+                href={whatsappUrl(`Hello, I want to buy source code / website: "${product.title}" listed on getyoursoftware.top`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="whatsapp-cta-button"
+                id="whatsapp-buy-btn"
+              >
+                <span>💬</span>
+                <span>Call / Chat on WhatsApp ({WHATSAPP_DISPLAY})</span>
+              </a>
+              <a
+                href={PLAY_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="playstore-cta-button"
+                id="playstore-buy-btn"
+              >
+                <span>📱</span>
+                <span>Download {APP_NAME} on Play Store</span>
+              </a>
+              <Link
+                href="/app"
+                style={{
+                  color: '#93c5fd',
+                  fontSize: '13px',
+                  alignSelf: 'center',
+                  textDecoration: 'underline',
+                  fontWeight: 600,
+                  marginLeft: '4px',
+                }}
+              >
+                Learn about {APP_NAME} App →
+              </Link>
+            </div>
           </div>
 
           {/* SPECS */}
@@ -374,6 +447,32 @@ export default function ListingDetailPage() {
               right to monitor conversations. By sending the message you agree to our{' '}
               <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
             </p>
+          </div>
+
+          {/* DIRECT WHATSAPP & APP BUY CARD */}
+          <div className="sidebar-cta-card">
+            <h4>💬 Buy Source Code / Website</h4>
+            <p>
+              Get direct delivery, verify live admin demos, or negotiate price directly with verified developers.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <a
+                href={whatsappUrl(`Hello, I want to buy source code / website: "${product.title}" listed on getyoursoftware.top`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="whatsapp-cta-button"
+              >
+                <span>💬</span> Call on WhatsApp ({WHATSAPP_DISPLAY})
+              </a>
+              <a
+                href={PLAY_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="playstore-cta-button"
+              >
+                <span>📱</span> Download {APP_NAME} on Play Store
+              </a>
+            </div>
           </div>
         </aside>
       </div>

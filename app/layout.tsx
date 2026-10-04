@@ -1,21 +1,84 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import Providers from '@/components/Providers'
-import { SITE_NAME, SITE_URL } from '@/lib/site-config'
+import {
+  SITE_NAME,
+  SITE_URL,
+  APP_NAME,
+  PLAY_STORE_URL,
+  APP_PACKAGE,
+} from '@/lib/site-config'
+
+const GA_MEASUREMENT_ID = 'G-EQPRMKK1ZX'
 
 export const metadata: Metadata = {
-  // Without this Next resolves relative OG image URLs against localhost, so
-  // shared links pointed at an unreachable host.
   metadataBase: new URL(SITE_URL),
-  title: `${SITE_NAME} — Canada’s Marketplace`,
+  title: {
+    default: `${SITE_NAME} — Buy & Sell Websites, Apps & Software | Official App: ${APP_NAME}`,
+    template: `%s | ${SITE_NAME}`,
+  },
   description:
-    'Buy and sell locally on getyoursoftware.top — a responsive marketplace with a MongoDB-backed admin panel.',
+    'The premier online marketplace for buying and selling turnkey websites, mobile apps, SaaS scripts, CMS portals, and digital software businesses. Download our official BuyCode Pro app on Google Play Store or contact directly on WhatsApp.',
+  keywords: [
+    'buy websites',
+    'sell websites',
+    'apps for sale',
+    'software marketplace',
+    'buy mobile app',
+    'buy SaaS',
+    'turnkey website',
+    'BuyCode Pro',
+    'BuyCode Pro app',
+    'download BuyCode Pro',
+    'buy source code google play',
+    'extremis.top',
+    'news portal website',
+    'website broker',
+    'digital assets marketplace',
+    'getyoursoftware.top',
+  ],
+  authors: [{ name: 'getyoursoftware.top' }],
+  creator: 'getyoursoftware.top',
+  publisher: 'getyoursoftware.top',
   applicationName: SITE_NAME,
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: `${SITE_NAME} — Canada’s Marketplace`,
-    description: 'Buy and sell locally on getyoursoftware.top.',
+    type: 'website',
+    locale: 'en_US',
+    url: SITE_URL,
+    title: `${SITE_NAME} — Buy & Sell Websites, Apps & Software | ${APP_NAME}`,
+    description:
+      'Buy and sell turnkey websites, mobile apps, SaaS scripts, CMS portals, and digital software businesses on getyoursoftware.top. Download BuyCode Pro on Google Play.',
     siteName: SITE_NAME,
-    images: [{ url: '/brand/getyoursoftware-lockup-dark.png', width: 900, height: 473 }],
+    images: [
+      {
+        url: '/brand/getyoursoftware-lockup-dark.png',
+        width: 900,
+        height: 473,
+        alt: `${SITE_NAME} Marketplace`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${SITE_NAME} — Buy & Sell Websites, Apps & Software | ${APP_NAME}`,
+    description:
+      'Buy and sell turnkey websites, mobile apps, SaaS platforms, and digital software on getyoursoftware.top. Official app BuyCode Pro on Google Play.',
+    images: ['/brand/getyoursoftware-lockup-dark.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
     icon: [
@@ -46,8 +109,71 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_NAME,
+    url: SITE_URL,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${SITE_URL}/browse?q={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+    description:
+      'Online marketplace to buy and sell turnkey websites, mobile apps, and digital software businesses.',
+  }
+
+  const appSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'MobileApplication',
+    name: APP_NAME,
+    operatingSystem: 'ANDROID',
+    applicationCategory: 'BusinessApplication',
+    installUrl: PLAY_STORE_URL,
+    downloadUrl: PLAY_STORE_URL,
+    description:
+      'Official BuyCode Pro mobile app on Google Play to browse, negotiate, and buy verified source code, turnkey websites, and digital apps.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+  }
+
   return (
     <html lang="en">
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+        />
+      </head>
       <body className="antialiased">
         <Providers>{children}</Providers>
       </body>

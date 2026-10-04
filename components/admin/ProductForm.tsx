@@ -30,6 +30,9 @@ export type ProductFormValues = {
   featured: boolean
   urgent: boolean
   tags: string[]
+  link?: string
+  github?: string
+  userId?: string
   seller: {
     name: string
     phone: string
@@ -68,7 +71,10 @@ export function emptyProduct(): ProductFormValues {
     featured: false,
     urgent: false,
     tags: [],
-    seller: { name: '', phone: '', email: '', location: '', verified: false },
+    link: '',
+    github: '',
+    userId: '65dc52e287bf09def1a37366',
+    seller: { name: '', phone: '+8801706617723', email: '', location: '', verified: false },
   }
 }
 
@@ -88,6 +94,9 @@ export function toFormValues(product: Product): ProductFormValues {
     featured: product.featured ?? false,
     urgent: product.urgent ?? false,
     tags: product.tags ?? [],
+    link: product.link ?? '',
+    github: product.github ?? '',
+    userId: product.userId ?? '65dc52e287bf09def1a37366',
     seller: {
       name: product.seller?.name ?? '',
       phone: product.seller?.phone ?? '',
@@ -275,7 +284,7 @@ export default function ProductForm({
               <Input
                 value={values.seller.phone}
                 onChange={(e) => setSeller('phone', e.target.value)}
-                placeholder="+1 416 555 0100"
+                placeholder="+8801706617723"
               />
             </Field>
             <Field label="Email">
@@ -300,6 +309,36 @@ export default function ProductForm({
               checked={values.seller.verified}
               onChange={(e) => setSeller('verified', e.target.checked)}
             />
+          </div>
+        </Card>
+
+        <Card>
+          <h2 className="mb-4 text-sm font-semibold text-ink">Project &amp; Code Repository Links</h2>
+          <p className="mb-4 text-xs text-ink-muted">
+            Configure live demo link, GitHub repository URL, and User ID for this listing (used by /api/projects).
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Field label="Live Demo URL (link)">
+              <Input
+                value={values.link ?? ''}
+                onChange={(e) => set('link', e.target.value)}
+                placeholder="https://example.com"
+              />
+            </Field>
+            <Field label="GitHub Repository URL (github)">
+              <Input
+                value={values.github ?? ''}
+                onChange={(e) => set('github', e.target.value)}
+                placeholder="https://github.com/username/repository"
+              />
+            </Field>
+            <Field label="User ID (userId)">
+              <Input
+                value={values.userId ?? ''}
+                onChange={(e) => set('userId', e.target.value)}
+                placeholder="65dc52e287bf09def1a37366"
+              />
+            </Field>
           </div>
         </Card>
       </div>

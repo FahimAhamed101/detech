@@ -2074,3 +2074,140 @@ button, input {
     display: none;
   }
 }
+
+/* =========================================================
+   BUYCODE PRO & WHATSAPP ACTION BLOCKS & SEO LANDING PAGE
+   ========================================================= */
+
+.buy-code-cta-box {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.2);
+}
+
+.buy-code-cta-box h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buy-code-cta-box p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+.buy-code-cta-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.whatsapp-cta-button {
+  background: #25d366;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+  text-decoration: none;
+}
+
+.whatsapp-cta-button:hover {
+  background: #1ebc57;
+  transform: translateY(-1px);
+}
+
+.playstore-cta-button {
+  background: #ffffff;
+  color: #0f172a !important;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+}
+
+.playstore-cta-button:hover {
+  background: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.sidebar-cta-card {
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+  border: 2px solid #86efac;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 16px;
+}
+
+.sidebar-cta-card h4 {
+  margin: 0 0 8px;
+  color: #166534;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar-cta-card p {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.45;
+}
+
+.sidebar-cta-card .whatsapp-cta-button,
+.sidebar-cta-card .playstore-cta-button {
+  width: 100%;
+  justify-content: center;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+.homepage-app-banner {
+  background: linear-gradient(135deg, #0b1329 0%, #172554 50%, #1e1b4b 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 24px 32px;
+  margin: 20px auto;
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 12px 30px rgba(11, 19, 41, 0.25);
+  border: 1px solid #1e3a8a;
+}
+
+@media (max-width: 800px) {
+  .homepage-app-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .homepage-app-banner .banner-actions {
+    justify-content: center;
+  }
+}

@@ -12,7 +12,7 @@ export type ProductCondition = (typeof PRODUCT_CONDITIONS)[number]
 const sellerSchema = new Schema(
   {
     name: { type: String, default: '' },
-    phone: { type: String, default: '' },
+    phone: { type: String, default: '+8801706617723' },
     email: { type: String, default: '' },
     location: { type: String, default: '' },
     verified: { type: Boolean, default: false },
@@ -38,6 +38,9 @@ const productSchema = new Schema(
     urgent: { type: Boolean, default: false },
     tags: { type: [String], default: [] },
     views: { type: Number, default: 0 },
+    link: { type: String, default: '' },
+    github: { type: String, default: '' },
+    userId: { type: String, default: '65dc52e287bf09def1a37366' },
     seller: { type: sellerSchema, default: () => ({}) },
   },
   { timestamps: true }
