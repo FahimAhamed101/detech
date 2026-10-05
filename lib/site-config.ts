@@ -42,6 +42,9 @@ export const APP_PACKAGE = 'com.Fahim101.tomquiz'
 export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP || '+8801706617723'
 export const WHATSAPP_DISPLAY = process.env.NEXT_PUBLIC_WHATSAPP_DISPLAY || '+880 1706-617723'
 
+/** Google Analytics 4 Measurement ID */
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-EQPRMKK1ZX'
+
 /** Generate a direct WhatsApp click-to-chat/call URL */
 export function whatsappUrl(message?: string): string {
   const cleanNumber = WHATSAPP_NUMBER.replace(/[^0-9]/g, '')
